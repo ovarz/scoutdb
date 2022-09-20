@@ -16,7 +16,7 @@
 
 <link rel="preload" href="fonts/nunito/XRXV3I6Li01BKofINeaB.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="css/rancak.css?<?php echo $anticache; ?>" as="style">
-<link rel="preload" href="img/logo.svg" as="image">
+<link rel="preload" href="img/logo.webp" as="image">
 <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
 
 <style><?php require ($_SERVER['SCOUTDB'].'css/font.css')?></style>
