@@ -34,10 +34,18 @@ a:hover, button:hover{color:var(--color-default-3); fill:var(--color-default-3);
 
 
 header{background-color:var(--color-default-3);}
+.header-link:hover{color:var(--bg-1); fill:var(--bg-1);}
+.header-logo:hover{filter:invert(1);}
 
 
 
 menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 8%);}
+.menu-link{color:var(--color-default-1); fill:var(--color-default-1);}
+.menu-link:before{background-color:var(--color-default-1);}
+.menu-link:hover{color:var(--color-default-2); fill:var(--color-default-2);}
+.menu-link:hover:before{background-color:var(--color-default-2);}
+.menu-curr{color:var(--color-default-3) !important; fill:var(--color-default-3) !important;}
+.menu-curr:before{background-color:var(--color-default-3) !important;}
 
 
 

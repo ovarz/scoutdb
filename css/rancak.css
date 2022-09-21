@@ -5,7 +5,7 @@
 :root, :before, :after{
   --site-container:1878px;
   --menu-min:55px;
-  --menu-max:233px;
+  --menu-max:210px;
   --size-1:5px;
   --size-2:8px;
   --size-3:13px;
@@ -25,7 +25,7 @@ body, html{font-family:'Nunito',sans-serif; font-size:var(--default-fontsize); f
 -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; 
 -moz-osx-font-smoothing:grayscale; text-rendering:optimizeSpeed;}
 html{scroll-behavior:smooth; min-height:100vh; background-color:var(--bg-1);}
-body{--menu-width:var(--menu-min); padding-top:var(--size-6); padding-left:var(--menu-width); overflow-x:hidden;}
+body{--menu-width:var(--menu-max); padding-top:var(--size-6); padding-left:var(--menu-width); overflow-x:hidden;}
 body.body-welcome{padding-top:0 !important; padding-left:0 !important;}
 a, button{font-weight:bold;}
 .btn, a.btn, button.btn{padding:var(--size-3) var(--size-4); font-weight:normal; -webkit-appearance:none; text-transform:capitalize; 
@@ -42,7 +42,7 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 
-header{--icon-size:24px; position:fixed; z-index:calc(var(--max-zindex) - 3000); top:0; left:0; width:100%; padding-left:var(--menu-width);}
+header{--icon-size:21px; position:fixed; z-index:calc(var(--max-zindex) - 3000); top:0; left:0; width:100%; padding-left:var(--menu-width);}
 header .width-max{display:flex; justify-content:space-between;}
 header .width-max > div{display:flex;}
 .header-link{height:var(--size-6); padding:0 var(--size-3);}
@@ -54,13 +54,12 @@ header .width-max > div{display:flex;}
 
 menu{position:fixed; z-index:calc(var(--max-zindex) - 2000); top:0; left:0; width:var(--menu-width); height:100vh; 
 border-right:1px solid; overflow-y:auto;}
+menu::-webkit-scrollbar{width:0px;}
+.menu-link{position:relative; display:flex; align-items:center; align-content:center; justify-content:flex-start;
+width:100%; height:var(--menu-min); padding:0 var(--size-4);}
+.menu-link:before{content:''; display:block; position:absolute; top:0; left:0; width:var(--size-1); height:100%;}
+.menu-link-label{margin-left:var(--size-3); text-transform:capitalize; line-height:100%;}
 
 
 
 .rancak-container{position:relative; padding:var(--size-4);}
-
-
-
-@media screen and (min-width:1280px){
-  body{--menu-width:var(--menu-max);}
-}

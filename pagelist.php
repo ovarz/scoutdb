@@ -1,8 +1,9 @@
 <?php 
-  $page='home';
+  $page='pagelist';
+  $channel='pagelist';
   require ('inc/base.php')
 ?>
-<?php require ($_SERVER['SCOUTDB'].'inc/sample.php')?>
+<?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
