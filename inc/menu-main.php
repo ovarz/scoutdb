@@ -1,8 +1,6 @@
 <menu>
   <div class="menu-container">
-    <?php 
-      foreach($menu_main_array as $menu_main_list){
-    ?>
+    <?php foreach($menu_main_array as $menu_main_list){ ?>
     <a aria-label="<?php echo($menu_main_list['menu_main_label'])?>" title="<?php echo($menu_main_list['menu_main_label'])?>" 
 	href="<?php echo($menu_main_list['menu_main_link'])?>"
 	class="menu-link <?php if($channel == $menu_main_list['menu_main_id']) { ?>menu-curr<?php } ?> content_center">

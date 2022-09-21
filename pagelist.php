@@ -22,17 +22,12 @@
         <a class="pagelist-row" href="">Halaman Login</a>
       </li>
       <li>
-        <a class="pagelist-row" href="menu.php">Halaman Daftar Menu</a>
+        <a class="pagelist-row" href="home.php">Halaman Daftar Menu</a>
       </li>
       <li>
-        <a class="pagelist-row" href="home.php">Halaman Dashboard</a>
-      </li>
-      <li>
-        <div class="pagelist-row">Halaman Artikel</div>  
+        <div class="pagelist-row">Halaman Practice</div>  
         <ul>
-          <li><a class="pagelist-row" href="vivacoid/">Halaman Artikel per Situs</a></li>
-          <li><a class="pagelist-row" href="berita/">Halaman Artikel per Kategori</a></li>
-          <li><a class="pagelist-row" href="vivacoid/detail.php">Halaman Detail Artikel</a></li>
+          <li><a class="pagelist-row" href="practice/">Halaman Utama Practice</a></li>
         </ul>
       </li>
     </ul>
