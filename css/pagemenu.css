@@ -9,7 +9,7 @@ transform:translateX(-50%) translateY(-50%); filter:blur(1px);}
 
 .pagemenu-container{position:relative; z-index:1000; padding:var(--size-6); width:100%; max-width:987px;}
 .pagemenu-logo img{width:auto; height:64px;}
-.pagemenu-list{display:grid; grid-gap:var(--size-4); grid-template-columns:repeat(auto-fit, minmax(144px,1fr)); margin-top:var(--size-6);}
+.pagemenu-list{display:grid; grid-gap:var(--size-3); grid-template-columns:repeat(auto-fit, minmax(144px,1fr)); margin-top:var(--size-6);}
 .pagemenu-link{padding:var(--size-4); flex-wrap:wrap; border-radius:var(--rounded-2); background-color:rgb(var(--color-border) / 55%);}
 .pagemenu-link-icon, .pagemenu-link-label{width:100%;}
 .pagemenu-link-icon .svgicon{width:auto; height:var(--size-4);}

@@ -1,8 +1,14 @@
-.rancak-container{min-height:100vh;}
+.rancak-container{min-height:100vh; justify-content:flex-end;}
+
+.login-slideshow, .login-slidebox-image:after{top:0; left:0; width:100%; height:100%;}
+.login-slideshow{position:fixed; z-index:1;}
+.login-slidebox-image img{position:relative; height:100vh;}
+.login-slidebox-image:after{content:''; display:block; position:absolute; z-index:10;  background:url("img/fixdot.png") rgba(33,33,33,0.55);}
+.login-slideshow .slick-dots li.slick-active button{background-color:var(--color-default-3);}
 
 .login-container{position:relative; z-index:1000; padding:var(--size-6); width:100%; max-width:420px;}
 .login-logo img{width:auto; height:64px;}
-.login-intro{margin:var(--size-4) 0;}
+.login-intro{margin:var(--size-4) 0; color:var(--color-default-2); line-height:160%;}
 .login-intro *{text-align:center;}
 .login-button{display:flex; justify-content:center; align-items:center; width:100%; padding:var(--size-3) var(--size-4); background-color:#424242;
 border-radius:var(--rounded-2);}

@@ -5,10 +5,29 @@
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
-<div class="rancak-container content_center">
-
-  <style><?php require ($_SERVER['SCOUTDB'].'css/login.css')?></style>
+<style>
+  <?php require ($_SERVER['VIAHUB'].'css/slideshow.css')?>
+  <?php require ($_SERVER['SCOUTDB'].'css/login.css')?>
+</style>
+<div class="login-slideshow">
+  <div class="login-slidebox">
+    <div class="login-slidebox-image flex_ori">
+      <img alt="img_title" class="lazyload" data-original="img/slide-1.jpg" />
+    </div>
+  </div>
+  <div class="login-slidebox">
+    <div class="login-slidebox-image flex_ori">
+      <img alt="img_title" class="lazyload" data-original="img/slide-2.jpg" />
+    </div>
+  </div>
+  <div class="login-slidebox">
+    <div class="login-slidebox-image flex_ori">
+      <img alt="img_title" class="lazyload" data-original="img/slide-3.jpg" />
+    </div>
+  </div>
+</div>
   
+<div class="rancak-container content_center">
   <div class="login-container">
     <div class="login-logo content_center">
       <picture>
@@ -28,4 +47,20 @@
   </div>
   
 </div>
+<script defer src="js/slideshow.js"></script>
+<script defer>
+$(document).ready(function(){
+  $('.login-slideshow').slick({
+	lazyLoad:'ondemand',
+	dots:true,
+	infinite:true,
+	slidesToShow:1,
+	slidesToScroll:1,
+	autoplay:true,
+	swipeToSlide:true,
+	arrows:false,
+	autoplaySpeed:5000,
+  });
+});
+</script>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>
