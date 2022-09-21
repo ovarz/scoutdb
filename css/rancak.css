@@ -52,13 +52,19 @@ header .width-max > div{display:flex;}
 
 
 
+menu:before, .menu-link:before{content:''; display:block; position:absolute; top:0; left:0; width:3px; height:100%;}
 menu{position:fixed; z-index:calc(var(--max-zindex) - 2000); top:0; left:0; width:var(--menu-width); height:100vh; 
 border-right:1px solid; overflow-y:auto;}
 menu::-webkit-scrollbar{width:0px;}
-.menu-link{position:relative; display:flex; align-items:center; align-content:center; justify-content:flex-start;
+.menu-link{--icon-size:18px; position:relative; display:grid; grid-gap:var(--size-3); grid-template-columns:var(--icon-size) 1fr; 
+align-items:center; align-content:center;
 width:100%; height:var(--menu-min); padding:0 var(--size-4);}
-.menu-link:before{content:''; display:block; position:absolute; top:0; left:0; width:var(--size-1); height:100%;}
-.menu-link-label{margin-left:var(--size-3); text-transform:capitalize; line-height:100%;}
+.menu-link-icon .svgicon{width:var(--icon-size); height:auto;}
+.menu-link-label{text-transform:capitalize; line-height:100%; justify-content:flex-start;}
+
+.menu-min{--menu-width:var(--menu-min);}
+.menu-min .menu-link{grid-template-columns:1fr; padding:0;}
+.menu-min .menu-link-label{display:none;}
 
 
 

@@ -47,10 +47,10 @@ var all_scroll = function(){
 
 
 
-var back_to_top = function(){
+var menu_toggle = function(){
   "use strict";
-  $('#btt').click(function(){
-	$('body,html').scrollTop(0);
+  $('.header-menu').click(function(){
+	$('body').toggleClass('menu-min');
     return false;
   });	
 };
@@ -76,87 +76,9 @@ var open_sticky = function(){
 
 
 
-var sticky_bottom_close = function(){
-  "use strict";
-  $(".isb-close").click(function(){
-    $(".iklan-sticky-bottom").hide();
-    $("footer.footer-all").css("padding-bottom", 20);
-    return false;
-  });
-};
-
-
-
-var close_menu = function(){
-  "use strict";
-  $("#popup-MainMenu").click(function(){
-    ClosePopup();
-  });
-};
-
-
-
-var close_share = function(){
-  "use strict";
-  $('.popup-share-overlay, .popup-share-close').click(function(){
-	ClosePopup();
-	return false;
-  });
-};
-
-
-
-var updown_vote = function(){
-  "use strict";
-  $(".article-vote").click(function(){
-    $(this).toggleClass("article-voted");
-    $('.article-vote').not(this).removeClass("article-voted");
-  });
-};
-
-
-
-var toggle_bookmark = function(){
-  "use strict";
-  $('.toggle-bookmark').click(function(){
-    var get_label = $(this).attr('data-title');
-	if(get_label == 'Add'){
-	  $(this).attr("data-title","Remove");
-	  $('.popup-toggle-bookmark').find('.popup-alert-box').html('Bookmark berhasil ditambah');
-	};
-	if(get_label == 'Remove'){
-	  $(this).attr("data-title","Add");
-	  $('.popup-toggle-bookmark').find('.popup-alert-box').html('Bookmark berhasil dihapus');
-	};
-	return false;
-  });
-};
-
-
-
-var fbcomment = function(){
-  $("body,html").bind("touchstart touchmove scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
-    var js = document.createElement('script');
-    js.src = '//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0&appId=162101040544143&autoLogAppEvents=1';
-    document.body.appendChild(js);
-  });
-  
-  $(".article-button-comment").click(function(){
-    $(this).parents().eq(2).find(".article-comment").slideToggle("fast");
-  });
-};
-
-
-
 $(document).ready(function(){
   "use strict";
   all_scroll();
-  back_to_top();
+  menu_toggle();
   open_sticky();
-  sticky_bottom_close();
-  close_menu();
-  close_share();
-  updown_vote();
-  toggle_bookmark();
-  fbcomment();
 });
