@@ -1,0 +1,10 @@
+.rancak-container{min-height:100vh;}
+
+.login-container{position:relative; z-index:1000; padding:var(--size-6); width:100%; max-width:420px;}
+.login-logo img{width:auto; height:64px;}
+.login-intro{margin:var(--size-4) 0;}
+.login-intro *{text-align:center;}
+.login-button{display:flex; justify-content:center; align-items:center; width:100%; padding:var(--size-3) var(--size-4); background-color:#424242;
+border-radius:var(--rounded-2);}
+.login-button:hover{background-color:rgb(var(--color-border) / 89%); color:var(--bg-1);}
+.login-button-label{font-size:18px; font-weight:bold; margin-left:var(--size-4);}
