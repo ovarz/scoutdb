@@ -9,7 +9,7 @@
   <?php require ($_SERVER['VIAHUB'].'css/slideshow.css')?>
   <?php require ($_SERVER['SCOUTDB'].'css/login.css')?>
 </style>
-<div class="login-slideshow">
+<section aria-label="Slideshow" class="login-slideshow">
   <div class="login-slidebox">
     <div class="login-slidebox-image flex_ori">
       <img alt="img_title" class="lazyload" data-original="img/slide-1.jpg" />
@@ -25,10 +25,13 @@
       <img alt="img_title" class="lazyload" data-original="img/slide-3.jpg" />
     </div>
   </div>
-</div>
+</section>
+  
+  
   
 <div class="rancak-container content_center">
-  <div class="login-container">
+
+  <section aria-label="Sign In" class="login-container">
     <div class="login-logo content_center">
       <picture>
         <source srcset="img/logo.webp" type="image/webp">
@@ -44,7 +47,7 @@
 	  <div class="login-button-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/google.svg')?></div>
 	  <div class="login-button-label">Sign in with Google</div>
 	</button>
-  </div>
+  </section>
   
 </div>
 <script defer src="js/slideshow.js"></script>

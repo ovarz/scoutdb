@@ -5,11 +5,14 @@
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
+<style><?php require ($_SERVER['SCOUTDB'].'css/pagemenu.css')?></style>
 <div class="rancak-container content_center">
 
-  <style><?php require ($_SERVER['SCOUTDB'].'css/pagemenu.css')?></style>
-  <div class="video-cover"></div>
-  <div class="pagemenu-container">
+  <section aria-label="Video Cover" class="video-cover"></section>
+  
+  
+  
+  <section aria-label="Daftar Menu" class="pagemenu-container">
     <div class="pagemenu-logo content_center">
       <picture>
         <source srcset="img/logo.webp" type="image/webp">
@@ -29,7 +32,7 @@
       </a>
       <?php } ?>
 	</div>
-  </div>
+  </section>
   
 </div>
 <script>

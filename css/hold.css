@@ -50,6 +50,12 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 8%); t
 
 
 
+.video-filter-field{background-color:transparent; background-color:rgba(0,0,0,0.21); border-radius:var(--rounded-2); color:var(--color-default-2);}
+.video-filter-field option{color:var(--bg-1);}
+.video-filter-dropdown .svgicon{fill:var(--color-default-2);}
+
+
+
 footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 8%);}
 footer > *{padding:var(--size-4);}
 
