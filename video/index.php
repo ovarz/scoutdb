@@ -14,7 +14,7 @@
       <a aria-label="Home" title="Home" class="breadcrumb-link header-home content_center" href="home.php">
         <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
       </a>
-      <div class="breadcrumb-link header-home content_center" href="video/">
+      <div class="breadcrumb-link header-home content_center">
         <span>Video</span>
       </div>
     </section>

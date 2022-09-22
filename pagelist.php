@@ -30,6 +30,12 @@
           <li><a class="pagelist-row" href="practice/">Halaman Utama Practice</a></li>
         </ul>
       </li>
+      <li>
+        <div class="pagelist-row">Halaman Video</div>  
+        <ul>
+          <li><a class="pagelist-row" href="video/">Halaman Utama Video</a></li>
+        </ul>
+      </li>
     </ul>
   </div>
   

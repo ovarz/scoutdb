@@ -8,7 +8,18 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <div class="rancak-container">
-  tes
+  <span class="width-max">
+
+    <section aria-label="Breadcrumb" class="breadcrumb">
+      <a aria-label="Home" title="Home" class="breadcrumb-link header-home content_center" href="home.php">
+        <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
+      </a>
+      <div class="breadcrumb-link header-home content_center">
+        <span>Practice</span>
+      </div>
+    </section>
+	
+  </span>
 </div>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>
