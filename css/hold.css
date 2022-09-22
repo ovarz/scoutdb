@@ -41,7 +41,8 @@ header{background-color:var(--color-default-3);}
 
 menu:before, .menu-link:before{background-color:#616161;}
 menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 8%); transition:var(--transition-default);}
-.menu-link{color:var(--color-default-1); fill:var(--color-default-1);}
+.menu-link{color:var(--color-default-1); fill:var(--color-default-1); border-color:rgb(var(--color-border) / 8%);}
+.menu-link:before{transition:var(--transition-default);}
 .menu-link:hover{color:var(--color-default-2); fill:var(--color-default-2);}
 .menu-link:hover:before{background-color:var(--color-default-2);}
 .menu-curr{color:var(--color-default-3) !important; fill:var(--color-default-3) !important;}

@@ -57,8 +57,8 @@ menu{position:fixed; z-index:calc(var(--max-zindex) - 2000); top:0; left:0; widt
 border-right:1px solid; overflow-y:auto;}
 menu::-webkit-scrollbar{width:0px;}
 .menu-link{--icon-size:18px; position:relative; display:grid; grid-gap:var(--size-3); grid-template-columns:var(--icon-size) 1fr; 
-align-items:center; align-content:center;
-width:100%; height:var(--menu-min); padding:0 var(--size-4);}
+align-items:center; align-content:center; border-bottom:1px dashed;
+width:100%; height:var(--menu-min); padding:0 var(--size-5);}
 .menu-link-icon .svgicon{width:var(--icon-size); height:auto;}
 .menu-link-label{text-transform:capitalize; line-height:100%; justify-content:flex-start;}
 
