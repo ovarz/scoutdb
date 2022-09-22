@@ -13,7 +13,18 @@
 	  </a>
 	</div>
 	<div class="header-right">
-	
+	  <button title="Notification" class="header-link header-notif open-float content_center">
+	    <?php require ($_SERVER['SCOUTDB'].'img/icon/notification.svg')?>
+	  </button>
+	  <button title="Setting" class="header-link header-setting open-float content_center">
+	    <?php require ($_SERVER['SCOUTDB'].'img/icon/setting.svg')?>
+	  </button>
+	  <a aria-label="Report" title="Report" class="header-link header-report content_center" href="report/">
+	    <?php require ($_SERVER['SCOUTDB'].'img/icon/report.svg')?>
+	  </a>
+	  <button title="Logout" class="header-link header-logout open-popup content_center">
+	    <?php require ($_SERVER['SCOUTDB'].'img/icon/logout.svg')?>
+	  </button>
 	</div>
   </span>
 </header>

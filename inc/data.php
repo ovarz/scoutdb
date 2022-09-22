@@ -10,5 +10,5 @@
   $menu_main_array[]=array('menu_main_id'=>'dashboard','menu_main_label'=>'menu','menu_main_link'=>'menu/');
 
 
-  $random_author=array("Pay Joe","Shuu Trysh Noe","Rhou Jya Lee","Rush Die","Soul as Three");
+  $random_username=array("Pay Joe","Rhou Jya Lee","Rush Die","Soul as Three");
 ?>

@@ -1,4 +1,14 @@
 <menu>
+  <a aria-label="<?php echo $random_username[array_rand($random_username)]; ?>" title="<?php echo $random_username[array_rand($random_username)]; ?>" 
+  class="side-profile" href="profile/">
+    <div class="side-profile-photo content_center">
+	  <div class="side-profile-photoframe flex_ori thumb-loading">
+	    <img alt="img_title" class="lazyload" data-original="img/sample/profile-photo.jpg" />
+	  </div>
+	</div>
+	<h1 class="side-profile-name"><?php echo $random_username[array_rand($random_username)]; ?></h1>
+  </a>
+  
   <div class="menu-container">
     <?php foreach($menu_main_array as $menu_main_list){ ?>
     <a aria-label="<?php echo($menu_main_list['menu_main_label'])?>" title="<?php echo($menu_main_list['menu_main_label'])?>" 
