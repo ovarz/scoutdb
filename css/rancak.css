@@ -43,7 +43,7 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 header{--icon-size:21px; position:fixed; z-index:calc(var(--max-zindex) - 3000); top:0; left:0; width:100%; padding-left:var(--menu-width);}
-header .width-max{display:flex; justify-content:space-between;}
+header .width-max{display:flex; justify-content:space-between; max-width:calc(var(--site-container) + (var(--size-4) * 2));}
 header .width-max > div{display:flex;}
 .header-link{height:var(--size-6); padding:0 var(--size-3);}
 .header-link .svgicon{width:auto; height:var(--icon-size);}
@@ -72,7 +72,8 @@ width:100%; height:var(--menu-min); padding:0 var(--size-5);}
 
 
 
-.rancak-container{position:relative; padding:var(--size-4); display:grid; grid-gap:var(--size-5);}
+.rancak-container{position:relative; padding:var(--size-4);}
+.rancak-container > .width-max{display:grid; grid-gap:var(--size-5);}
 
 
 
