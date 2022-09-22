@@ -23,7 +23,7 @@
 
     <section aria-label="Daftar Statistik" class="video-list">
       <div class="video-filter">
-        <h1 class="section-title video-filter-label">Daftar Statistik</h1>
+        <h1 class="section-title video-filter-label">Video</h1>
         <div class="video-filter-container">
           <div class="video-filter-sort">
             <select class="video-filter-field">
