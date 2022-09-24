@@ -21,10 +21,10 @@
 
 
 
-    <section aria-label="Daftar Statistik" class="video-list">
+    <section aria-label="Daftar Statistik" class="videoscout-list">
       <div class="video-filter">
         <h2 class="section-title video-filter-label">Scout By Video</h2>
-        <div class="video-filter-container">
+        <div class="video-filter-contain+er">
           <div class="video-filter-sort">
             <select class="video-filter-field">
               <option value="1">Terbaru</option>
@@ -42,6 +42,12 @@
           </div>
         </div>
       </div>
+	  
+	  <div class="videoscout-list-container">
+	    <?php for ($i=1; $i <= 10 ; $i++) { ?>
+	      <?php require ($_SERVER['SCOUTDB'].'module/scout-video-list.php')?>
+		<?php } ?>
+	  </div>
     </section>
     
   </span>

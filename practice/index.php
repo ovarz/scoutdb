@@ -19,6 +19,14 @@
       </div>
     </section>
 	
+	
+
+    <section aria-label="Section Practice" class="section-container">
+      <div class="section-title">
+	    <div class="section-title-label">Practice</div>
+	  </div>
+    </section>
+	
   </span>
 </div>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>
