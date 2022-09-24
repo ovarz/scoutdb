@@ -7,6 +7,7 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
+<style><?php require ($_SERVER['SCOUTDB'].'css/scout-video.css')?></style>
 <div class="rancak-container">
   <span class="width-max">
 
