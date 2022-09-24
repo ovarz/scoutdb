@@ -37,7 +37,7 @@
 </div>
 <script>
 $(window).on('load',function(){
-  $('.video-cover').append("<video autoplay=\"\" loop muted><source src=\"img/pagemenu.mp4\" type=\"video/mp4\"></video>");
+  $('.video-cover').append("<img alt=\"Cover Menu\" src=\"img/cover-menu.jpg\" width=\"1920\" height=\"1080\">");
 }); 
 </script>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>

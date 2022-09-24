@@ -33,7 +33,7 @@
       <li>
         <div class="pagelist-row">Halaman Video</div>  
         <ul>
-          <li><a class="pagelist-row" href="video/">Halaman Utama Video</a></li>
+          <li><a class="pagelist-row" href="scout-video/">Halaman Utama Video</a></li>
         </ul>
       </li>
     </ul>
