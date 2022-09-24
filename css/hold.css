@@ -61,6 +61,17 @@ background-color:rgba(0,0,0,0.21); color:var(--color-default-2); border-color:rg
 
 
 
+.pagination{--icon-size:36px; display:flex;}
+.pagination-button{margin-right:var(--size-2); margin-top:var(--size-2); width:var(--icon-size); height:var(--icon-size);
+color:var(--color-default-2); fill:var(--color-default-2); font-weight:bold; 
+border:1px solid rgb(var(--color-border) / 8%); border-radius:var(--rounded-1);}
+.pagination-button .svgicon{width:auto; height:var(--default-fontsize);}
+
+a.pagination-button{background-color:var(--color-default-3);}
+div.pagination-button{background-color:#000000;}
+
+
+
 footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 8%);}
 footer > *{padding:var(--size-4);}
 

@@ -49,6 +49,8 @@
 	      <?php require ($_SERVER['SCOUTDB'].'module/scout-video-list.php')?>
 		<?php } ?>
 	  </div>
+	  
+	  <?php require ($_SERVER['SCOUTDB'].'module/pagination.php')?>
     </section>
     
   </span>
