@@ -24,7 +24,7 @@
     <section aria-label="Daftar Statistik" class="videoscout-list">
       <div class="video-filter">
         <h2 class="section-title video-filter-label">Scout By Video</h2>
-        <div class="video-filter-contain+er">
+        <div class="video-filter-container">
           <div class="video-filter-sort">
             <select class="video-filter-field">
               <option value="1">Terbaru</option>
