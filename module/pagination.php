@@ -24,6 +24,6 @@
     <?php require ($_SERVER['SCOUTDB'].'img/icon/right.svg')?>
   </a>
   <a aria-label="Halaman Terakhir" title="Halaman Terakhir" class="pagination-button content_center" href="javascript:void(0)">
-    <?php require ($_SERVER['SCOUTDB'].'img/icon/left.svg')?>
+    <?php require ($_SERVER['SCOUTDB'].'img/icon/right-double.svg')?>
   </a>
 </div>

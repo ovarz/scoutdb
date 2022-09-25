@@ -2,6 +2,9 @@
   <a aria-label="IMG_TITLE" title="IMG_TITLE" class="vlc-thumb" href="scout-video/detail.php">
 	<div class="vlc-thumb-frame flex_ori thumb-loading">
 	  <img alt="img_title" class="lazyload" data-original="img/sample/content-<?php echo rand(1,20); ?>.jpg" />
+	  <div class="vlc-thumb-icon content_center">
+	    <?php require ($_SERVER['SCOUTDB'].'img/icon/play-circle.svg')?>
+	  </div>
 	</div>
   </a>
   <a aria-label="IMG_TITLE" title="IMG_TITLE" class="vlc-link" href="scout-video/detail.php">
@@ -22,11 +25,11 @@
   </a>
   <div class="vlc-action">
     <span>
-      <button title="Notification" class="vlc-button vlc-button-upload open-float content_center">
-        <?php require ($_SERVER['SCOUTDB'].'img/icon/notification.svg')?>
+      <button title="Upload Video" class="vlc-button vlc-button-upload open-float content_center">
+        <?php require ($_SERVER['SCOUTDB'].'img/icon/upload.svg')?>
       </button>
-      <button title="Notification" class="vlc-button vlc-button-delete open-float content_center">
-        <?php require ($_SERVER['SCOUTDB'].'img/icon/notification.svg')?>
+      <button title="Delete Video" class="vlc-button vlc-button-delete open-float content_center">
+        <?php require ($_SERVER['SCOUTDB'].'img/icon/delete.svg')?>
       </button>
 	</span>
   </div>
