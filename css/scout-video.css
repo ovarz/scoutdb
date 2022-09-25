@@ -2,17 +2,19 @@
 .video-filter-container{display:flex;}
 .video-filter-container .svgicon{width:auto; height:16px;}
 .video-filter-label{margin-bottom:0;}
-.video-filter-sort, .video-filter-search{position:relative;}
-.video-filter-search{margin-left:var(--size-4);}
-.video-filter-field{position:relative; z-index:1000; padding:var(--size-3); padding-right:var(--size-6); border:1px solid;}
+.video-filter-sort, .video-filter-search, .video-filter-date{position:relative;}
+.video-filter-search{margin:0 var(--size-3);}
+.video-filter-field{position:relative; z-index:1000; padding:var(--size-3); padding-right:var(--size-6); border:1px solid; width:180px;}
 .video-filter-dropdown, .video-filter-button{position:absolute; z-index:2000; right:0; top:0; width:var(--size-6); height:100%;}
 .video-filter-dropdown{z-index:1;}
+
+.video-filter-sort .video-filter-field{width:120px;}
 
 
 
 .videoscout-list-container{display:grid; grid-gap:var(--size-4); padding-top:var(--size-4);
 border-top:1px dashed rgb(var(--color-border) / 13%);}
-.vlc-row{--icon-size:21px; display:grid; grid-gap:var(--size-3); grid-template-columns:175px 1fr 233px;
+.vlc-row{--icon-size:21px; display:grid; grid-gap:var(--size-3); grid-template-columns:120px 1fr 260px;
 padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) / 13%); font-weight:normal;}
 
 .vlc-thumb-frame{border-radius:var(--rounded-1);}
@@ -25,7 +27,7 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 .vlc-info-label{position:relative; padding-right:var(--size-1);}
 .vlc-info-label:after{content:':'; display:block; position:absolute; top:0; right:0; height:100%;}
 
-.vlc-match-row{--emblem-size:55px; display:grid; grid-template-columns:1fr var(--size-4) 1fr; grid-gap:var(--size-2);}
+.vlc-match-row{--emblem-size:55px; display:grid; grid-template-columns:1fr var(--emblem-size) 1fr; grid-gap:var(--size-2);}
 .vlc-match-row *{text-align:center;}
 .vlc-match-emblem{height:var(--emblem-size); margin-bottom:var(--size-2);}
 .vlc-match-emblem:before{padding-top:100%;}
@@ -34,6 +36,7 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 
 
 
-@media screen and (min-width:1400px){
-  .vlc-row{grid-gap:var(--size-4);}
+@media screen and (min-width:1180px){
+  .video-filter-field{width:250px;}
+  .vlc-row{grid-template-columns:165px 1fr 260px; grid-gap:var(--size-4);}
 }

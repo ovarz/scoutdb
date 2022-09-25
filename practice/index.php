@@ -11,10 +11,10 @@
   <span class="width-max">
 
     <section aria-label="Breadcrumb" class="breadcrumb">
-      <a aria-label="Home" title="Home" class="breadcrumb-link header-home content_center" href="home.php">
+      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="home.php">
         <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
       </a>
-      <div class="breadcrumb-link header-home content_center">
+      <div class="breadcrumb-link content_center">
         <span>Practice</span>
       </div>
     </section>
