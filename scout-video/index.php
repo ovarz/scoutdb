@@ -53,7 +53,18 @@
 	  
 	  <div class="videoscout-list-container">
 	    <?php for ($i=1; $i <= 10 ; $i++) { ?>
-	      <?php require ($_SERVER['SCOUTDB'].'module/scout-video-list.php')?>
+          <a aria-label="IMG_TITLE" title="IMG_TITLE" class="vlc-row" href="scout-video/detail.php">
+            <div class="vlc-thumb">
+              <div class="vlc-thumb-frame flex_ori thumb-loading">
+                <img alt="img_title" class="lazyload" data-original="img/sample/content-<?php echo rand(1,20); ?>.jpg" />
+                <div class="vlc-thumb-icon content_center">
+                  <?php require ($_SERVER['SCOUTDB'].'img/icon/play-circle.svg')?>
+                </div>
+              </div>
+            </div>
+            <?php require ($_SERVER['SCOUTDB'].'module/scout-video-info.php')?>
+            <?php require ($_SERVER['SCOUTDB'].'module/scout-video-match.php')?>
+          </a>
 		<?php } ?>
 	  </div>
 	  

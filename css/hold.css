@@ -54,13 +54,6 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 8%); t
 
 
 
-.video-filter-field{background-color:transparent; border-radius:var(--rounded-2);
-background-color:rgba(0,0,0,0.21); color:var(--color-default-2); border-color:rgb(var(--color-border) / 8%);}
-.video-filter-field option{color:var(--bg-1);}
-.video-filter-dropdown .svgicon{fill:var(--color-default-2);}
-
-
-
 .pagination{--icon-size:36px; display:flex;}
 .pagination-button{margin-right:var(--size-2); margin-top:var(--size-2); width:var(--icon-size); height:var(--icon-size);
 color:var(--color-default-2); fill:var(--color-default-2); font-weight:bold; 

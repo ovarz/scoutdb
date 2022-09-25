@@ -4,9 +4,13 @@
 .video-filter-label{margin-bottom:0;}
 .video-filter-sort, .video-filter-search, .video-filter-date{position:relative;}
 .video-filter-search{margin:0 var(--size-3);}
-.video-filter-field{position:relative; z-index:1000; padding:var(--size-3); padding-right:var(--size-6); border:1px solid; width:180px;}
+.video-filter-field{position:relative; z-index:1000; padding:var(--size-3); padding-right:var(--size-6); width:180px;
+border-radius:var(--rounded-2); border:1px solid rgb(var(--color-border) / 8%);
+background-color:rgba(0,0,0,0.21); color:var(--color-default-2);}
+.video-filter-field option{color:var(--bg-1);}
 .video-filter-dropdown, .video-filter-button{position:absolute; z-index:2000; right:0; top:0; width:var(--size-6); height:100%;}
 .video-filter-dropdown{z-index:1;}
+.video-filter-dropdown .svgicon{fill:var(--color-default-2);}
 
 .video-filter-sort .video-filter-field{width:120px;}
 
@@ -23,7 +27,7 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 .vlc-thumb:hover .vlc-thumb-icon{opacity:1;}
 
 .vlc-info{display:grid; grid-gap:var(--size-1);}
-.vlc-info-row{display:grid; grid-template-columns:144px 1fr; grid-gap:var(--size-2);}
+.vlc-info-row{display:grid; grid-template-columns:136px 1fr; grid-gap:var(--size-2);}
 .vlc-info-label{position:relative; padding-right:var(--size-1);}
 .vlc-info-label:after{content:':'; display:block; position:absolute; top:0; right:0; height:100%;}
 
@@ -32,7 +36,21 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 .vlc-match-emblem{height:var(--emblem-size); margin-bottom:var(--size-2);}
 .vlc-match-emblem:before{padding-top:100%;}
 .vlc-match-emblem img{max-width:var(--emblem-size); max-height:var(--emblem-size);}
-.vlc-match-score{font-weight:bold;}
+.vlc-match-vs b{font-weight:900; color:var(--color-default-2);}
+
+
+
+.videoscout-detail{--min-height:calc(100vh - var(--size-6) - 64px); display:grid; grid-template-columns:1fr 377px; margin-top:var(--size-3);}
+.videoscout-play{position:relative; background-color:#000;}
+.videoscout-play iframe{width:100%; height:var(--min-height); position:sticky; top:var(--size-6);}
+.videoscout-info{min-height:var(--min-height); padding:var(--size-4); padding-top:0; color:var(--color-default-2);}
+.videoscout-info > *{margin-bottom:var(--size-4); padding-bottom:var(--size-4); border-bottom:1px solid rgb(var(--color-border) / 13%);}
+.vlc-timeline{display:grid; grid-gap:var(--size-4);}
+.vlc-timeline-list{display:grid; grid-template-columns:56px 1fr; grid-gap:var(--size-2); align-items:center;}
+.vlc-timeline-data{background-color:rgb(var(--color-border) / 8%); padding:var(--size-2); font-size:12px; text-align:center;
+border-radius:var(--rounded-1); border:1px solid rgb(var(--color-border) / 8%);}
+.vlc-timeline-info{line-height:130%;}
+
 
 
 
