@@ -1,6 +1,6 @@
 .rancak-container{min-height:100vh;}
 
-.video-cover{position:fixed; z-index:1; top:0; left:0; width:100%; height:100%;}
+.video-cover{position:fixed; z-index:1; top:0; left:0; width:100%; height:100%; opacity:0.55;}
 .video-cover video{position:absolute; z-index:2; top:50%; left:50%; min-width:100%; min-height:100%; width:auto; height:auto; 
 transform:translateX(-50%) translateY(-50%); filter:blur(1px);}
 .video-cover:before, .video-cover:after{content:'';  position:absolute; top:0; left:0; width:100%; height:100%;}

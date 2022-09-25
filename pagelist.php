@@ -31,9 +31,10 @@
         </ul>
       </li>
       <li>
-        <div class="pagelist-row">Halaman Video</div>  
+        <div class="pagelist-row">Halaman Scout by Video</div>  
         <ul>
-          <li><a class="pagelist-row" href="scout-video/">Halaman Utama Video</a></li>
+          <li><a class="pagelist-row" href="scout-video/">Halaman Daftar Video</a></li>
+          <li><a class="pagelist-row" href="scout-video/detail.php">Halaman Detail Video</a></li>
         </ul>
       </li>
     </ul>
