@@ -34,8 +34,8 @@
         <ul>
           <li><a class="pagelist-row" href="practice/">Halaman Daftar Team</a></li>
           <li><a class="pagelist-row" href="practice/team/">Halaman Daftar Player</a></li>
-          <li><a class="pagelist-row" href="practice/team/pay-joe/">Halaman Daftar Training</a></li>
-          <li><a class="pagelist-row" href="practice/team/pay-joe/speed/">Halaman Mulai Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/">Halaman Daftar Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/training/">Halaman Mulai Training</a></li>
         </ul>
       </li>
       <li>
@@ -72,6 +72,8 @@
             $icon_array[]=array('icon_id'=>'search');
             $icon_array[]=array('icon_id'=>'setting');
             $icon_array[]=array('icon_id'=>'sync');
+            $icon_array[]=array('icon_id'=>'training-speed');
+            $icon_array[]=array('icon_id'=>'training-shooting');
 		    foreach($icon_array as $icon_list){ 
 		  ?>
 		  <a class="icon-link" href="img/icon/<?php echo($icon_list['icon_id'])?>.svg" target="_blank">

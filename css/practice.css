@@ -1,5 +1,8 @@
-.header-report .button-dummy{display:flex; align-content:center; align-items:center; padding:var(--size-2) var(--size-3);
-background-color:var(--color-default-2); color:var(--color-default-3); fill:var(--color-default-3);
-border-radius:var(--rounded-2); transition:var(--transition-default);}
-.header-report:hover .button-dummy{background-color:var(--bg-1);}
-.header-report .button-dummy .svgicon{margin-right:var(--size-2);}
+.training-container{margin-top:var(--size-4); margin-bottom:var(--size-2); font-weight:bold;}
+.training-list{display:grid; grid-gap:var(--size-2); grid-template-columns:repeat(auto-fill, minmax(120px,1fr));}
+.training-link{display:grid; grid-gap:var(--size-2); grid-auto-rows:min-content; padding:var(--size-4);
+background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);}
+.training-link:hover{border-color:var(--color-default-3);}
+.training-link *{text-align:center; text-transform:capitalize;}
+.training-icon{line-height:0;}
+.training-icon .svgicon{width:auto; height:var(--size-5);}

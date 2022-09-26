@@ -92,16 +92,16 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
 
 
 
-.team-list{display:grid; grid-gap:var(--size-5) var(--size-3); grid-template-columns:repeat(auto-fit, minmax(120px,1fr));}
-.team-link{display:grid; grid-gap:var(--size-1);}
+.team-list{display:grid; grid-gap:var(--size-5) var(--size-3); grid-template-columns:repeat(auto-fill, minmax(120px,1fr));}
+.team-link{display:grid; grid-gap:var(--size-1); grid-auto-rows:min-content;}
 .team-icon:before{height:var(--size-6);}
 .team-icon img{object-fit:contain; object-position:center;}
 .team-name{text-align:center;}
 
 
 
-.player-list{display:grid; grid-gap:var(--size-5) var(--size-3); grid-template-columns:repeat(auto-fill, minmax(120px,1fr));}
-.player-link{display:grid;}
+.player-list{display:grid; grid-gap:var(--size-5) var(--size-3); grid-template-columns:repeat(auto-fill, minmax(140px,1fr));}
+.player-link{display:grid; grid-auto-rows:min-content;}
 .player-photo:before{height:144px;}
 .player-photo:after{content:''; display:block; position:absolute; z-index:1000; bottom:0; left:0; width:100%; height:100%;}
 .player-photo img{object-fit:contain; object-position:center;}

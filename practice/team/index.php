@@ -7,7 +7,6 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
-<link rel="stylesheet" type="text/css" href="css/practice.css"/>
 <div class="rancak-container">
   <span class="width-max">
 
@@ -15,7 +14,7 @@
       <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="home.php">
         <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
       </a>
-      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="practice/">
+      <a aria-label="Practice" title="Practice" class="breadcrumb-link content_center" href="practice/">
         <span>Practice</span>
       </a>
       <div class="breadcrumb-link content_center">
@@ -27,11 +26,11 @@
 
     <section aria-label="Section Practice" class="section-container">
       <div class="section-title">
-	    <div class="section-title-label">Choose your Player</div>
+	    <div class="section-title-label">Choose Your Player</div>
 	  </div>
-      <div class="team-list">
+      <div class="player-list">
         <?php for ($i=1; $i <= 20 ; $i++) { ?>
-          <?php $player_link='practice/team/pay-joe/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
+          <?php $player_link='practice/team/player/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
         <?php } ?>
       </div>
     </section>
