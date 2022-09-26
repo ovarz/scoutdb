@@ -7,7 +7,7 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
-<style><?php require ($_SERVER['SCOUTDB'].'css/scout-video.css')?></style>
+<link rel="stylesheet" type="text/css" href="css/scout-video.css"/>
 <div class="rancak-container">
   <span class="width-max">
 
@@ -28,13 +28,15 @@
 
 
 
-<section aria-label="Video Statistik" class="videoscout-detail">
-  <div class="videoscout-play">
+<div class="videoscout-detail">
+
+  <section aria-label="Video Statistik" class="videoscout-play">
     <iframe width="560" height="315" class="lazyload" data-original="https://www.youtube.com/embed/cJCK80fqkv0?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+  </section>
   
   
-  <div class="videoscout-info">
+  
+  <section aria-label="Info Statistik" class="videoscout-info">
 	<?php require ($_SERVER['SCOUTDB'].'module/scout-video-match.php')?>
 	<?php require ($_SERVER['SCOUTDB'].'module/scout-video-info.php')?>
 	<div class="vlc-timeline">
@@ -45,7 +47,8 @@
 		</div>
 	  <?php } ?>
 	</div>
-  </div>
-</section>
+  </section>
+  
+</div>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>

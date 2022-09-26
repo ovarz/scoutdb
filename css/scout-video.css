@@ -36,11 +36,11 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 .vlc-match-emblem{height:var(--emblem-size); margin-bottom:var(--size-2);}
 .vlc-match-emblem:before{padding-top:100%;}
 .vlc-match-emblem img{max-width:var(--emblem-size); max-height:var(--emblem-size);}
-.vlc-match-vs b{font-weight:900; color:var(--color-default-2);}
+.vlc-match-vs b{font-weight:900;}
 
 
 
-.videoscout-detail{--min-height:calc(100vh - var(--size-6) - 64px); display:grid; grid-template-columns:1fr 377px; margin-top:var(--size-3);}
+.videoscout-detail{--min-height:calc(100vh - var(--size-6) - 58px); display:grid; grid-template-columns:1fr 377px; margin-top:var(--size-3);}
 .videoscout-play{position:relative; background-color:#000;}
 .videoscout-play iframe{width:100%; height:var(--min-height); position:sticky; top:var(--size-6);}
 .videoscout-info{min-height:var(--min-height); padding:var(--size-4); padding-top:0; color:var(--color-default-2);}

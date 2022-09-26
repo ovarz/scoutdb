@@ -1,0 +1,5 @@
+.header-report .button-dummy{display:flex; align-content:center; align-items:center; padding:var(--size-2) var(--size-3);
+background-color:var(--color-default-2); color:var(--color-default-3); fill:var(--color-default-3);
+border-radius:var(--rounded-2); transition:var(--transition-default);}
+.header-report:hover .button-dummy{background-color:var(--bg-1);}
+.header-report .button-dummy .svgicon{margin-right:var(--size-2);}

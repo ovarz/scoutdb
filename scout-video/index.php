@@ -8,7 +8,7 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <link rel="stylesheet" type="text/css" href="css/calendar.css"/>
-<style><?php require ($_SERVER['SCOUTDB'].'css/scout-video.css')?></style>
+<link rel="stylesheet" type="text/css" href="css/scout-video.css"/>
 <div class="rancak-container">
   <span class="width-max">
 
