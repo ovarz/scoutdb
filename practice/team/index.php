@@ -1,7 +1,7 @@
 <?php 
   $page='dashboard';
   $channel='practice';
-  require ('../inc/base.php')
+  require ('../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
@@ -15,8 +15,11 @@
       <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="home.php">
         <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
       </a>
-      <div class="breadcrumb-link content_center">
+      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="practice/">
         <span>Practice</span>
+      </a>
+      <div class="breadcrumb-link content_center">
+        <span>Team Full Name FC</span>
       </div>
     </section>
 	
@@ -24,11 +27,11 @@
 
     <section aria-label="Section Practice" class="section-container">
       <div class="section-title">
-	    <div class="section-title-label">Choose Your Team</div>
+	    <div class="section-title-label">Choose your Player</div>
 	  </div>
       <div class="team-list">
         <?php for ($i=1; $i <= 20 ; $i++) { ?>
-          <?php $team_link='practice/team/'; require ($_SERVER['SCOUTDB'].'module/team-list.php')?>
+          <?php $player_link='practice/team/speed/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
         <?php } ?>
       </div>
     </section>

@@ -65,6 +65,11 @@ div.pagination-button{background-color:#000000;}
 
 
 
+.player-photo:after{background:linear-gradient(to bottom, transparent 50%, var(--bg-1) 100%);}
+.player-position{color:var(--color-default-1);}
+
+
+
 footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 8%);}
 footer > *{padding:var(--size-4);}
 
