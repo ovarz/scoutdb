@@ -24,8 +24,18 @@
 
     <section aria-label="Section Practice" class="section-container">
       <div class="section-title">
-	    <div class="section-title-label">Practice</div>
+	    <div class="section-title-label">What's for Today Practice?</div>
 	  </div>
+      <div class="team-list">
+        <?php for ($i=1; $i <= 20 ; $i++) { ?>
+        <a aria-label="TEAM_NAME" title="TEAM_NAME" class="team-link" href="practice/team/">
+          <div class="team-icon flex_ori thumb-loading">
+            <img alt="img_title" class="lazyload" data-original="img/sample/team-<?php echo rand(1,20); ?>.svg" />
+          </div>
+          <div class="team-name">Team Name</div>
+        </a>
+        <?php } ?>
+      </div>
     </section>
 	
   </span>

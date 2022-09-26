@@ -92,6 +92,15 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
 
 
 
+.team-list{display:grid; grid-gap:var(--size-5) var(--size-3); grid-template-columns:repeat(auto-fit, minmax(120px,1fr));}
+.team-link{display:grid; grid-gap:var(--size-1);}
+.team-icon:before{height:var(--size-6);}
+.team-icon img{object-fit:contain; object-position:center;}
+.team-name{text-align:center;}
+
+
+
+
 
 @media screen and (min-width:0px) and (max-width:1023px){
   body{--menu-width:var(--menu-min);}
