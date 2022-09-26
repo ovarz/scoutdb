@@ -19,10 +19,10 @@
         <span>Practice</span>
       </a>
       <a aria-label="Team Full Name FC" title="Team Full Name FC" class="breadcrumb-link content_center" href="practice/team/">
-        <span>Team Full Name FC</span>
+        <span>Team_Full_Name FC</span>
       </a>
       <div class="breadcrumb-link content_center">
-        <span><?php echo $random_username[array_rand($random_username)]; ?></span>
+        <span>Player_Full_Name</span>
       </div>
     </section>
 	

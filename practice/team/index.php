@@ -18,7 +18,7 @@
         <span>Practice</span>
       </a>
       <div class="breadcrumb-link content_center">
-        <span>Team Full Name FC</span>
+        <span>Team_Full_Name FC</span>
       </div>
     </section>
 	
