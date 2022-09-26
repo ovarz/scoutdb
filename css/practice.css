@@ -1,8 +1,11 @@
 .training-container{margin-top:var(--size-4); margin-bottom:var(--size-2); font-weight:bold;}
 .training-list{display:grid; grid-gap:var(--size-2); grid-template-columns:repeat(auto-fill, minmax(120px,1fr));}
-.training-link{display:grid; grid-gap:var(--size-2); grid-auto-rows:min-content; padding:var(--size-4);
+.training-link{display:grid; grid-gap:var(--size-1); grid-auto-rows:min-content; padding:var(--size-4);
 background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);}
+.training-link:hover{background-color:var(--color-default-3); color:var(--color-default-2); fill:var(--color-default-2);}
 .training-link:hover{border-color:var(--color-default-3);}
 .training-link *{text-align:center; text-transform:capitalize;}
-.training-icon{line-height:0;}
-.training-icon .svgicon{width:auto; height:var(--size-5);}
+.training-icon{line-height:0; margin-bottom:var(--size-2);}
+.training-icon .svgicon{width:auto; height:var(--size-4);}
+.training-icon .svgicon-star-filled{fill:#DAA21B;}
+.training-update{font-weight:normal; font-size:12px; color:var(--color-default-1);}

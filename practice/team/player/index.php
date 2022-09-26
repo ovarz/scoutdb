@@ -37,15 +37,16 @@
       <div class="training-list">
         <?php 
           $training_array = array();
-          $training_array[]=array('training_link'=>'speed','training_id'=>'speed','training_name'=>'endurance');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'speed','training_name'=>'speed');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'speed','training_name'=>'reaction');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'speed','training_name'=>'agility');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'speed','training_name'=>'power');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'speed','training_name'=>'flexibility');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'endurance');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'speed');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'reaction');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'agility');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'power');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'flexibility');
           foreach($training_array as $training_list){
         ?>
-          <?php $training_link='practice/team/player/'; require ($_SERVER['SCOUTDB'].'module/training-list.php')?>
+          <?php $training_link='practice/team/player/'; $training_rating_total=rand(0,5); 
+          require ($_SERVER['SCOUTDB'].'module/training-list.php')?>
         <?php } ?>
       </div>
       
@@ -53,16 +54,17 @@
       <div class="training-list">
         <?php 
           $training_array = array();
-          $training_array[]=array('training_link'=>'speed','training_id'=>'shooting','training_name'=>'dribble');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'shooting','training_name'=>'passing');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'shooting','training_name'=>'shooting');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'shooting','training_name'=>'control');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'shooting','training_name'=>'turning');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'shooting','training_name'=>'forward moves');
-          $training_array[]=array('training_link'=>'speed','training_id'=>'shooting','training_name'=>'ball mastery');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'dribble');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'passing');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'shooting');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'control');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'turning');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'forward moves');
+          $training_array[]=array('training_link'=>'speed','training_name'=>'ball mastery');
           foreach($training_array as $training_list){
         ?>
-          <?php $training_link='practice/team/player/'; require ($_SERVER['SCOUTDB'].'module/training-list.php')?>
+          <?php $training_link='practice/team/player/'; $training_rating_total=rand(0,5);
+          require ($_SERVER['SCOUTDB'].'module/training-list.php')?>
         <?php } ?>
       </div>
     </section>
