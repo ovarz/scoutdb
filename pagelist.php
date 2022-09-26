@@ -32,7 +32,10 @@
       <li>
         <div class="pagelist-row">Halaman Practice</div>  
         <ul>
-          <li><a class="pagelist-row" href="practice/">Halaman Utama Practice</a></li>
+          <li><a class="pagelist-row" href="practice/">Halaman Daftar Team</a></li>
+          <li><a class="pagelist-row" href="practice/team/">Halaman Daftar Player</a></li>
+          <li><a class="pagelist-row" href="practice/team/pay-joe/">Halaman Daftar Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/pay-joe/speed/">Halaman Mulai Training</a></li>
         </ul>
       </li>
       <li>

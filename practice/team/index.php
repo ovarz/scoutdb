@@ -31,7 +31,7 @@
 	  </div>
       <div class="team-list">
         <?php for ($i=1; $i <= 20 ; $i++) { ?>
-          <?php $player_link='practice/team/speed/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
+          <?php $player_link='practice/team/pay-joe/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
         <?php } ?>
       </div>
     </section>
