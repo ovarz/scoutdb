@@ -12,6 +12,8 @@ background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);
 .training-start{margin-top:var(--size-3); padding:var(--size-2) var(--size-3); border:2px solid; width:100%; border-radius:var(--rounded-3);
 color:inherit !important; fill:inherit !important;}
 
+
+
 .ptl-box{margin-bottom:var(--size-5);}
 .ptl-title{font-weight:bold; color:var(--color-default-2); padding-bottom:var(--size-2);}
 .ptl-list{padding-left:18px; list-style:square; display:grid; grid-gap:var(--size-2);}
@@ -20,19 +22,50 @@ padding-bottom:var(--size-2); margin-bottom:var(--size-2); border-bottom:1px das
 .ptl-rating-star{grid-gap:var(--size-1); margin-right:var(--size-3);}
 .ptl-rating-star .svgicon{width:var(--size-3);}
 
-.practice-tutorial-sticky{position:sticky; top:var(--size-7);}
+.ptl-profile, .ptl-player-info, .ptl-player-row{display:grid;}
+.ptl-profile{grid-gap:var(--size-4); grid-template-columns:100px 1fr;}
+.ptl-player-info{grid-gap:var(--size-2);}
+.ptl-player-row{grid-gap:var(--size-2); grid-template-columns:110px 1fr;
+padding-bottom:var(--size-2); border-bottom:1px dashed rgb(var(--color-border) / 13%);}
+.ptl-player-label{padding-right:var(--size-2); position:relative;}
+.ptl-player-label:after{content:':'; display:block; position:absolute; right:0; top:0;}
+
+
+
 .practice-tutorial{display:grid; grid-template-columns:1fr 377px; grid-gap:var(--size-5); max-width:1024px;}
+.practice-tutorial-process{grid-template-columns:1fr 330px;}
+.practice-tutorial-sticky{position:sticky; top:var(--size-7);}
 .practice-tutorial-video{border-radius:var(--rounded-2); overflow:hidden;}
 .practice-tutorial-video:before{padding-top:56.25%;}
 .practice-tutorial-video iframe{position:absolute; top:0; left:0; width:100%; height:100%;}
 .practice-tutorial-action{display:flex; justify-content:flex-end;}
+
+
+
+.practice-countdown{display:flex; justify-content:center; padding:var(--size-2); 
+border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2);}
+.practice-countdown > div{padding:var(--size-3); position:relative; font-size:55px; color:var(--color-default-2); font-weight:bold;}
+.practice-countdown-minutes:before, .practice-countdown-minutes:after{content:':'; display:block; position:absolute; top:var(--size-2);}
+.practice-countdown-minutes:before{left:calc(var(--size-1) * -1);}
+.practice-countdown-minutes:after{right:calc(var(--size-1) * -1);}
+
+
+
 .pta-button{margin-left:var(--size-3); margin-top:var(--size-3);}
+.pta-button-full{width:100%; margin-left:0;}
 .pta-button-cancel{background-color:rgb(var(--color-border) / 13%) !important;}
 .pta-button-cancel:hover{background-color:rgb(var(--color-border) / 13%) !important;}
+
+
+
+.ptl-player-frame{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);}
+.ptl-player-frame:before{padding-top:100%;}
 
 
 
 
 @media screen and (min-width:1180px){
   .practice-tutorial{grid-template-columns:1fr 480px;}
+  .practice-tutorial-process{grid-template-columns:1fr 360px;}
+  .ptl-profile{grid-template-columns:242px 1fr;}
 }

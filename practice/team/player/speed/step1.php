@@ -36,14 +36,10 @@
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
 	    <div class="section-title-label">Speed</div>
 	  </h2>
-      <div class="practice-tutorial">
+      <div class="practice-tutorial practice-tutorial-process">
         <div class="practice-tutorial-left">
-          <div class="ptl-box">
-            <div class="ptl-title">Testee Info</div>
-            <div>
-              tes
-            </div>
-          </div>
+		  <?php require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?>
+		  
           <div class="ptl-box">
             <div class="ptl-title">Matrix Score</div>
             <ul class="ptl-rating-list">
@@ -98,17 +94,23 @@
             </ul>
           </div>
         </div>
+		
+		
+		
         <div class="practice-tutorial-right">
           <div class="practice-tutorial-sticky">
-            <div class="practice-tutorial-video flex_ori thumb-loading">
-              <iframe width="560" height="315" class="lazyload" data-original="https://www.youtube.com/embed/VZrt9geh6xA?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <div class="practice-countdown">
+			  <div class="practice-countdown-hours">00</div>
+			  <div class="practice-countdown-minutes">00</div>
+			  <div class="practice-countdown-seconds">00</div>
+			</div>
             <div class="practice-tutorial-action">
-              <a aria-label="Cancel" title="Back" class="btn pta-button pta-button-cancel content_center" href="practice/team/player/">
+              <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
+              href="practice/team/player/speed/">
                 <span>Cancel</span>
               </a>
-              <a aria-label="Start Practice" title="Back" class="btn pta-button pta-button-start content_center" 
-              href="practice/team/player/speed/step1.php">
+              <a aria-label="Start Practice" title="Start" class="btn pta-button pta-button-start content_center" 
+              href="practice/team/player/speed/step2.php">
                 <span>Start Practice</span>
               </a>
             </div>

@@ -54,59 +54,6 @@
               <?php } ?>
             </ul>
           </div>
-          <div class="ptl-box">
-            <div class="ptl-title">Matrix Score</div>
-            <ul class="ptl-rating-list">
-              <li class="ptl-rating-star rating-icon">
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-              </li>
-              <li class="ptl-rating-condition">&lt; 1,08s</li>
-            </ul>
-            <ul class="ptl-rating-list">
-              <li class="ptl-rating-star rating-icon">
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-              </li>
-              <li class="ptl-rating-condition">1,09s - 1,27s</li>
-            </ul>
-            <ul class="ptl-rating-list">
-              <li class="ptl-rating-star rating-icon">
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-              </li>
-              <li class="ptl-rating-condition">1,28s - 1,46s</li>
-            </ul>
-            <ul class="ptl-rating-list">
-              <li class="ptl-rating-star rating-icon">
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-              </li>
-              <li class="ptl-rating-condition">1,47s - 1,65s</li>
-            </ul>
-            <ul class="ptl-rating-list">
-              <li class="ptl-rating-star rating-icon">
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-              </li>
-              <li class="ptl-rating-condition">&gt; 1,65s</li>
-            </ul>
-          </div>
         </div>
         <div class="practice-tutorial-right">
           <div class="practice-tutorial-sticky">
@@ -114,7 +61,7 @@
               <iframe width="560" height="315" class="lazyload" data-original="https://www.youtube.com/embed/VZrt9geh6xA?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="practice-tutorial-action">
-              <a aria-label="Start Practice" title="Back" class="btn pta-button pta-button-start content_center" 
+              <a aria-label="Start Practice" title="Back" class="btn pta-button pta-button-full pta-button-start content_center" 
               href="practice/team/player/speed/step1.php">
                 <span>Start Practice</span>
               </a>
