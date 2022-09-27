@@ -24,7 +24,7 @@ a, .btn, button{transition:var(--transition-default); cursor:pointer}
 a, button{color:var(--color-default-2); fill:var(--color-default-2);}
 a:hover, button:hover{color:var(--color-default-3); fill:var(--color-default-3);}
 .btn, a.btn, button.btn{background-color:var(--color-default-3); border-radius:var(--rounded-3);}
-.btn:hover, a.btn:hover, button.btn:hover{background-color:var(--color-default-4);}
+.btn:hover, a.btn:hover, button.btn:hover{background-color:var(--color-default-4); color:var(--color-default-2); fill:var(--color-default-2);}
 .flex_ori > img{opacity:0; transition:var(--transition-default);}
 .flex_ori > img.lazyloaded{opacity:1;}
 .thumb-loading:before{animation:skeleton-loading 0.5s linear infinite alternate; background-color:var(--color-default-4);}
@@ -54,6 +54,11 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 8%); t
 .menu-link:hover:before{background-color:var(--color-default-2);}
 .menu-curr{color:var(--color-default-3) !important; fill:var(--color-default-3) !important;}
 .menu-curr:before{background-color:var(--color-default-3) !important;}
+
+
+
+.rating-icon .svgicon-star-filled{fill:#DAA21B;}
+.rating-icon .svgicon-star-outline{fill:#FFFFFF;}
 
 
 

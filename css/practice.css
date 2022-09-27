@@ -1,15 +1,38 @@
 .training-container{margin-top:var(--size-4); margin-bottom:var(--size-2); font-weight:bold;}
 .training-list{display:grid; grid-gap:var(--size-2); grid-template-columns:repeat(auto-fill, minmax(120px,1fr));}
 .training-link{display:flex; flex-wrap:wrap; align-content:space-between; grid-auto-rows:min-content; padding:var(--size-4);
-background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);}
+background-color:rgb(var(--color-border) / 8%); border-radius:var(--rounded-1);}
 .training-link:hover{background-color:var(--color-default-3); color:var(--color-default-2); fill:var(--color-default-2);}
 .training-link:hover{border-color:var(--color-default-3);}
 .training-link *{text-align:center; text-transform:capitalize;}
 .training-link > *{width:100%;}
-.training-icon{line-height:0; margin:var(--size-2) 0; display:grid; grid-template-columns:repeat(5,1fr); grid-gap:2px;}
-.training-icon .svgicon{width:100%; height:auto;}
-.training-icon .svgicon-star-filled{fill:#DAA21B;}
+.training-icon{margin:var(--size-2) 0;}
 .training-name{margin-bottom:auto;}
 .training-update{font-weight:normal; font-size:12px; color:var(--color-default-1);}
 .training-start{margin-top:var(--size-3); padding:var(--size-2) var(--size-3); border:2px solid; width:100%; border-radius:var(--rounded-3);
 color:inherit !important; fill:inherit !important;}
+
+.ptl-box{margin-bottom:var(--size-5);}
+.ptl-title{font-weight:bold; color:var(--color-default-2); padding-bottom:var(--size-2);}
+.ptl-list{padding-left:18px; list-style:square; display:grid; grid-gap:var(--size-2);}
+.ptl-rating-list{display:flex; align-items:center; 
+padding-bottom:var(--size-2); margin-bottom:var(--size-2); border-bottom:1px dashed rgb(var(--color-border) / 8%);}
+.ptl-rating-star{grid-gap:var(--size-1); margin-right:var(--size-3);}
+.ptl-rating-star .svgicon{width:var(--size-3);}
+
+.practice-tutorial-sticky{position:sticky; top:var(--size-7);}
+.practice-tutorial{display:grid; grid-template-columns:1fr 377px; grid-gap:var(--size-5); max-width:1024px;}
+.practice-tutorial-video{border-radius:var(--rounded-2); overflow:hidden;}
+.practice-tutorial-video:before{padding-top:56.25%;}
+.practice-tutorial-video iframe{position:absolute; top:0; left:0; width:100%; height:100%;}
+.practice-tutorial-action{display:flex; justify-content:flex-end;}
+.pta-button{margin-left:var(--size-3); margin-top:var(--size-3);}
+.pta-button-cancel{background-color:rgb(var(--color-border) / 13%) !important;}
+.pta-button-cancel:hover{background-color:rgb(var(--color-border) / 8%) !important;}
+
+
+
+
+@media screen and (min-width:1180px){
+  .practice-tutorial{grid-template-columns:1fr 480px;}
+}

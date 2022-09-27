@@ -94,6 +94,11 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
 
 
 
+.rating-icon{line-height:0; display:grid; grid-template-columns:repeat(5,1fr); grid-gap:2px;}
+.rating-icon .svgicon{width:100%; height:auto;}
+
+
+
 .team-list{display:grid; grid-gap:var(--size-5) var(--size-3); grid-template-columns:repeat(auto-fill, minmax(120px,1fr));}
 .team-link{display:grid; grid-gap:var(--size-1); grid-auto-rows:min-content;}
 .team-icon:before{height:var(--size-6);}

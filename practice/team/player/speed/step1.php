@@ -24,9 +24,9 @@
       <a aria-label="Player_Full_Name" title="Player_Full_Name" class="breadcrumb-link content_center" href="practice/team/player/">
         <span>Player_Full_Name</span>
       </a>
-      <div class="breadcrumb-link content_center">
+      <a aria-label="Speed" title="Speed" class="breadcrumb-link content_center" href="practice/team/player/speed/">
         <span>Speed</span>
-      </div>
+      </a>
     </section>
 	
 	
@@ -38,20 +38,10 @@
       <div class="practice-tutorial">
         <div class="practice-tutorial-left">
           <div class="ptl-box">
-            <div class="ptl-title">Practice Objective</div>
-            <ul class="ptl-list">
-              <?php for ($i=1; $i <= 3 ; $i++) { ?>
-              <li><?php echo $random_keyword[array_rand($random_keyword)]; ?></li>
-              <?php } ?>
-            </ul>
-          </div>
-          <div class="ptl-box">
-            <div class="ptl-title">Equipments Needed</div>
-            <ul class="ptl-list">
-              <?php for ($i=1; $i <= 7 ; $i++) { ?>
-              <li><?php echo $random_keyword[array_rand($random_keyword)]; ?></li>
-              <?php } ?>
-            </ul>
+            <div class="ptl-title">Testee Info</div>
+            <div>
+              tes
+            </div>
           </div>
           <div class="ptl-box">
             <div class="ptl-title">Matrix Score</div>
@@ -113,6 +103,9 @@
               <iframe width="560" height="315" class="lazyload" data-original="https://www.youtube.com/embed/VZrt9geh6xA?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="practice-tutorial-action">
+              <a aria-label="Cancel" title="Back" class="btn pta-button pta-button-cancel content_center" href="practice/team/player/">
+                <span>Cancel</span>
+              </a>
               <a aria-label="Start Practice" title="Back" class="btn pta-button pta-button-start content_center" 
               href="practice/team/player/speed/step1.php">
                 <span>Start Practice</span>

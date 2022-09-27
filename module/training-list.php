@@ -2,7 +2,7 @@
 href="<?php echo $training_link; ?><?php echo($training_list['training_link'])?>">
   <div class="training-name"><?php echo($training_list['training_name'])?></div>
   <div class="training-data">
-    <div class="training-icon">
+    <div class="training-icon rating-icon">
       <?php for ($training_rating=1; $training_rating <= $training_rating_total ; $training_rating++) { ?>
         <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
       <?php } ?>
