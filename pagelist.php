@@ -39,10 +39,10 @@
         </ul>
       </li>
       <li>
-        <div class="pagelist-row">Halaman Scout by Video</div>  
+        <div class="pagelist-row">Halaman Video Player</div>  
         <ul>
-          <li><a class="pagelist-row" href="scout-video/">Halaman Daftar Video</a></li>
-          <li><a class="pagelist-row" href="scout-video/detail.php">Halaman Detail Video</a></li>
+          <li><a class="pagelist-row" href="video-player/">Halaman Daftar Video</a></li>
+          <li><a class="pagelist-row" href="video-player/detail.php">Halaman Detail Video</a></li>
         </ul>
       </li>
       <li>

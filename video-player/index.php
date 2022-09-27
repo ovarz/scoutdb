@@ -1,6 +1,6 @@
 <?php 
   $page='dashboard';
-  $channel='scout-video';
+  $channel='video-player';
   require ('../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
@@ -8,7 +8,7 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <link rel="stylesheet" type="text/css" href="css/calendar.css"/>
-<link rel="stylesheet" type="text/css" href="css/scout-video.css"/>
+<link rel="stylesheet" type="text/css" href="css/video-player.css"/>
 <div class="rancak-container">
   <span class="width-max">
 
@@ -17,15 +17,15 @@
         <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
       </a>
       <div class="breadcrumb-link content_center">
-        <span>Scout By Video</span>
+        <span>Video Player</span>
       </div>
     </section>
 
 
 
-    <section aria-label="Daftar Statistik" class="videoscout-list">
+    <section aria-label="Daftar Statistik" class="videoplayer-list">
       <div class="video-filter">
-        <h2 class="section-title video-filter-label">Scout By Video</h2>
+        <h2 class="section-title video-filter-label">Video List</h2>
         <div class="video-filter-container">
           <div class="video-filter-sort">
             <select class="video-filter-field">
@@ -51,9 +51,9 @@
         </div>
       </div>
 	  
-	  <div class="videoscout-list-container">
+	  <div class="videoplayer-list-container">
 	    <?php for ($i=1; $i <= 10 ; $i++) { ?>
-          <a aria-label="IMG_TITLE" title="IMG_TITLE" class="vlc-row" href="scout-video/detail.php">
+          <a aria-label="IMG_TITLE" title="IMG_TITLE" class="vlc-row" href="video-player/detail.php">
             <div class="vlc-thumb">
               <div class="vlc-thumb-frame flex_ori thumb-loading">
                 <img alt="img_title" class="lazyload" data-original="img/sample/content-<?php echo rand(1,20); ?>.jpg" />
@@ -62,8 +62,8 @@
                 </div>
               </div>
             </div>
-            <?php require ($_SERVER['SCOUTDB'].'module/scout-video-info.php')?>
-            <?php require ($_SERVER['SCOUTDB'].'module/scout-video-match.php')?>
+            <?php require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
+            <?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
           </a>
 		<?php } ?>
 	  </div>

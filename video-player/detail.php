@@ -1,44 +1,32 @@
 <?php 
   $page='dashboard';
-  $channel='scout-video';
+  $channel='video-player';
   require ('../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
-<link rel="stylesheet" type="text/css" href="css/scout-video.css"/>
-<div class="rancak-container">
-  <span class="width-max">
+<link rel="stylesheet" type="text/css" href="css/video-player.css"/>
+<div class="videoplayer-detail">
 
-    <section aria-label="Breadcrumb" class="breadcrumb">
-      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="home.php">
-        <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
-      </a>
-      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="scout-video/">
-        Scout By Video
-      </a>
-      <div class="breadcrumb-link content_center">
-        <span>ScoutDB Competition 2022</span>
-      </div>
-    </section>
-    
-  </span>
-</div>
-
-
-
-<div class="videoscout-detail">
-
-  <section aria-label="Video Statistik" class="videoscout-play">
+  <section aria-label="Video Statistik" class="videoplayer-play">
     <iframe width="560" height="315" class="lazyload" data-original="https://www.youtube.com/embed/cJCK80fqkv0?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
   
   
   
-  <section aria-label="Info Statistik" class="videoscout-info">
-	<?php require ($_SERVER['SCOUTDB'].'module/scout-video-match.php')?>
-	<?php require ($_SERVER['SCOUTDB'].'module/scout-video-info.php')?>
+  <section aria-label="Info Statistik" class="videoplayer-info">
+    <div class="breadcrumb">
+      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="home.php">
+        <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
+      </a>
+      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="video-player/">
+        Video Player
+      </a>
+    </div>
+	<?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
+	<?php require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
 	<div class="vlc-timeline">
 	  <?php for ($i=1; $i <= 20 ; $i++) { ?>
 	    <div title="00:00" class="vlc-timeline-list">

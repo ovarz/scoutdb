@@ -16,7 +16,7 @@ background-color:rgba(0,0,0,0.21); color:var(--color-default-2);}
 
 
 
-.videoscout-list-container{display:grid; grid-gap:var(--size-4); padding-top:var(--size-4);
+.videoplayer-list-container{display:grid; grid-gap:var(--size-4); padding-top:var(--size-4);
 border-top:1px dashed rgb(var(--color-border) / 13%);}
 .vlc-row{--icon-size:21px; display:grid; grid-gap:var(--size-3); grid-template-columns:120px 1fr 260px;
 padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) / 13%); font-weight:normal;}
@@ -40,11 +40,11 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 
 
 
-.videoscout-detail{--min-height:calc(100vh - var(--size-6) - 58px); display:grid; grid-template-columns:1fr 377px; margin-top:var(--size-3);}
-.videoscout-play{position:relative; background-color:#000;}
-.videoscout-play iframe{width:100%; height:var(--min-height); position:sticky; top:var(--size-6);}
-.videoscout-info{min-height:var(--min-height); padding:var(--size-4); padding-top:0; color:var(--color-default-2);}
-.videoscout-info > *{margin-bottom:var(--size-4); padding-bottom:var(--size-4); border-bottom:1px solid rgb(var(--color-border) / 13%);}
+.videoplayer-detail{--min-height:calc(100vh - var(--size-6)); display:grid; grid-template-columns:1fr 377px;}
+.videoplayer-play{position:relative; background-color:#000;}
+.videoplayer-play iframe{width:100%; height:var(--min-height); position:sticky; top:var(--size-6);}
+.videoplayer-info{min-height:var(--min-height); padding:var(--size-4); color:var(--color-default-2);}
+.videoplayer-info > *{margin-bottom:var(--size-4); padding-bottom:var(--size-4); border-bottom:1px solid rgb(var(--color-border) / 13%);}
 .vlc-timeline{display:grid; grid-gap:var(--size-4);}
 .vlc-timeline-list{display:grid; grid-template-columns:56px 1fr; grid-gap:var(--size-2); align-items:center;}
 .vlc-timeline-data{background-color:rgb(var(--color-border) / 8%); padding:var(--size-2); font-size:12px; text-align:center;
