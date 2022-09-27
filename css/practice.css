@@ -11,3 +11,5 @@ background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);
 .training-icon .svgicon-star-filled{fill:#DAA21B;}
 .training-name{margin-bottom:auto;}
 .training-update{font-weight:normal; font-size:12px; color:var(--color-default-1);}
+.training-start{margin-top:var(--size-3); padding:var(--size-2) var(--size-3); border:2px solid; width:100%; border-radius:var(--rounded-3);
+color:inherit !important; fill:inherit !important;}

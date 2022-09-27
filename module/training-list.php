@@ -19,5 +19,6 @@ href="<?php echo $training_link; ?><?php echo($training_list['training_link'])?>
         00 Jan 0000
       <?php } ?>
     </div>
+    <button title="Start Practice" class="training-start">Start</button>
   </div>
 </a>
