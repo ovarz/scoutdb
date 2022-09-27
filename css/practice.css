@@ -33,8 +33,9 @@ padding-bottom:var(--size-2); border-bottom:1px dashed rgb(var(--color-border) /
 
 
 .practice-tutorial{display:grid; grid-template-columns:1fr 377px; grid-gap:var(--size-5); max-width:1024px;}
+.practice-tutorial-right{display:block;}
 .practice-tutorial-process{grid-template-columns:1fr 330px;}
-.practice-tutorial-sticky{position:sticky; top:var(--size-7);}
+.practice-tutorial-sticky{position:-webkit-sticky; position:sticky; top:var(--size-7);}
 .practice-tutorial-video{border-radius:var(--rounded-2); overflow:hidden;}
 .practice-tutorial-video:before{padding-top:56.25%;}
 .practice-tutorial-video iframe{position:absolute; top:0; left:0; width:100%; height:100%;}
