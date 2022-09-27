@@ -35,7 +35,11 @@
           <li><a class="pagelist-row" href="practice/">Halaman Daftar Team</a></li>
           <li><a class="pagelist-row" href="practice/team/">Halaman Daftar Player</a></li>
           <li><a class="pagelist-row" href="practice/team/player/">Halaman Daftar Training</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/training/">Halaman Mulai Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/">Halaman Detail Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/step1.php">Halaman Mulai Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/step2.php">Halaman Sedang Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/step3.php">Halaman Selesai Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/result.php">Halaman Hasil Training</a></li>
         </ul>
       </li>
       <li>
