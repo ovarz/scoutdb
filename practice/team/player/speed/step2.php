@@ -49,16 +49,16 @@
             <div class="practice-countdown">
 			  <div class="practice-countdown-hours">00</div>
 			  <div class="practice-countdown-minutes">00</div>
-			  <div class="practice-countdown-seconds">00</div>
+			  <div class="practice-countdown-seconds">01</div>
 			</div>
             <div class="practice-tutorial-action">
               <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
-              href="practice/team/player/speed/">
+              href="practice/team/player/speed/step1.php">
                 <span>Cancel</span>
               </a>
               <a aria-label="Start Practice" title="Start Practice" class="btn pta-button pta-button-start content_center" 
-              href="practice/team/player/speed/step2.php">
-                <span>Start Practice</span>
+              href="practice/team/player/speed/step3.php">
+                <span>Finish Practice</span>
               </a>
             </div>
           </div>    

@@ -58,9 +58,27 @@ border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2);
 
 
 
-.ptl-player-frame{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);
+.ptl-player-frame{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);
 background:radial-gradient(rgb(var(--color-border) / 0%) 0%, rgb(var(--color-border) / 13%) 100%);}
 .ptl-player-frame:before{padding-top:100%;}
+
+
+
+.practice-result-rating{margin-bottom:var(--size-4);}
+.practice-result-rating .rating-icon{grid-gap:var(--size-4);}
+
+
+
+.pri-row{display:grid; grid-template-columns:100px 1fr; grid-gap:var(--size-2); padding-bottom:var(--size-2);}
+.pri-label{position:relative;}
+.pri-label:after{content:':'; display:block; position:absolute; top:0; right:0;}
+
+
+
+.plt-comment-box{padding:var(--size-4); min-height:144px; width:100%; background-color:rgb(var(--color-border) / 5%);
+border:1px solid rgb(var(--color-border) / 1%); border-radius:var(--rounded-2); color:var(--color-default-2);
+box-shadow:inset -3px -3px 12px rgba(0,0,0,.3), inset 3px 3px 18px rgba(0,0,0,.3);}
+.ptl-comment .btn{margin-top:var(--size-2);}
 
 
 
