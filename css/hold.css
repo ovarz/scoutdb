@@ -36,6 +36,9 @@ a:hover, button:hover{color:var(--color-default-3); fill:var(--color-default-3);
 header{background-color:var(--color-default-3);}
 .header-link:hover{color:var(--bg-1); fill:var(--bg-1);}
 .header-logo:hover{filter:invert(1);}
+.header-report .button-dummy{border-radius:var(--rounded-3); background-color:var(--color-default-2); 
+color:var(--color-default-3); fill:var(--color-default-3); transition:var(--transition-default);}
+.header-report:hover .button-dummy{background-color:var(--bg-2);}
 
 
 

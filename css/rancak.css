@@ -49,6 +49,8 @@ header .width-max > div{display:flex;}
 .header-link .svgicon{width:auto; height:var(--icon-size);}
 .header-left > *:first-child{padding-left:var(--size-4);}
 .header-right > *:last-child{padding-right:var(--size-4);}
+.header-report .button-dummy{display:flex; align-items:center; padding:var(--size-2) var(--size-4);}
+.header-report .button-dummy .svgicon{margin-right:var(--size-1);}
 
 
 
