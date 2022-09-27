@@ -58,7 +58,8 @@ border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2);
 
 
 
-.ptl-player-frame{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);}
+.ptl-player-frame{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);
+background:radial-gradient(rgb(var(--color-border) / 0%) 0%, rgb(var(--color-border) / 13%) 100%);}
 .ptl-player-frame:before{padding-top:100%;}
 
 
