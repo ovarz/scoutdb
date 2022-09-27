@@ -32,9 +32,10 @@
 	
 
     <section aria-label="Section Practice" class="section-container">
-      <div class="section-title">
+      <h2 class="section-title">
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
 	    <div class="section-title-label">Speed</div>
-	  </div>
+	  </h2>
       <div class="practice-tutorial">
         <div class="practice-tutorial-left">
           <div class="ptl-box">

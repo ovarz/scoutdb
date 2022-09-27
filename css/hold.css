@@ -43,17 +43,21 @@ color:var(--color-default-3); fill:var(--color-default-3); transition:var(--tran
 
 
 menu:before, .menu-link:before{background-color:#616161;}
-menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 8%); transition:var(--transition-default);}
+menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 13%); transition:var(--transition-default);}
 
 .side-profile-photoframe{border-radius:50%; overflow:hidden;}
 
-.menu-container, .menu-link{border-color:rgb(var(--color-border) / 8%);}
+.menu-container, .menu-link{border-color:rgb(var(--color-border) / 13%);}
 .menu-link{color:var(--color-default-1); fill:var(--color-default-1);}
 .menu-link:before{transition:var(--transition-default);}
 .menu-link:hover{color:var(--color-default-2); fill:var(--color-default-2);}
 .menu-link:hover:before{background-color:var(--color-default-2);}
 .menu-curr{color:var(--color-default-3) !important; fill:var(--color-default-3) !important;}
 .menu-curr:before{background-color:var(--color-default-3) !important;}
+
+
+
+.section-title{color:var(--color-default-2); fill:var(--color-default-3);}
 
 
 
@@ -65,7 +69,7 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 8%); t
 .pagination{--icon-size:36px; display:flex;}
 .pagination-button{margin-right:var(--size-2); margin-top:var(--size-2); width:var(--icon-size); height:var(--icon-size);
 color:var(--color-default-2); fill:var(--color-default-2); font-weight:bold; 
-border:1px solid rgb(var(--color-border) / 8%); border-radius:var(--rounded-1);}
+border:1px solid rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);}
 .pagination-button .svgicon{width:auto; height:var(--default-fontsize);}
 
 a.pagination-button{background-color:var(--color-default-3);}
@@ -78,7 +82,7 @@ div.pagination-button{background-color:#000000;}
 
 
 
-footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 8%);}
+footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 13%);}
 footer > *{padding:var(--size-4);}
 
 

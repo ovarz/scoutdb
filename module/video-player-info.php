@@ -11,8 +11,4 @@
     <li class="vlc-info-label">Round</li>
     <li class="vlc-info-data"><?php echo rand(1,2); ?></li>
   </ul>
-  <ul class="vlc-info-row">
-    <li class="vlc-info-label">Player Scouted</li>
-    <li class="vlc-info-data"><?php echo $random_username[array_rand($random_username)]; ?></li>
-  </ul>
 </div>

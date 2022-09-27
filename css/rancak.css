@@ -78,7 +78,9 @@ width:100%; height:var(--menu-min); padding:0 var(--size-5);}
 
 
 
-.section-title{font-size:21px; color:#FFF; font-weight:bold; margin-bottom:var(--size-4);}
+.section-title{display:flex; font-size:21px; text-transform:uppercase; font-weight:bold; margin-bottom:var(--size-4);}
+.section-title-icon{display:flex; align-items:center; margin-right:var(--size-3);}
+.section-title .svgicon{width:auto; height:24px;}
 
 
 

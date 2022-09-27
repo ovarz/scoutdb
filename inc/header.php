@@ -21,9 +21,6 @@
         </div>
 	  </a>
       <?php } ?>
-	  <button title="Sync" class="header-link header-sync content_center">
-	    <?php require ($_SERVER['SCOUTDB'].'img/icon/sync.svg')?>
-	  </button>
 	  <button title="Notification" class="header-link header-notif open-float content_center">
 	    <?php require ($_SERVER['SCOUTDB'].'img/icon/notification.svg')?>
 	  </button>

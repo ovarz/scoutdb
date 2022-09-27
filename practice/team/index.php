@@ -25,9 +25,10 @@
 	
 
     <section aria-label="Section Practice" class="section-container">
-      <div class="section-title">
+      <h2 class="section-title">
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
 	    <div class="section-title-label">Choose Your Player</div>
-	  </div>
+	  </h2>
       <div class="player-list">
         <?php for ($i=1; $i <= 20 ; $i++) { ?>
           <?php $player_link='practice/team/player/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>

@@ -29,9 +29,10 @@
 	
 
     <section aria-label="Section Practice" class="section-container">
-      <div class="section-title">
+      <h2 class="section-title">
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
 	    <div class="section-title-label">Choose Your Training</div>
-	  </div>
+	  </h2>
       
       <div class="training-container">Physical Practice</div>
       <div class="training-list">

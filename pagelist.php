@@ -70,6 +70,7 @@
             $icon_array[]=array('icon_id'=>'right');
             $icon_array[]=array('icon_id'=>'right-double');
             $icon_array[]=array('icon_id'=>'search');
+            $icon_array[]=array('icon_id'=>'section-title');
             $icon_array[]=array('icon_id'=>'setting');
             $icon_array[]=array('icon_id'=>'star-filled');
             $icon_array[]=array('icon_id'=>'star-outline');

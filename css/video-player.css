@@ -5,7 +5,7 @@
 .video-filter-sort, .video-filter-search, .video-filter-date{position:relative;}
 .video-filter-search{margin:0 var(--size-3);}
 .video-filter-field{position:relative; z-index:1000; padding:var(--size-3); padding-right:var(--size-6); width:180px;
-border-radius:var(--rounded-2); border:1px solid rgb(var(--color-border) / 8%);
+border-radius:var(--rounded-2); border:1px solid rgb(var(--color-border) / 13%);
 background-color:rgba(0,0,0,0.21); color:var(--color-default-2);}
 .video-filter-field option{color:var(--bg-1);}
 .video-filter-dropdown, .video-filter-button{position:absolute; z-index:2000; right:0; top:0; width:var(--size-6); height:100%;}
@@ -17,9 +17,9 @@ background-color:rgba(0,0,0,0.21); color:var(--color-default-2);}
 
 
 .videoplayer-list-container{display:grid; grid-gap:var(--size-4); padding-top:var(--size-4);
-border-top:1px dashed rgb(var(--color-border) / 13%);}
-.vlc-row{--icon-size:21px; display:grid; grid-gap:var(--size-3); grid-template-columns:120px 1fr 260px;
-padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) / 13%); font-weight:normal;}
+border-top:1px dashed rgb(var(--color-border) / 34%);}
+.vlc-row{--icon-size:21px; display:grid; grid-gap:var(--size-3); grid-template-columns:140px 1fr 260px;
+padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) / 34%); font-weight:normal;}
 
 .vlc-thumb-frame{border-radius:var(--rounded-1);}
 .vlc-thumb-frame:before{padding-top:56.25%;}
@@ -31,7 +31,7 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 .vlc-info-label{position:relative; padding-right:var(--size-1);}
 .vlc-info-label:after{content:':'; display:block; position:absolute; top:0; right:0; height:100%;}
 
-.vlc-match-row{--emblem-size:55px; display:grid; grid-template-columns:1fr var(--emblem-size) 1fr; grid-gap:var(--size-2);}
+.vlc-match-row{--emblem-size:50px; display:grid; grid-template-columns:1fr var(--emblem-size) 1fr; grid-gap:var(--size-2);}
 .vlc-match-row *{text-align:center;}
 .vlc-match-emblem{height:var(--emblem-size); margin-bottom:var(--size-2);}
 .vlc-match-emblem:before{padding-top:100%;}
@@ -40,21 +40,26 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 
 
 
-.videoplayer-detail{--min-height:calc(100vh - var(--size-6)); display:grid; grid-template-columns:1fr 377px;}
-.videoplayer-play{position:relative; background-color:#000;}
-.videoplayer-play iframe{width:100%; height:var(--min-height); position:sticky; top:var(--size-6);}
-.videoplayer-info{min-height:var(--min-height); padding:var(--size-4); color:var(--color-default-2);}
+.videoplayer-detail{display:grid; grid-template-columns:1fr 330px; grid-gap:var(--size-4);}
+
+.videoplayer-info{color:var(--color-default-2);}
 .videoplayer-info > *{margin-bottom:var(--size-4); padding-bottom:var(--size-4); border-bottom:1px solid rgb(var(--color-border) / 13%);}
-.vlc-timeline{display:grid; grid-gap:var(--size-4);}
-.vlc-timeline-list{display:grid; grid-template-columns:56px 1fr; grid-gap:var(--size-2); align-items:center;}
-.vlc-timeline-data{background-color:rgb(var(--color-border) / 8%); padding:var(--size-2); font-size:12px; text-align:center;
-border-radius:var(--rounded-1); border:1px solid rgb(var(--color-border) / 8%);}
-.vlc-timeline-info{line-height:130%;}
+
+.videoplayer-play{position:sticky; top:calc(var(--size-6) + var(--size-4)); background-color:#000; 
+border-radius:var(--rounded-1); overflow:hidden;}
+.videoplayer-play:before{padding-top:56.25%;}
+.videoplayer-play iframe{width:100%; position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.vlt-list{display:grid; grid-gap:var(--size-3);}
+.vlt-list-row{display:grid; grid-template-columns:56px 1fr; grid-gap:var(--size-2); align-items:flex-start;
+padding-bottom:var(--size-3); border-bottom:1px dashed rgb(var(--color-border) / 13%);}
+.vlt-list-info{line-height:130%; border-left:1px solid rgb(var(--color-border) / 13%); padding-left:var(--size-3);}
+.vlt-list-player{font-weight:bold; color:var(--color-default-2); margin-bottom:var(--size-1);}
 
 
 
 
 @media screen and (min-width:1180px){
   .video-filter-field{width:250px;}
-  .vlc-row{grid-template-columns:165px 1fr 260px; grid-gap:var(--size-4);}
+  .vlc-row{grid-gap:var(--size-4);}
 }

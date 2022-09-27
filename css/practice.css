@@ -1,7 +1,7 @@
 .training-container{margin-top:var(--size-4); margin-bottom:var(--size-2); font-weight:bold;}
 .training-list{display:grid; grid-gap:var(--size-2); grid-template-columns:repeat(auto-fill, minmax(120px,1fr));}
 .training-link{display:flex; flex-wrap:wrap; align-content:space-between; grid-auto-rows:min-content; padding:var(--size-4);
-background-color:rgb(var(--color-border) / 8%); border-radius:var(--rounded-1);}
+background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);}
 .training-link:hover{background-color:var(--color-default-3); color:var(--color-default-2); fill:var(--color-default-2);}
 .training-link:hover{border-color:var(--color-default-3);}
 .training-link *{text-align:center; text-transform:capitalize;}
@@ -16,7 +16,7 @@ color:inherit !important; fill:inherit !important;}
 .ptl-title{font-weight:bold; color:var(--color-default-2); padding-bottom:var(--size-2);}
 .ptl-list{padding-left:18px; list-style:square; display:grid; grid-gap:var(--size-2);}
 .ptl-rating-list{display:flex; align-items:center; 
-padding-bottom:var(--size-2); margin-bottom:var(--size-2); border-bottom:1px dashed rgb(var(--color-border) / 8%);}
+padding-bottom:var(--size-2); margin-bottom:var(--size-2); border-bottom:1px dashed rgb(var(--color-border) / 13%);}
 .ptl-rating-star{grid-gap:var(--size-1); margin-right:var(--size-3);}
 .ptl-rating-star .svgicon{width:var(--size-3);}
 
@@ -28,7 +28,7 @@ padding-bottom:var(--size-2); margin-bottom:var(--size-2); border-bottom:1px das
 .practice-tutorial-action{display:flex; justify-content:flex-end;}
 .pta-button{margin-left:var(--size-3); margin-top:var(--size-3);}
 .pta-button-cancel{background-color:rgb(var(--color-border) / 13%) !important;}
-.pta-button-cancel:hover{background-color:rgb(var(--color-border) / 8%) !important;}
+.pta-button-cancel:hover{background-color:rgb(var(--color-border) / 13%) !important;}
 
 
 

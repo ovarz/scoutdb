@@ -8,34 +8,49 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <link rel="stylesheet" type="text/css" href="css/video-player.css"/>
-<div class="videoplayer-detail">
+<div class="rancak-container videoplayer-detail">
+    
+  <div class="videoplayer-left">	
+    <section aria-label="Info Statistik" class="videoplayer-info">
+      <div class="breadcrumb">
+        <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="home.php">
+          <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
+        </a>
+        <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="video-player/">
+          Video Player
+        </a>
+      </div>
+      <?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
+      <?php require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
+    </section>
 
-  <section aria-label="Video Statistik" class="videoplayer-play">
-    <iframe width="560" height="315" class="lazyload" data-original="https://www.youtube.com/embed/cJCK80fqkv0?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
+
+
+    <section aria-label="Video Statistik" class="videoplayer-play flex_ori thumb-loading">
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/Z55vhg72UWs?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+	
+  </div>
+
+ 
   
+  <div class="videoplayer-right">
   
-  
-  <section aria-label="Info Statistik" class="videoplayer-info">
-    <div class="breadcrumb">
-      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="home.php">
-        <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
-      </a>
-      <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="video-player/">
-        Video Player
-      </a>
-    </div>
-	<?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
-	<?php require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
-	<div class="vlc-timeline">
-	  <?php for ($i=1; $i <= 20 ; $i++) { ?>
-	    <div title="00:00" class="vlc-timeline-list">
-		  <div class="vlc-timeline-data">00:00</div>
-		  <div class="vlc-timeline-info"><?php echo $random_keyword[array_rand($random_keyword)]; ?></div>
-		</div>
-	  <?php } ?>
-	</div>
-  </section>
+    <section aria-label="Timeline Statistik" class="videoplayer-timeline">
+      <div class="vlt-list">
+        <?php for ($i=1; $i <= 20 ; $i++) { ?>
+          <div title="00:00" class="vlt-list-row">
+            <div class="vlt-list-data">000:00</div>
+            <div class="vlt-list-info">
+			  <div class="vlt-list-player"><?php echo $random_username[array_rand($random_username)]; ?></div>
+			  <div class="vlt-list-desc"><?php echo $random_keyword[array_rand($random_keyword)]; ?></div>
+			</div>
+          </div>
+        <?php } ?>
+      </div>
+    </section>
+	
+  </div>
   
 </div>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>

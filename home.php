@@ -5,10 +5,19 @@
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
-<style><?php require ($_SERVER['SCOUTDB'].'css/pagemenu.css')?></style>
+<style><?php require ($_SERVER['SCOUTDB'].'css/home.css')?></style>
 <div class="rancak-container content_center">
 
   <section aria-label="Video Cover" class="video-cover"></section>
+  
+  <section aria-label="Top Menu" class="top-menu">
+    <button title="Sync" class="header-link header-sync content_center">
+      <?php require ($_SERVER['SCOUTDB'].'img/icon/sync.svg')?>
+    </button>
+    <button title="Logout" class="header-link header-logout open-popup content_center">
+      <?php require ($_SERVER['SCOUTDB'].'img/icon/logout.svg')?>
+    </button>
+  </section>
   
   
   
