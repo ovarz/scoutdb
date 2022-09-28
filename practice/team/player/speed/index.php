@@ -1,6 +1,7 @@
 <?php 
   $page='dashboard';
   $channel='practice';
+  $backto_link='practice/team/player/'; $backto_label='Player';
   require ('../../../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>

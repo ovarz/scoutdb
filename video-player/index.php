@@ -1,6 +1,7 @@
 <?php 
   $page='dashboard';
   $channel='video-player';
+  $backto_link='home.php'; $backto_label='Home';
   require ('../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>

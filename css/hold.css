@@ -61,6 +61,10 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 13%); 
 
 
 
+.breadcrumb{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-3);}
+
+
+
 .rating-icon .svgicon-star-filled{fill:#DAA21B;}
 .rating-icon .svgicon-star-outline{fill:#FFFFFF;}
 

@@ -1,6 +1,7 @@
 <?php 
   $page='welcome';
   $channel='home';
+  $backto_link=''; $backto_label='';
   require ('inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>

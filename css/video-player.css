@@ -43,7 +43,9 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 .videoplayer-left{display:block;}
 .videoplayer-detail{display:grid; grid-template-columns:1fr 330px; grid-gap:var(--size-4);}
 .videoplayer-info{color:var(--color-default-2);}
-.videoplayer-info > *{margin-bottom:var(--size-4); padding-bottom:var(--size-4); border-bottom:1px solid rgb(var(--color-border) / 13%);}
+.videoplayer-info .breadcrumb{margin-bottom:var(--size-4);}
+.videoplayer-info > .vlc-match, .videoplayer-info > .vlc-info{margin-bottom:var(--size-4); padding-bottom:var(--size-4); 
+border-bottom:1px solid rgb(var(--color-border) / 13%);}
 .videoplayer-play{position:-webkit-sticky; position:sticky; top:calc(var(--size-6) + var(--size-4)); background-color:#000; 
 border-radius:var(--rounded-1); overflow:hidden;}
 .videoplayer-play:before{padding-top:56.25%;}

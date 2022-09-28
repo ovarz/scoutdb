@@ -1,6 +1,7 @@
 <?php 
   $page='dashboard';
   $channel='video-player';
+  $backto_link='video-player/'; $backto_label='Video Player';
   require ('../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
@@ -42,7 +43,10 @@
           <div title="00:00" class="vlt-list-row">
             <div class="vlt-list-data">000:00</div>
             <div class="vlt-list-info">
-			  <div class="vlt-list-player"><?php echo $random_username[array_rand($random_username)]; ?></div>
+			  <a aria-label="<?php echo $random_username[array_rand($random_username)]; ?>" 
+			  title="<?php echo $random_username[array_rand($random_username)]; ?>" class="vlt-list-player" href="home.php">
+			    <?php echo $random_username[array_rand($random_username)]; ?>
+			  </a>
 			  <div class="vlt-list-desc"><?php echo $random_keyword[array_rand($random_keyword)]; ?></div>
 			</div>
           </div>

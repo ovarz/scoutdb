@@ -1,6 +1,7 @@
 <?php 
   $page='pagelist';
   $channel='pagelist';
+  $backto_link='home.php'; $backto_label='Home';
   require ('inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
@@ -54,6 +55,7 @@
         <div class="icon-list">
 		  <?php 
             $icon_array = array();
+            $icon_array[]=array('icon_id'=>'back');
             $icon_array[]=array('icon_id'=>'calendar');
             $icon_array[]=array('icon_id'=>'dropdown');
             $icon_array[]=array('icon_id'=>'google');
