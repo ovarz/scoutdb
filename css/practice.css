@@ -83,6 +83,15 @@ box-shadow:inset -3px -3px 12px rgba(0,0,0,.3), inset 3px 3px 18px rgba(0,0,0,.3
 
 
 
+.practice-result-search{--button-width:30px; margin-left:auto; font-size:14px; font-weight:normal; text-transform:none; position:relative;}
+.practice-result-search .search-field{border-bottom:1px solid rgb(var(--color-border) / 13%); background-color:transparent; color:var(--color-default-2);
+width:233px; height:100%; padding-right:var(--button-width);}
+.practice-result-search .search-button{width:var(--button-width); height:100%; display:flex; align-items:center; justify-content:flex-end;
+position:absolute; top:0; right:0; z-index:1000;}
+.practice-result-search .search-button .svgicon{width:auto; height:14px;}
+
+
+
 
 @media screen and (min-width:1180px){
   .practice-tutorial{grid-template-columns:1fr 480px;}

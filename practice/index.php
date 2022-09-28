@@ -6,7 +6,7 @@
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
-<?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
+<?php $practice_result='none'; require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <div class="rancak-container">
   <span class="width-max">

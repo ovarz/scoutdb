@@ -6,7 +6,7 @@
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
-<?php $practice_result='none'; require ($_SERVER['SCOUTDB'].'inc/header.php')?>
+<?php $practice_result='practice'; require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <link rel="stylesheet" type="text/css" href="css/practice.css"/>
 <div class="rancak-container">
@@ -35,35 +35,16 @@
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
-	    <div class="section-title-label">Speed</div>
+	    <div class="section-title-label">Speed - Practice Report</div>
+		<div class="practice-result-search">
+		  <input class="search-field" name="" type="text" placeholder="Search by player name.....">
+		  <button title="Search" class="search-button">
+		    <?php require ($_SERVER['SCOUTDB'].'img/icon/search.svg')?>
+		  </button>
+		</div>
 	  </h2>
-      <div class="practice-tutorial practice-tutorial-process">
-        <div class="practice-tutorial-left">
-		  <?php require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?>
-		  <?php require ($_SERVER['SCOUTDB'].'module/practice-matrix-score.php')?>
-        </div>
-		
-		
-		
-        <div class="practice-tutorial-right">
-          <div class="practice-tutorial-sticky">
-            <div class="practice-countdown">
-			  <div class="practice-countdown-hours">00</div>
-			  <div class="practice-countdown-minutes">00</div>
-			  <div class="practice-countdown-seconds">00</div>
-			</div>
-            <div class="practice-tutorial-action">
-              <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
-              href="practice/team/player/speed/">
-                <span>Cancel</span>
-              </a>
-              <a aria-label="Start Practice" title="Start Practice" class="btn pta-button pta-button-start content_center" 
-              href="practice/team/player/speed/step2.php">
-                <span>Start Practice</span>
-              </a>
-            </div>
-          </div>    
-        </div>
+      <div class="report-practice-list">
+	    tes
       </div>
     </section>
 	

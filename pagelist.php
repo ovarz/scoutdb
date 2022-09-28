@@ -81,6 +81,7 @@
             $icon_array[]=array('icon_id'=>'setting');
             $icon_array[]=array('icon_id'=>'star-filled');
             $icon_array[]=array('icon_id'=>'star-outline');
+            $icon_array[]=array('icon_id'=>'switch');
             $icon_array[]=array('icon_id'=>'sync');
 		    foreach($icon_array as $icon_list){ 
 		  ?>

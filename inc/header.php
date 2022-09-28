@@ -14,10 +14,25 @@
 	</div>
 	<div class="header-right">
       <?php if($channel == 'practice') { ?>
-	  <a aria-label="Report" title="Report" class="header-link header-report content_center" href="report/">
+	  <a aria-label="Report" title="Report" class="header-link header-report content_center"
+        <?php if($practice_result == 'practice') { ?>
+          href="practice/team/player/speed/result-player.php"
+        <?php } ?>
+        <?php if($practice_result != 'practice') { ?>
+          href="practice/team/player/speed/result.php"
+        <?php } ?>
+	  >
         <div class="button-dummy">
 	      <?php require ($_SERVER['SCOUTDB'].'img/icon/report.svg')?>
-          <span>Report</span>
+		  <?php if($practice_result == 'none') { ?>
+            <span>Report</span>
+		  <?php } ?>
+		  <?php if($practice_result == 'practice') { ?>
+            <span>Switch To Player Report</span>
+		  <?php } ?>
+		  <?php if($practice_result == 'player') { ?>
+            <span>Switch To Practice Report</span>
+		  <?php } ?>
         </div>
 	  </a>
       <?php } ?>
