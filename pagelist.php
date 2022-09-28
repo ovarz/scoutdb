@@ -15,11 +15,12 @@
     .pagelist > ul{list-style:disc;}
     .pagelist > ul > li > ul{list-style:circle;}
     .pagelist-row{padding:7px 0; display:block;}
-	.icon-list{display:grid; grid-template-columns:repeat(auto-fit, minmax(96px,1fr)); grid-gap:var(--size-2);}
-	.icon-link{padding:var(--size-3); background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);}
+	.icon-list{display:flex; flex-wrap:wrap;}
+	.icon-link{display:flex; align-items:center; padding:var(--size-3); background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);
+	margin-right:var(--size-2); margin-top:var(--size-2);}
 	.icon-link:hover{background-color:var(--color-default-3); color:var(--color-default-2); fill:var(--color-default-2);}
-	.icon-link svg{width:auto; height:24px;}
-	.icon-name{text-align:center; margin-top:var(--size-2);}
+	.icon-link svg{width:auto; height:18px; margin-right:var(--size-3);}
+	.icon-name{text-align:center;}
   </style>
 
   <div class="pagelist">
