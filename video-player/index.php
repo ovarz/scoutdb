@@ -57,18 +57,18 @@
 	  
 	  <div class="videoplayer-list-container">
 	    <?php for ($i=1; $i <= 10 ; $i++) { ?>
-          <a aria-label="IMG_TITLE" title="IMG_TITLE" class="vlc-row" href="video-player/detail.php">
-            <div class="vlc-thumb">
-              <div class="vlc-thumb-frame flex_ori thumb-loading">
-                <img alt="img_title" class="lazyload" data-original="img/sample/content-<?php echo rand(1,20); ?>.jpg" />
-                <div class="vlc-thumb-icon content_center">
-                  <?php require ($_SERVER['SCOUTDB'].'img/icon/play-circle.svg')?>
-                </div>
+        <a aria-label="IMG_TITLE" title="IMG_TITLE" class="vlc-row" href="video-player/detail.php">
+          <div class="vlc-thumb">
+            <div class="vlc-thumb-frame flex_ori thumb-loading">
+              <img alt="img_title" class="lazyload" data-original="img/sample/content-<?php echo rand(1,20); ?>.jpg" />
+              <div class="vlc-thumb-icon content_center">
+                <?php require ($_SERVER['SCOUTDB'].'img/icon/play-circle.svg')?>
               </div>
             </div>
-            <?php require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
-            <?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
-          </a>
+          </div>
+          <?php require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
+          <?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
+        </a>
 		<?php } ?>
 	  </div>
 	  
