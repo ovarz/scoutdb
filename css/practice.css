@@ -105,6 +105,23 @@ display:grid; grid-template-columns:var(--thumb-size) 1fr;}
 
 
 
+.report-player-practice, .rpp-row{display:grid;}
+.rpp-row{grid-template-columns:144px 1fr 1fr 1fr 1fr 1fr 1fr 1fr; border-bottom:1px dashed rgb(var(--color-border) / 13%);}
+.rpp-column{padding:var(--size-3); display:flex; flex-wrap:wrap; align-content:center; align-items:center;}
+.rpp-column > *{width:100%;}
+.rpp-detail{border-left:1px dashed rgb(var(--color-border) / 13%);}
+.rpp-detail *{text-align:center;}
+.rpp-detail .rpp-time{font-size:18px;}
+.rpp-detail .rating-icon{max-width:100px; margin:var(--size-1) auto var(--size-2);}
+
+.rpp-head, .rpp-type{color:var(--color-default-2); background-color:rgb(var(--color-border) / 8%); font-weight:bold;}
+.rpp-head .rpp-day{font-size:18px; letter-spacing:1px;}
+.rpp-head .rpp-date{font-size:11px;}
+.rpp-head .rpp-today{color:var(--color-default-5);}
+
+.report-player-pagination{position:absolute; bottom:-4px; right:0;}
+
+
 @media screen and (min-width:1180px){
   .practice-tutorial{grid-template-columns:1fr 480px;}
   .practice-tutorial-process{grid-template-columns:1fr 360px;}

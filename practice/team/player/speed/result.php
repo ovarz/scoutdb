@@ -68,7 +68,7 @@
 		  </div>
 		</div>
 		<?php } ?>
-	  <?php require ($_SERVER['SCOUTDB'].'module/pagination.php')?>
+	    <?php require ($_SERVER['SCOUTDB'].'module/pagination.php')?>
       </div>
     </section>
 	

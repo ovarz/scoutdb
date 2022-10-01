@@ -42,7 +42,8 @@
           <li><a class="pagelist-row" href="practice/team/player/speed/step1.php">Halaman Mulai Training</a></li>
           <li><a class="pagelist-row" href="practice/team/player/speed/step2.php">Halaman Sedang Training</a></li>
           <li><a class="pagelist-row" href="practice/team/player/speed/step3.php">Halaman Selesai Training</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/speed/result.php">Halaman Hasil Training</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/result.php">Halaman Hasil Training - Per Latihan</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/result-player.php">Halaman Hasil Training - Per Pemain</a></li>
         </ul>
       </li>
       <li>
