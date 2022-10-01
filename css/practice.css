@@ -120,6 +120,7 @@ display:grid; grid-template-columns:var(--thumb-size) 1fr;}
 .rpp-head .rpp-today{color:var(--color-default-5);}
 
 .report-player-pagination{position:absolute; bottom:-4px; right:0;}
+.report-player-pagination .pagination-button{margin-right:0; margin-left:var(--size-2);}
 
 
 @media screen and (min-width:1180px){
