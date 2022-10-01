@@ -9,8 +9,8 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
-<link rel="stylesheet" type="text/css" href="css/calendar.css"/>
-<link rel="stylesheet" type="text/css" href="css/video-player.css"/>
+<link rel="stylesheet" type="text/css" href="css/calendar.css?<?php echo $anticache; ?>"/>
+<link rel="stylesheet" type="text/css" href="css/video-player.css?<?php echo $anticache; ?>"/>
 <div class="rancak-container">
   <span class="width-max">
 

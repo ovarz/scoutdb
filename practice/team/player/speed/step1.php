@@ -9,7 +9,7 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
 <?php $practice_result='none'; require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
-<link rel="stylesheet" type="text/css" href="css/practice.css"/>
+<link rel="stylesheet" type="text/css" href="css/practice.css?<?php echo $anticache; ?>"/>
 <div class="rancak-container">
   <span class="width-max">
 
