@@ -112,7 +112,7 @@ display:grid; grid-template-columns:var(--thumb-size) 1fr;}
 .rpp-detail{border-left:1px dashed rgb(var(--color-border) / 13%);}
 .rpp-detail *{text-align:center;}
 .rpp-detail .rpp-time{font-size:18px;}
-.rpp-detail .rating-icon{max-width:100px; margin:var(--size-1) auto var(--size-2);}
+.rpp-detail .rating-icon{max-width:100px; margin:var(--size-1) auto var(--size-2); grid-gap:var(--size-1);}
 
 .rpp-head, .rpp-type{color:var(--color-default-2); background-color:rgb(var(--color-border) / 8%); font-weight:bold;}
 .rpp-head .rpp-day{font-size:18px; letter-spacing:1px;}
