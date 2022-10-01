@@ -1,7 +1,7 @@
 <div class="ptl-box ptl-profile">
   <div class="ptl-player-photo">
     <div class="ptl-player-frame flex_ori thumb-loading">
-	  <img alt="img_title" class="lazyload" data-original="img/sample/player-<?php echo rand(1,20); ?>.png" />
+	  <img alt="img_title" class="lazyload" data-original="img/sample/player-<?php echo rand(1,20); ?>.jpg" />
 	</div>
   </div>
   <div class="ptl-player-info">

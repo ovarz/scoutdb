@@ -93,14 +93,14 @@ position:absolute; top:0; right:0; z-index:1000;}
 
 
 .report-practice-list{display:grid; grid-gap:var(--size-2); grid-template-columns:repeat(auto-fit, minmax(260px,1fr))}
-.rpl-box{--thumb-size:89px; background-color:rgb(var(--color-border) / 13%); padding:0 var(--size-3); border-radius:var(--rounded-1);
+.rpl-box{--thumb-size:89px; background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1); overflow:hidden;
 display:grid; grid-template-columns:var(--thumb-size) 1fr;}
 .rpl-photo{display:flex; align-items:flex-end;}
 .rpl-frame{width:var(--thumb-size); height:var(--thumb-size);}
 .rpl-info{padding:var(--size-3);}
 .rpl-name{font-size:18px; font-weight:bold; color:var(--color-default-2);}
 .rpl-rating{grid-gap:var(--size-1); max-width:89px; margin:var(--size-1) 0;}
-
+.rpl-date{font-size:12px;}
 
 
 
