@@ -33,4 +33,4 @@ $("body,html").bind("touchstart touchmove scroll mousedown DOMMouseScroll mousew
 
 <link rel="stylesheet" type="text/css" href="css/rancak.css?<?php echo $anticache; ?>"/>
 </head>
-<body class="body-<?php echo $page; ?>">
+<body class="body-<?php echo $page; ?> menu-<?php echo $menu; ?>">

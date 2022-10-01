@@ -1,5 +1,6 @@
 <?php 
   $page='welcome';
+  $menu='full';
   $channel='welcome';
   $backto_link=''; $backto_label='';
   require ('inc/base.php')

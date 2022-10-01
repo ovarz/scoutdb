@@ -1,5 +1,6 @@
 <?php 
   $page='dashboard';
+  $menu='full';
   $channel='practice';
   $backto_link='practice/team/player/speed/'; $backto_label='Speed';
   require ('../../../../inc/base.php')

@@ -1,5 +1,6 @@
 <?php 
   $page='pagelist';
+  $menu='full';
   $channel='pagelist';
   $backto_link='home.php'; $backto_label='Home';
   require ('inc/base.php')

@@ -1,5 +1,6 @@
 <?php 
   $page='dashboard';
+  $menu='full';
   $channel='practice';
   $backto_link='home.php'; $backto_label='Home';
   require ('../inc/base.php')
