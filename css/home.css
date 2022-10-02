@@ -5,7 +5,7 @@
 transform:translateX(-50%) translateY(-50%); filter:blur(1px);}
 .video-cover:before, .video-cover:after{content:'';  position:absolute; top:0; left:0; width:100%; height:100%;}
 .video-cover:before{z-index:3; background:url("img/fixdot.png");}
-.video-cover:after{z-index:4; background:linear-gradient(224deg, rgba(255,255,255,0.34) 0%, rgba(0,0,0,0.34) 89%);}
+.video-cover:after{z-index:4; background:linear-gradient(224deg, rgba(255,255,255,0.21) 0%, rgba(0,0,0,0.21) 89%);}
 .video-cover img{position:absolute; z-index:2; top:0; left:0; width:100%; height:100%; object-fit:cover;}
 
 .top-menu{position:absolute; z-index:1000; top:var(--size-3); right:var(--size-4); display:flex;}
@@ -13,13 +13,14 @@ transform:translateX(-50%) translateY(-50%); filter:blur(1px);}
 .top-menu .header-link:hover{fill:var(--color-default-3);}
 
 .pagemenu-container{position:relative; z-index:2000; padding:var(--size-5); width:100%; max-width:987px;}
-.pagemenu-logo img{width:auto; height:64px;}
+.pagemenu-logo img{width:auto; height:64px; filter:drop-shadow(0px 2px 1px rgba(0,0,0,0.25));}
 .pagemenu-list{display:grid; grid-gap:var(--size-1); grid-template-columns:repeat(auto-fit, minmax(144px,1fr)); margin-top:var(--size-6);}
-.pagemenu-link{padding:var(--size-5) var(--size-4); flex-wrap:wrap; border:1px solidrgba(0,0,0,0.55);  background-color:rgb(var(--color-border) / 55%);}
+.pagemenu-link{padding:var(--size-5) var(--size-4); flex-wrap:wrap; border:1px solidrgba(0,0,0,0.55);  background-color:rgb(var(--color-border) / 55%);
+box-shadow:0 2px 10px rgb(0 0 0 / 25%); border-radius:2px;}
 .pagemenu-link-icon, .pagemenu-link-label{width:100%;}
-.pagemenu-link-icon .svgicon{width:auto; height:var(--size-5);}
+.pagemenu-link-icon .svgicon{width:auto; height:var(--size-5); filter:drop-shadow(0px 2px 1px rgba(0,0,0,0.25));}
 .pagemenu-link-label{text-align:center; text-transform:uppercase; font-weight:bold; margin-top:var(--size-3); font-size:11px;}
-.pagemenu-link:hover{background-color:var(--color-default-3); color:var(--color-default-2); fill:var(--color-default-2);}
+.pagemenu-link:hover{background-color:var(--bg-1); color:var(--color-default-2); fill:var(--color-default-2);}
 
 @supports(-webkit-backdrop-filter:none) or (backdrop-filter:none){
   .pagemenu-link{-webkit-backdrop-filter:blur(var(--size-3)); backdrop-filter:blur(var(--size-3)); background-color:rgb(var(--color-border) / 21%);}
