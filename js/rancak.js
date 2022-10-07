@@ -76,6 +76,16 @@ var open_popup = function(){
 
 
 
+var close_popup = function(){
+  "use strict";
+  $('.rancak-popup-overlay, .popup-close-button').click(function(){
+    ClosePopup()
+    return false;
+  });	
+};
+
+
+
 var open_float = function(){
   "use strict";
   $('.open-float').click(function(){
@@ -95,5 +105,6 @@ $(document).ready(function(){
   all_scroll();
   menu_toggle();
   open_popup();
+  close_popup();
   open_float();
 });

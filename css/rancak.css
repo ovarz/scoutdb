@@ -30,7 +30,6 @@ body.body-welcome{padding-top:0 !important; padding-left:0 !important;}
 a, button{font-weight:bold;}
 .btn, a.btn, button.btn{padding:var(--size-3) var(--size-4); font-weight:normal; -webkit-appearance:none; text-transform:capitalize; 
 display:flex; text-align:center; align-items:center; justify-content:center;}
-.rancak-popup{display:none;}
 .width-max{position:relative; width:100%; max-width:var(--site-container); margin:0 auto;}
 
 
