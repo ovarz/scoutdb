@@ -16,16 +16,25 @@
     <div class="login-slidebox-image flex_ori">
       <img alt="img_title" class="lazyload" data-original="img/slide-1.jpg" />
     </div>
+	<div class="login-slidebox-content">
+	  <b>Record statistics</b> for real-time matchs
+	</div>
   </div>
   <div class="login-slidebox">
     <div class="login-slidebox-image flex_ori">
       <img alt="img_title" class="lazyload" data-original="img/slide-2.jpg" />
     </div>
+	<div class="login-slidebox-content">
+	  <b>Record statistics</b> in a pre-recorded video
+	</div>
   </div>
   <div class="login-slidebox">
     <div class="login-slidebox-image flex_ori">
       <img alt="img_title" class="lazyload" data-original="img/slide-3.jpg" />
     </div>
+	<div class="login-slidebox-content">
+	  <b>Record statistics</b> for your custom matchs</b>
+	</div>
   </div>
 </section>
   
@@ -61,7 +70,7 @@ $(document).ready(function(){
 	infinite:true,
 	slidesToShow:1,
 	slidesToScroll:1,
-	autoplay:true,
+	autoplay:false,
 	swipeToSlide:true,
 	arrows:false,
 	autoplaySpeed:5000,
