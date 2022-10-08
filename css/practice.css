@@ -30,6 +30,13 @@ padding-bottom:var(--size-2); border-bottom:1px dashed rgb(var(--color-border) /
 .ptl-player-label{padding-right:var(--size-2); position:relative;}
 .ptl-player-label:after{content:':'; display:block; position:absolute; right:0; top:0;}
 
+.ptl-toggle{padding-bottom:var(--size-2); margin-bottom:var(--size-2); border-bottom:1px solid rgb(var(--color-border) / 55%); width:100%;
+color:var(--color-default-2) !important; fill:var(--color-default-2) !important;}
+.ptl-toggle > span{display:flex; justify-content:space-between; align-items:center;}
+.ptl-toggle .svgicon{width:auto; height:10px; transition:var(--transition-default); transform:rotate(180deg);}
+.ptl-minimize{padding:var(--size-2) var(--size-3); border:0; background-color:var(--color-default-3); border-radius:var(--rounded-1);}
+.ptl-minimize .svgicon{transform:rotate(0deg);}
+
 
 
 .practice-tutorial{display:grid; grid-template-columns:1fr 377px; grid-gap:var(--size-5); max-width:1024px;}

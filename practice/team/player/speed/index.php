@@ -41,7 +41,12 @@
       <div class="practice-tutorial">
         <div class="practice-tutorial-left">
           <div class="ptl-box">
-            <div class="ptl-title">Practice Objective</div>
+		    <button title="Practice Info" class="ptl-toggle">
+			  <span>
+			    <div class="ptl-toggle-label">Practice Objective</div>
+			    <?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+			  </span>
+			</button>
             <ul class="ptl-list">
               <?php for ($i=1; $i <= 3 ; $i++) { ?>
               <li><?php echo $random_keyword[array_rand($random_keyword)]; ?></li>
@@ -49,7 +54,12 @@
             </ul>
           </div>
           <div class="ptl-box">
-            <div class="ptl-title">Equipments Needed</div>
+		    <button title="Practice Info" class="ptl-toggle">
+			  <span>
+			    <div class="ptl-toggle-label">Equipments Needed</div>
+			    <?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+			  </span>
+			</button>
             <ul class="ptl-list">
               <?php for ($i=1; $i <= 7 ; $i++) { ?>
               <li><?php echo $random_keyword[array_rand($random_keyword)]; ?></li>
@@ -75,5 +85,6 @@
 	
   </span>
 </div>
+<script defer rancak-hold="js/practice.js"></script>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>

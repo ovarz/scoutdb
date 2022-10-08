@@ -77,5 +77,6 @@
 	
   </span>
 </div>
+<script defer rancak-hold="js/practice.js"></script>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>
