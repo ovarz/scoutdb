@@ -7,7 +7,7 @@
   --color-default-2:#FFFFFF;
   --color-default-3:#B7263D;
   --color-default-4:#760223; 
-  --color-default-5:#FF6C75;
+  --color-default-5:#D8415A;
   --rounded-1:var(--size-1);
   --rounded-2:var(--size-2);
   --rounded-3:var(--size-4);
@@ -51,8 +51,8 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 13%); 
 .menu-link:before{transition:var(--transition-default);}
 .menu-link:hover{color:var(--color-default-2); fill:var(--color-default-2);}
 .menu-link:hover:before{background-color:var(--color-default-2);}
-.menu-curr{color:var(--color-default-3) !important; fill:var(--color-default-3) !important;}
-.menu-curr:before{background-color:var(--color-default-3) !important;}
+.menu-curr{color:var(--color-default-5) !important; fill:var(--color-default-5) !important;}
+.menu-curr:before{background-color:var(--color-default-5) !important;}
 
 
 

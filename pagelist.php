@@ -22,6 +22,11 @@
 	.icon-link:hover{background-color:var(--color-default-3); color:var(--color-default-2); fill:var(--color-default-2);}
 	.icon-link svg{width:auto; height:18px; margin-right:var(--size-3);}
 	.icon-name{text-align:center;}
+	.image-list{display:flex; flex-wrap:wrap;}
+	.image-link{padding:var(--size-3); border:1px solid rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);
+	margin-right:var(--size-2); margin-top:var(--size-2);}
+	.image-display img{height:89px;}
+	.image-name{text-align:center; margin-top:var(--size-2);}
   </style>
 
   <div class="pagelist">
@@ -92,6 +97,28 @@
 			  <?php require ($_SERVER['SCOUTDB'].'img/icon/'.$icon_list['icon_id'].'.svg')?>
 			</div>
 			<div class="icon-name"><?php echo($icon_list['icon_id'])?></div>
+		  </a>
+		  <?php } ?>
+		</div>
+      </li>
+      <li style="margin-top:var(--size-3);">
+        <div class="pagelist-row">Image</div>  
+        <div class="image-list">
+		  <?php 
+            $image_array = array();
+            $image_array[]=array('image_file'=>'logo.png','image_name'=>'Logo');
+            $image_array[]=array('image_file'=>'profile-photo.jpg','image_name'=>'Default Profile Picture');
+            $image_array[]=array('image_file'=>'slide-1.jpg','image_name'=>'Login Slide 1');
+            $image_array[]=array('image_file'=>'slide-2.jpg','image_name'=>'Login Slide 2');
+            $image_array[]=array('image_file'=>'slide-3.jpg','image_name'=>'Login Slide 3');
+            $image_array[]=array('image_file'=>'cover-menu.jpg','image_name'=>'Home Cover Background');
+		    foreach($image_array as $image_list){ 
+		  ?>
+		  <a class="image-link" href="img/<?php echo($image_list['image_file'])?>" target="_blank">
+		    <div class="image-display content_center">
+			  <img alt="img_title" class="lazyload" data-original="img/<?php echo($image_list['image_file'])?>">
+			</div>
+			<div class="image-name"><?php echo($image_list['image_name'])?></div>
 		  </a>
 		  <?php } ?>
 		</div>
