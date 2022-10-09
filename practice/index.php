@@ -25,7 +25,7 @@
 
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
 	    <div class="section-title-label">Choose Your Team</div>
 	  </h2>
       <div class="team-list">

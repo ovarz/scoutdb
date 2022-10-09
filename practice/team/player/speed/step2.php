@@ -35,7 +35,7 @@
 
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
 	    <div class="section-title-label">Speed</div>
 	  </h2>
       <div class="practice-tutorial practice-tutorial-process">

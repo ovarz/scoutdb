@@ -72,6 +72,7 @@ background:radial-gradient(rgb(var(--color-border) / 0%) 0%, rgb(var(--color-bor
 
 
 
+.practice-result-info{margin-bottom:var(--size-2);}
 .practice-result-rating{margin-bottom:var(--size-4);}
 .practice-result-rating .rating-icon{grid-gap:var(--size-4);}
 

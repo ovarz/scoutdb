@@ -32,7 +32,7 @@
 
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
 	    <div class="section-title-label"><?php echo $random_username[array_rand($random_username)]; ?> - Practice Report</div>
 		<div class="pagination report-player-pagination">
 		  <a aria-label="Previous Page" title="Previous Page" class="pagination-button content_center" href="javascript:void(0)">

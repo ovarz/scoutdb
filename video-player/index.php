@@ -28,7 +28,7 @@
     <section aria-label="Daftar Statistik" class="videoplayer-list">
       <div class="video-filter">
         <h2 class="section-title video-filter-label">
-	      <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/section-title.svg')?></div>
+	      <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-video-player.svg')?></div>
 	      <div class="section-title-label">Video List</div>
 		</h2>
         <div class="video-filter-container">
