@@ -57,6 +57,19 @@ border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2);
 .practice-countdown-minutes:before{left:calc(var(--size-1) * -1);}
 .practice-countdown-minutes:after{right:calc(var(--size-1) * -1);}
 
+.practice-bleep{display:grid; grid-template-columns:repeat(2,1fr); grid-gap:var(--size-3); margin-bottom:var(--size-2);}
+.practice-bleep-label{margin-bottom:var(--size-1);}
+.practice-bleep-box{height:var(--size-7); font-size:36px; font-weight:bold; color:var(--color-default-2); 
+border-radius:var(--rounded-2); border:2px solid var(--color-box);
+display:flex; justify-content:center; align-items:center;}
+.practice-bleep-button{padding:var(--size-3) var(--size-4); text-align:center; background-color:var(--color-box); color:var(--color-default-2);
+border-radius:var(--rounded-2); margin-top:var(--size-1); transition:var(--transition-default);}
+.practice-bleep-container:hover .practice-bleep-button{background-color:rgb(var(--color-border) / 13%);}
+
+.practice-bleep-level, .practice-bleep-shuttle{--color-box:#9E9E9E;}
+.practice-bleep-fail{--color-box:#DB4A58;}
+.practice-bleep-success{--color-box:#009327;}
+
 
 
 .pta-button{margin-left:var(--size-3); margin-top:var(--size-3);}
