@@ -40,12 +40,12 @@
       <div class="training-list">
         <?php 
           $training_array = array();
-          $training_array[]=array('training_link'=>'speed','training_name'=>'endurance');
+          $training_array[]=array('training_link'=>'endurance','training_name'=>'endurance');
           $training_array[]=array('training_link'=>'speed','training_name'=>'speed');
           $training_array[]=array('training_link'=>'speed','training_name'=>'reaction');
           $training_array[]=array('training_link'=>'speed','training_name'=>'agility');
-          $training_array[]=array('training_link'=>'speed','training_name'=>'power');
-          $training_array[]=array('training_link'=>'speed','training_name'=>'flexibility');
+          $training_array[]=array('training_link'=>'power','training_name'=>'power');
+          $training_array[]=array('training_link'=>'power','training_name'=>'flexibility');
           foreach($training_array as $training_list){
         ?>
           <?php $training_link='practice/team/player/'; $training_rating_total=rand(0,5); 
@@ -63,7 +63,7 @@
           $training_array[]=array('training_link'=>'speed','training_name'=>'control');
           $training_array[]=array('training_link'=>'speed','training_name'=>'turning');
           $training_array[]=array('training_link'=>'speed','training_name'=>'forward moves');
-          $training_array[]=array('training_link'=>'speed','training_name'=>'ball mastery');
+          $training_array[]=array('training_link'=>'ball-mastery','training_name'=>'ball mastery');
           foreach($training_array as $training_list){
         ?>
           <?php $training_link='practice/team/player/'; $training_rating_total=rand(0,5);

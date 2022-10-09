@@ -2,7 +2,8 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $backto_link='practice/team/player/speed/'; $backto_label='Speed';
+  $practice_type='speed';
+  $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
   require ('../../../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
@@ -26,8 +27,9 @@
       <a aria-label="Player_Full_Name" title="Player_Full_Name" class="breadcrumb-link content_center" href="practice/team/player/">
         <span>Player_Full_Name</span>
       </a>
-      <a aria-label="Speed" title="Speed" class="breadcrumb-link content_center" href="practice/team/player/speed/">
-        <span>Speed</span>
+      <a aria-label="<?php echo $practice_type; ?>" title="<?php echo $practice_type; ?>" class="breadcrumb-link content_center" 
+	  href="practice/team/player/<?php echo $practice_type; ?>/">
+        <span><?php echo $practice_type; ?></span>
       </a>
     </section>
 	
@@ -36,7 +38,7 @@
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label">Speed</div>
+	    <div class="section-title-label"><?php echo $practice_type; ?></div>
 	  </h2>
       <div class="practice-tutorial practice-tutorial-process">
         <div class="practice-tutorial-left">
@@ -55,11 +57,11 @@
 			</div>
             <div class="practice-tutorial-action">
               <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
-              href="practice/team/player/speed/step1.php">
+              href="practice/team/player/<?php echo $practice_type; ?>/step1.php">
                 <span>Cancel</span>
               </a>
               <a aria-label="Start Practice" title="Start Practice" class="btn pta-button pta-button-start content_center" 
-              href="practice/team/player/speed/step3.php">
+              href="practice/team/player/<?php echo $practice_type; ?>/step3.php">
                 <span>Finish Practice</span>
               </a>
             </div>

@@ -2,6 +2,7 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
+  $practice_type='speed';
   $backto_link='practice/team/player/'; $backto_label='Player';
   require ('../../../../inc/base.php')
 ?>
@@ -27,7 +28,7 @@
         <span>Player_Full_Name</span>
       </a>
       <div class="breadcrumb-link content_center">
-        <span>Speed</span>
+        <span><?php echo $practice_type; ?></span>
       </div>
     </section>
 	
@@ -36,7 +37,7 @@
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label">Speed</div>
+	    <div class="section-title-label"><?php echo $practice_type; ?></div>
 	  </h2>
       <div class="practice-tutorial">
         <div class="practice-tutorial-left">
@@ -74,7 +75,7 @@
             </div>
             <div class="practice-tutorial-action">
               <a aria-label="Start Practice" title="Back" class="btn pta-button pta-button-full pta-button-start content_center" 
-              href="practice/team/player/speed/step1.php">
+              href="practice/team/player/<?php echo $practice_type; ?>/step1.php">
                 <span>Start Practice</span>
               </a>
             </div>
