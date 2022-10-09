@@ -2,7 +2,7 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $practice_type='speed';
+  $practice_type='endurance';
   $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
   require ('../../../../inc/base.php')
 ?>
@@ -74,10 +74,29 @@
                 <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
 			  </div>
 			</div>
-            <div class="practice-countdown">
-			  <div class="practice-countdown-hours">00</div>
-			  <div class="practice-countdown-minutes">00</div>
-			  <div class="practice-countdown-seconds">13</div>
+            <div class="practice-result-bleep practice-result-data">
+			  <ul class="prb-row">
+			    <li class="prb-label">Level</li>
+			    <li class="prb-info"><?php echo rand(1,20); ?></li>
+			  </ul>
+			  <ul class="prb-row">
+			    <li class="prb-label">Shuttle</li>
+			    <li class="prb-info"><?php echo rand(1,10); ?></li>
+			  </ul>
+			  <ul class="prb-row">
+			    <li class="prb-label">V20 Max</li>
+			    <li class="prb-info"><?php echo rand(10,90); ?>,<?php echo rand(0,9); ?></li>
+			  </ul>
+			  <ul class="prb-row">
+			    <li class="prb-label">Fail History</li>
+			    <li class="prb-info">
+				  <ul>
+				    <?php for ($i=1; $i <= 3 ; $i++) { ?>
+				    <li>00 - 00</li>
+					<?php } ?>
+				  </ul>
+				</li>
+			  </ul>
 			</div>
             <div class="practice-tutorial-action">
               <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 

@@ -74,7 +74,7 @@
                 <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
 			  </div>
 			</div>
-            <div class="practice-countdown">
+            <div class="practice-countdown practice-result-data">
 			  <div class="practice-countdown-hours">00</div>
 			  <div class="practice-countdown-minutes">00</div>
 			  <div class="practice-countdown-seconds">13</div>

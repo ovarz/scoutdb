@@ -43,12 +43,20 @@
           <li><a class="pagelist-row" href="practice/">Halaman Daftar Team</a></li>
           <li><a class="pagelist-row" href="practice/team/">Halaman Daftar Player</a></li>
           <li><a class="pagelist-row" href="practice/team/player/">Halaman Daftar Training</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/speed/">Halaman Detail Training</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/speed/step1.php">Halaman Mulai Training</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/speed/step2.php">Halaman Sedang Training</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/speed/step3.php">Halaman Selesai Training</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/speed/result.php">Halaman Hasil Training - Per Latihan</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/speed/result-player.php">Halaman Hasil Training - Per Pemain</a></li>
+		  
+          <li><a class="pagelist-row" href="practice/team/player/speed/">Halaman Training Timer</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/step1.php">Halaman Training Timer - Mulai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/step2.php">Halaman Training Timer - Berlangsung</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/step3.php">Halaman Training Timer - Selesai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/speed/result.php">Halaman Training Timer - Hasil</a></li>
+		  
+          <li><a class="pagelist-row" href="practice/team/player/endurance/">Halaman Training Bleep</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/endurance/step1.php">Halaman Training Bleep - Mulai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/endurance/step2.php">Halaman Training Bleep - Berlangsung</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/endurance/step3.php">Halaman Training Bleep - Selesai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/endurance/result.php">Halaman Training Bleep - Hasil</a></li>
+		  
+          <li><a class="pagelist-row" href="practice/team/player/result-player.php">Halaman Hasil Training - Per Pemain</a></li>
         </ul>
       </li>
       <li>
