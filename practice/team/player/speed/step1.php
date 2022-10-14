@@ -3,7 +3,7 @@
   $menu='full';
   $channel='practice';
   $practice_type='speed';
-  $backto_link='practice/team/player/speed/'; $backto_label='Speed';
+  $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
   require ('../../../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>

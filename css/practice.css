@@ -161,6 +161,13 @@ display:grid; grid-template-columns:var(--thumb-size) 1fr;}
 .report-player-pagination .pagination-button{margin-right:0; margin-left:var(--size-2);}
 
 
+
+.practice-input{padding:var(--size-3); text-align:center; background-color:transparent; width:100%; color:var(--color-default-2); 
+font-size:55px; font-weight:bold; margin:var(--size-3) 0 var(--size-2);
+border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2);}
+.practice-input::placeholder{font-size:24px;}
+
+
 @media screen and (min-width:1180px){
   .practice-tutorial{grid-template-columns:1fr 480px;}
   .practice-tutorial-process{grid-template-columns:1fr 360px;}

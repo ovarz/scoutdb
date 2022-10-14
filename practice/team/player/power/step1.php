@@ -2,7 +2,7 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $practice_type='endurance';
+  $practice_type='power';
   $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
   require ('../../../../inc/base.php')
 ?>
@@ -50,28 +50,16 @@
 		
         <div class="practice-tutorial-right">
           <div class="practice-tutorial-sticky">
-            <div class="practice-bleep">
-			  <div class="practice-bleep-container practice-bleep-level">
-			    <div class="practice-bleep-label">Level</div>
-				<div class="practice-bleep-box">
-				  <b>1</b>
-				</div>
-			  </div>
-			  <div class="practice-bleep-container practice-bleep-shuttle">
-			    <div class="practice-bleep-label">Shuttle</div>
-				<div class="practice-bleep-box">
-				  <b>1</b>
-				</div>
-			  </div>
-			</div>
+		    <input type="text" class="practice-input" placeholder="Input Number Here" 
+			onkeypress="return (event.charCode !=8 &amp;&amp; event.charCode ==0 || (event.charCode >= 48 &amp;&amp; event.charCode <= 57))">
             <div class="practice-tutorial-action">
               <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
-              href="practice/team/player/<?php echo $practice_type; ?>/">
-                <span>Cancel</span>
+              href="practice/team/player/<?php echo $practice_type; ?>/step1.php">
+                <span>Retake Practice</span>
               </a>
               <a aria-label="Start Practice" title="Start Practice" class="btn pta-button pta-button-start content_center" 
-              href="practice/team/player/<?php echo $practice_type; ?>/step2.php">
-                <span>Start Practice</span>
+              href="practice/team/player/<?php echo $practice_type; ?>/result.php">
+                <span>Submit Practice</span>
               </a>
             </div>
           </div>    

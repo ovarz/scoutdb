@@ -44,6 +44,10 @@
           <li><a class="pagelist-row" href="practice/team/">Halaman Daftar Player</a></li>
           <li><a class="pagelist-row" href="practice/team/player/">Halaman Daftar Training</a></li>
 		  
+          <li><a class="pagelist-row" href="practice/team/player/power/">Halaman Training Numeric</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/power/step1.php">Halaman Training Numeric - Input Skor</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/power/result.php">Halaman Training Numeric - Hasil</a></li>
+		  
           <li><a class="pagelist-row" href="practice/team/player/speed/">Halaman Training Timer</a></li>
           <li><a class="pagelist-row" href="practice/team/player/speed/step1.php">Halaman Training Timer - Mulai</a></li>
           <li><a class="pagelist-row" href="practice/team/player/speed/step2.php">Halaman Training Timer - Berlangsung</a></li>

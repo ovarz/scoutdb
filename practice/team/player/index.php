@@ -63,7 +63,7 @@
           $training_array[]=array('training_link'=>'speed','training_name'=>'control');
           $training_array[]=array('training_link'=>'speed','training_name'=>'turning');
           $training_array[]=array('training_link'=>'speed','training_name'=>'forward moves');
-          $training_array[]=array('training_link'=>'ball-mastery','training_name'=>'ball mastery');
+          $training_array[]=array('training_link'=>'power','training_name'=>'ball mastery');
           foreach($training_array as $training_list){
         ?>
           <?php $training_link='practice/team/player/'; $training_rating_total=rand(0,5);

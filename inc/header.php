@@ -15,10 +15,13 @@
 	<div class="header-right">
       <?php if($channel == 'practice') { ?>
 	  <a aria-label="Report" title="Report" class="header-link header-report content_center"
+        <?php if($practice_result == 'none') { ?>
+          href="practice/team/player/result-player.php"
+        <?php } ?>
         <?php if($practice_result == 'practice') { ?>
           href="practice/team/player/result-player.php"
         <?php } ?>
-        <?php if($practice_result != 'practice') { ?>
+        <?php if($practice_result != 'none' && $practice_result != 'practice') { ?>
           href="practice/team/player/speed/result.php"
         <?php } ?>
 	  >
