@@ -15,7 +15,7 @@
 	  <div class="menu-link-icon content_center">
 	    <?php require ($_SERVER['SCOUTDB'].'img/icon/back.svg')?>
 	  </div>
-	  <div class="menu-link-label content_center">Back To <?php echo $backto_label; ?></div>
+	  <div class="menu-link-label content_center">Back</div>
 	</a>
     <?php foreach($menu_main_array as $menu_main_list){ ?>
     <a aria-label="<?php echo($menu_main_list['menu_main_label'])?>" title="<?php echo($menu_main_list['menu_main_label'])?>" 
