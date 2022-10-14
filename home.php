@@ -34,8 +34,7 @@
 	<div class="pagemenu-list">
       <?php foreach($menu_main_array as $menu_main_list){ ?>
       <a aria-label="<?php echo($menu_main_list['menu_main_label'])?>" title="<?php echo($menu_main_list['menu_main_label'])?>" 
-      href="<?php echo($menu_main_list['menu_main_link'])?>"
-      class="pagemenu-link content_center">
+      class="pagemenu-link content_center" href="<?php echo($menu_main_list['menu_main_link'])?>">
         <div class="pagemenu-link-icon content_center">
           <?php require ($_SERVER['SCOUTDB'].'img/icon/menu-'.$menu_main_list['menu_main_id'].'.svg')?>
         </div>
