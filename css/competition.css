@@ -1,3 +1,0 @@
-.submenu{--sml-height:40px; position:-webkit-sticky !important; position:sticky !important; z-index:calc(var(--max-zindex) - 3000) !important;
-border-bottom:1px solid rgb(var(--color-border) / 13%); background-color:var(--bg-1); display:flex; width:100%;}
-.submenu-link{height:var(--sml-height); padding:0 var(--size-3); flex-grow:1;}

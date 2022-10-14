@@ -56,6 +56,11 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 13%); 
 
 
 
+.submenu{border-color:rgb(var(--color-border) / 13%); background-color:var(--bg-4);}
+.submenu-curr{color:var(--color-default-5) !important; fill:var(--color-default-5) !important;}
+
+
+
 .section-title{color:var(--color-default-2); fill:var(--color-default-3);}
 
 

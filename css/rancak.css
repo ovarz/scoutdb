@@ -77,6 +77,13 @@ width:100%; height:var(--menu-min); padding:0 var(--size-5);}
 
 
 
+.submenu, .submenu-link{padding:0 var(--size-3);}
+.submenu{--sml-height:40px; position:-webkit-sticky !important; position:sticky !important; z-index:calc(var(--max-zindex) - 3000) !important; top:var(--size-6);
+border-bottom:1px solid; display:flex; width:100%;}
+.submenu-link{height:var(--sml-height); flex-grow:1;}
+
+
+
 .section-title{display:flex; font-size:21px; text-transform:uppercase; font-weight:bold; margin-bottom:var(--size-4); position:relative;}
 .section-title-icon{display:flex; align-items:center; margin-right:var(--size-3);}
 .section-title .svgicon{width:auto; height:24px;}
