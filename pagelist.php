@@ -60,6 +60,12 @@
           <li><a class="pagelist-row" href="practice/team/player/endurance/step3.php">Halaman Training Bleep - Selesai</a></li>
           <li><a class="pagelist-row" href="practice/team/player/endurance/result.php">Halaman Training Bleep - Hasil</a></li>
 		  
+          <li><a class="pagelist-row" href="practice/team/player/timer-point/">Halaman Training Timer & Poin</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/timer-point/step1.php">Halaman Training Timer & Poin - Mulai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/timer-point/step2.php">Halaman Training Timer & Poin - Berlangsung</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/timer-point/step3.php">Halaman Training Timer & Poin - Selesai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/timer-point/result.php">Halaman Training Timer & Poin - Hasil</a></li>
+		  
           <li><a class="pagelist-row" href="practice/team/player/result-player.php">Halaman Hasil Training - Per Pemain</a></li>
         </ul>
       </li>

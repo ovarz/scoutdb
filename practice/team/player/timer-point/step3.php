@@ -2,7 +2,7 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $practice_type='endurance';
+  $practice_type='timer-point';
   $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
   require ('../../../../inc/base.php')
 ?>
@@ -27,9 +27,9 @@
       <a aria-label="Player_Full_Name" title="Player_Full_Name" class="breadcrumb-link content_center" href="practice/team/player/">
         <span>Player_Full_Name</span>
       </a>
-      <a aria-label="<?php echo $practice_type; ?>" title="<?php echo $practice_type; ?>" class="breadcrumb-link content_center" 
+      <a aria-label="Timer & Point" title="Timer & Point" class="breadcrumb-link content_center" 
 	  href="practice/team/player/<?php echo $practice_type; ?>/">
-        <span><?php echo $practice_type; ?></span>
+        <span>Timer & Point</span>
       </a>
     </section>
 	
@@ -38,7 +38,7 @@
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label"><?php echo $practice_type; ?></div>
+	    <div class="section-title-label">Timer & Point</div>
 	  </h2>
       <div class="practice-tutorial practice-tutorial-process">
         <div class="practice-tutorial-left">
@@ -77,26 +77,12 @@
 			</div>
             <div class="practice-result-bleep practice-result-data">
 			  <ul class="prb-row">
-			    <li class="prb-label">Level</li>
-			    <li class="prb-info"><?php echo rand(1,20); ?></li>
+			    <li class="prb-label">Time</li>
+			    <li class="prb-info">00:00:00</li>
 			  </ul>
 			  <ul class="prb-row">
-			    <li class="prb-label">Shuttle</li>
-			    <li class="prb-info"><?php echo rand(1,10); ?></li>
-			  </ul>
-			  <ul class="prb-row">
-			    <li class="prb-label">V20 Max</li>
-			    <li class="prb-info"><?php echo rand(10,90); ?>,<?php echo rand(0,9); ?></li>
-			  </ul>
-			  <ul class="prb-row">
-			    <li class="prb-label">Fail History</li>
-			    <li class="prb-info">
-				  <ul>
-				    <?php for ($i=1; $i <= 3 ; $i++) { ?>
-				    <li>00 - 00</li>
-					<?php } ?>
-				  </ul>
-				</li>
+			    <li class="prb-label">Poin</li>
+			    <li class="prb-info">000</li>
 			  </ul>
 			</div>
             <div class="practice-tutorial-action">

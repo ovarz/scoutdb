@@ -57,7 +57,7 @@
       <div class="training-list">
         <?php 
           $training_array = array();
-          $training_array[]=array('training_link'=>'speed','training_name'=>'dribble');
+          $training_array[]=array('training_link'=>'timer-point','training_name'=>'dribble');
           $training_array[]=array('training_link'=>'speed','training_name'=>'passing');
           $training_array[]=array('training_link'=>'speed','training_name'=>'shooting');
           $training_array[]=array('training_link'=>'speed','training_name'=>'control');

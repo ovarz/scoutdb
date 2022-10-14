@@ -2,7 +2,7 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $practice_type='endurance';
+  $practice_type='timer-point';
   $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
   require ('../../../../inc/base.php')
 ?>
@@ -27,9 +27,9 @@
       <a aria-label="Player_Full_Name" title="Player_Full_Name" class="breadcrumb-link content_center" href="practice/team/player/">
         <span>Player_Full_Name</span>
       </a>
-      <a aria-label="<?php echo $practice_type; ?>" title="<?php echo $practice_type; ?>" class="breadcrumb-link content_center" 
+      <a aria-label="Timer & Point" title="Timer & Point" class="breadcrumb-link content_center" 
 	  href="practice/team/player/<?php echo $practice_type; ?>/">
-        <span><?php echo $practice_type; ?></span>
+        <span>Timer & Point</span>
       </a>
     </section>
 	
@@ -38,75 +38,31 @@
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label"><?php echo $practice_type; ?></div>
+	    <div class="section-title-label">Timer & Point</div>
 	  </h2>
       <div class="practice-tutorial practice-tutorial-process">
         <div class="practice-tutorial-left">
 		  <?php require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?>
-		  <div class="ptl-box ptl-comment">
-            <textarea class="plt-comment-box" placeholder="Masukkan komentar......"></textarea>
-			<button aria-label="Submit Comment" class="btn content_center">
-              <span>Submit Comment</span>
-            </button>
-		  </div>
+		  <?php require ($_SERVER['SCOUTDB'].'module/practice-matrix-score.php')?>
         </div>
 		
 		
 		
         <div class="practice-tutorial-right">
           <div class="practice-tutorial-sticky">
-		    <div class="practice-result-info">
-              <ul class="pri-row">
-                <li class="pri-label">Practice ID</li>
-                <li class="pri-data">#123456</li>
-              </ul>
-              <ul class="pri-row">
-                <li class="pri-label">Date & Time</li>
-                <li class="pri-data">00 September 0000 - 00:00</li>
-              </ul>
-			</div>
-		    <div class="practice-result-rating">
-  			  <div class="ptl-title">Rating Result</div>
-			  <div class="rating-icon">
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-filled.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-                <?php require ($_SERVER['SCOUTDB'].'img/icon/star-outline.svg')?>
-			  </div>
-			</div>
-            <div class="practice-result-bleep practice-result-data">
-			  <ul class="prb-row">
-			    <li class="prb-label">Level</li>
-			    <li class="prb-info"><?php echo rand(1,20); ?></li>
-			  </ul>
-			  <ul class="prb-row">
-			    <li class="prb-label">Shuttle</li>
-			    <li class="prb-info"><?php echo rand(1,10); ?></li>
-			  </ul>
-			  <ul class="prb-row">
-			    <li class="prb-label">V20 Max</li>
-			    <li class="prb-info"><?php echo rand(10,90); ?>,<?php echo rand(0,9); ?></li>
-			  </ul>
-			  <ul class="prb-row">
-			    <li class="prb-label">Fail History</li>
-			    <li class="prb-info">
-				  <ul>
-				    <?php for ($i=1; $i <= 3 ; $i++) { ?>
-				    <li>00 - 00</li>
-					<?php } ?>
-				  </ul>
-				</li>
-			  </ul>
+            <div class="practice-countdown">
+			  <div class="practice-countdown-hours">00</div>
+			  <div class="practice-countdown-minutes">00</div>
+			  <div class="practice-countdown-seconds">00</div>
 			</div>
             <div class="practice-tutorial-action">
               <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
-              href="practice/team/player/<?php echo $practice_type; ?>/step1.php">
-                <span>Retake Practice</span>
+              href="practice/team/player/<?php echo $practice_type; ?>/">
+                <span>Cancel</span>
               </a>
               <a aria-label="Start Practice" title="Start Practice" class="btn pta-button pta-button-start content_center" 
-              href="practice/team/player/<?php echo $practice_type; ?>/result.php">
-                <span>Submit Practice</span>
+              href="practice/team/player/<?php echo $practice_type; ?>/step2.php">
+                <span>Start Practice</span>
               </a>
             </div>
           </div>    

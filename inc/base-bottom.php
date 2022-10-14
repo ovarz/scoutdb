@@ -15,25 +15,46 @@
 </div>
 
 
-
-<?php if($practice_type == 'endurance') { ?>
-<div id="popup-V20" class="rancak-popup hide">
-  <div class="rancak-popup-overlay"></div>
-  <button title="Close" class="popup-close-button rancak-popup-close content_center">
-    <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
-  </button>
-  <div class="rancak-popup-container content_center">
-    <div class="rancak-popup-box popup-v20">
-	  <div class="popup-v20-label">Input V20 Max</div>
-	  <input type="text" class="popup-v20-field" placeholder="Input Number Here"
-	  onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"/>
-	  <div class="popup-v20-action">
-	    <button title="No" class="btn popup-close-button popup-v20-cancel">Cancel</button>
-	    <button title="Yes" class="btn popup-v20-save" onclick="location.href='practice/team/player/endurance/step3.php';">Save</button>
-	  </div>
-	</div>
-  </div>
-</div>
+<?php if (isset($practice_type)){ ?>
+  <?php if($practice_type == 'endurance'){ ?>
+    <div id="popup-V20" class="rancak-popup hide">
+      <div class="rancak-popup-overlay"></div>
+      <button title="Close" class="popup-close-button rancak-popup-close content_center">
+        <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
+      </button>
+      <div class="rancak-popup-container content_center">
+        <div class="rancak-popup-box popup-v20">
+          <div class="popup-v20-label">Input V20 Max</div>
+          <input type="text" class="popup-v20-field" placeholder="Input Number Here"
+          onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"/>
+          <div class="popup-v20-action">
+            <button title="No" class="btn popup-close-button popup-v20-cancel">Cancel</button>
+            <button title="Yes" class="btn popup-v20-save" onclick="location.href='practice/team/player/<?php echo $practice_type; ?>/step3.php';">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
+  
+  <?php if($practice_type == 'timer-point'){ ?>
+    <div id="popup-TimerPoint" class="rancak-popup hide">
+      <div class="rancak-popup-overlay"></div>
+      <button title="Close" class="popup-close-button rancak-popup-close content_center">
+        <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
+      </button>
+      <div class="rancak-popup-container content_center">
+        <div class="rancak-popup-box popup-v20">
+          <div class="popup-v20-label">Input Poin</div>
+          <input type="text" class="popup-v20-field" placeholder="Input Number Here"
+          onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"/>
+          <div class="popup-v20-action">
+            <button title="No" class="btn popup-close-button popup-v20-cancel">Cancel</button>
+            <button title="Yes" class="btn popup-v20-save" onclick="location.href='practice/team/player/<?php echo $practice_type; ?>/step3.php';">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
 <?php } ?>
 
 
