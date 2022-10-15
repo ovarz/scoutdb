@@ -43,7 +43,7 @@
       <div class="practice-tutorial practice-tutorial-process">
         <div class="practice-tutorial-left">
 		  <?php require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?>
-		  <?php $comment_reply='no'; require ($_SERVER['SCOUTDB'].'module/comment.php')?>
+		  <?php $comment_reply='yes'; require ($_SERVER['SCOUTDB'].'module/comment.php')?>
         </div>
 		
 		
@@ -79,10 +79,6 @@
               <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
               href="practice/team/player/<?php echo $practice_type; ?>/step1.php">
                 <span>Retake Practice</span>
-              </a>
-              <a aria-label="Start Practice" title="Start Practice" class="btn pta-button pta-button-start content_center" 
-              href="practice/team/player/<?php echo $practice_type; ?>/result.php">
-                <span>Submit Practice</span>
               </a>
             </div>
           </div>    

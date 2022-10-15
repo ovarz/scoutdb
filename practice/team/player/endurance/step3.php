@@ -43,12 +43,7 @@
       <div class="practice-tutorial practice-tutorial-process">
         <div class="practice-tutorial-left">
 		  <?php require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?>
-		  <div class="ptl-box ptl-comment">
-            <textarea class="plt-comment-box" placeholder="Masukkan komentar......"></textarea>
-			<button aria-label="Submit Comment" class="btn content_center">
-              <span>Submit Comment</span>
-            </button>
-		  </div>
+		  <?php $comment_reply='no'; require ($_SERVER['SCOUTDB'].'module/comment.php')?>
         </div>
 		
 		
