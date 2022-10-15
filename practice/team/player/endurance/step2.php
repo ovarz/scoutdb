@@ -64,13 +64,15 @@
 				</div>
 			  </div>
 			  <button class="practice-bleep-container practice-bleep-fail">
-				<div class="practice-bleep-box">
+				<div class="practice-score-box">
+				  <?php require ($_SERVER['SCOUTDB'].'img/icon/bleep-fail.svg')?>
 				  <b>0</b>
 				</div>
 			    <div class="practice-bleep-button">Fail</div>
 			  </button>
 			  <button class="practice-bleep-container practice-bleep-success">
-				<div class="practice-bleep-box">
+				<div class="practice-score-box">
+				  <?php require ($_SERVER['SCOUTDB'].'img/icon/bleep-success.svg')?>
 				  <b>1</b>
 				</div>
 			    <div class="practice-bleep-button">Success</div>

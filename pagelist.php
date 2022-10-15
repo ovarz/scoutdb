@@ -66,6 +66,7 @@
           <li><a class="pagelist-row" href="practice/team/player/timer-point/step3.php">Halaman Training Timer & Poin - Selesai</a></li>
           <li><a class="pagelist-row" href="practice/team/player/timer-point/result.php">Halaman Training Timer & Poin - Hasil</a></li>
 		  
+          <li><a class="pagelist-row" href="practice/team/player/speed/finish.php">Halaman Detail Hasil Training</a></li>
           <li><a class="pagelist-row" href="practice/team/player/result-player.php">Halaman Hasil Training - Per Pemain</a></li>
         </ul>
       </li>
@@ -82,7 +83,11 @@
 		  <?php 
             $icon_array = array();
             $icon_array[]=array('icon_id'=>'back');
+            $icon_array[]=array('icon_id'=>'bleep-fail');
+            $icon_array[]=array('icon_id'=>'bleep-success');
             $icon_array[]=array('icon_id'=>'calendar');
+            $icon_array[]=array('icon_id'=>'close');
+            $icon_array[]=array('icon_id'=>'delete');
             $icon_array[]=array('icon_id'=>'dropdown');
             $icon_array[]=array('icon_id'=>'google');
             $icon_array[]=array('icon_id'=>'home');
@@ -108,6 +113,7 @@
             $icon_array[]=array('icon_id'=>'star-outline');
             $icon_array[]=array('icon_id'=>'switch');
             $icon_array[]=array('icon_id'=>'sync');
+            $icon_array[]=array('icon_id'=>'upload');
 		    foreach($icon_array as $icon_list){ 
 		  ?>
 		  <a class="icon-link" href="img/icon/<?php echo($icon_list['icon_id'])?>.svg" target="_blank">
