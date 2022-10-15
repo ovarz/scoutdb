@@ -2,7 +2,7 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $practice_type='timer-point';
+  $practice_type='dribble';
   $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
   require ('../../../../inc/base.php')
 ?>
@@ -27,9 +27,9 @@
       <a aria-label="Player_Full_Name" title="Player_Full_Name" class="breadcrumb-link content_center" href="practice/team/player/">
         <span>Player_Full_Name</span>
       </a>
-      <a aria-label="Timer & Point" title="Timer & Point" class="breadcrumb-link content_center" 
+      <a aria-label="Dribble" title="Dribble" class="breadcrumb-link content_center" 
 	  href="practice/team/player/<?php echo $practice_type; ?>/">
-        <span>Timer & Point</span>
+        <span>Dribble</span>
       </a>
     </section>
 	
@@ -38,7 +38,7 @@
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label">Timer & Point - Practice Report</div>
+	    <div class="section-title-label">Dribble - Practice Report</div>
 		<div class="practice-result-search">
 		  <input class="search-field" name="" type="text" placeholder="Search by player name.....">
 		  <button title="Search" class="search-button">

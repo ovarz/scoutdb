@@ -77,10 +77,6 @@
 			  </button>
 			</div>
             <div class="practice-tutorial-action">
-              <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
-              href="practice/team/player/<?php echo $practice_type; ?>/step1.php">
-                <span>Cancel</span>
-              </a>
               <button title="V20" class="btn open-popup pta-button pta-button-start content_center">
                 <span>Finish Practice</span>
               </button>

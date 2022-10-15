@@ -2,8 +2,8 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $practice_type='timer-point';
-  $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
+  $practice_type='dribble';
+  $backto_link='practice/team/player/'; $backto_label='Player';
   require ('../../../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
@@ -27,10 +27,9 @@
       <a aria-label="Player_Full_Name" title="Player_Full_Name" class="breadcrumb-link content_center" href="practice/team/player/">
         <span>Player_Full_Name</span>
       </a>
-      <a aria-label="Timer & Point" title="Timer & Point" class="breadcrumb-link content_center" 
-	  href="practice/team/player/<?php echo $practice_type; ?>/">
-        <span>Timer & Point</span>
-      </a>
+      <div class="breadcrumb-link content_center">
+        <span>Dribble</span>
+      </div>
     </section>
 	
 	
@@ -38,31 +37,47 @@
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label">Timer & Point</div>
+	    <div class="section-title-label"><?php echo $practice_type; ?></div>
 	  </h2>
-      <div class="practice-tutorial practice-tutorial-process">
+      <div class="practice-tutorial">
         <div class="practice-tutorial-left">
-		  <?php require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?>
-		  <?php require ($_SERVER['SCOUTDB'].'module/practice-matrix-score.php')?>
+          <div class="ptl-box">
+		    <button title="Practice Info" class="ptl-toggle">
+			  <span>
+			    <div class="ptl-toggle-label">Practice Objective</div>
+			    <?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+			  </span>
+			</button>
+            <ul class="ptl-list">
+              <?php for ($i=1; $i <= 3 ; $i++) { ?>
+              <li><?php echo $random_keyword[array_rand($random_keyword)]; ?></li>
+              <?php } ?>
+            </ul>
+          </div>
+          <div class="ptl-box">
+		    <button title="Practice Info" class="ptl-toggle">
+			  <span>
+			    <div class="ptl-toggle-label">Equipments Needed</div>
+			    <?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+			  </span>
+			</button>
+            <ul class="ptl-list">
+              <?php for ($i=1; $i <= 7 ; $i++) { ?>
+              <li><?php echo $random_keyword[array_rand($random_keyword)]; ?></li>
+              <?php } ?>
+            </ul>
+          </div>
         </div>
-		
-		
-		
         <div class="practice-tutorial-right">
           <div class="practice-tutorial-sticky">
-            <div class="practice-countdown">
-			  <div class="practice-countdown-hours">00</div>
-			  <div class="practice-countdown-minutes">00</div>
-			  <div class="practice-countdown-seconds">01</div>
-			</div>
+            <div class="practice-tutorial-video flex_ori thumb-loading">
+              <iframe width="560" height="315" class="lazyload" data-original="https://www.youtube.com/embed/VZrt9geh6xA?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <div class="practice-tutorial-action">
-              <a aria-label="Cancel Practice" title="Cancel Practice" class="btn pta-button pta-button-cancel content_center" 
+              <a aria-label="Start Practice" title="Back" class="btn pta-button pta-button-full pta-button-start content_center" 
               href="practice/team/player/<?php echo $practice_type; ?>/step1.php">
-                <span>Cancel</span>
+                <span>Start Practice</span>
               </a>
-              <button title="TimerPoint" class="btn open-popup pta-button pta-button-start content_center">
-                <span>Finish Practice</span>
-              </button>
             </div>
           </div>    
         </div>

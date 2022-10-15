@@ -36,7 +36,7 @@
     </div>
   <?php } ?>
   
-  <?php if($practice_type == 'timer-point'){ ?>
+  <?php if($practice_type == 'dribble'){ ?>
     <div id="popup-TimerPoint" class="rancak-popup hide">
       <div class="rancak-popup-overlay"></div>
       <button title="Close" class="popup-close-button rancak-popup-close content_center">

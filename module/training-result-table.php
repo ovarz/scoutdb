@@ -1,4 +1,4 @@
-<div class="rpp-column rpp-detail">
+<a aria-label="Hasil Latihan" title="Hasil Latihan" class="rpp-column rpp-detail" href="practice/team/player/speed/step3.php">
   <?php if($practice_table == 'contain') { ?>
     <div class="rpp-time">00:00</div>
     <div class="rpp-time rating-icon">
@@ -13,4 +13,4 @@
   <?php if($practice_table == 'empty') { ?>
     <div class="rpp-empty">-</div>
   <?php } ?>
-</div>
+</a>
