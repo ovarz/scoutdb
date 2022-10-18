@@ -31,13 +31,6 @@ padding-bottom:var(--size-4); border-bottom:1px dashed rgb(var(--color-border) /
 .vlc-info-label{position:relative; padding-right:var(--size-1);}
 .vlc-info-label:after{content:':'; display:block; position:absolute; top:0; right:0; height:100%;}
 
-.vlc-match-row{--emblem-size:50px; display:grid; grid-template-columns:1fr var(--emblem-size) 1fr; grid-gap:var(--size-2);}
-.vlc-match-row *{text-align:center;}
-.vlc-match-emblem{height:var(--emblem-size); margin-bottom:var(--size-2);}
-.vlc-match-emblem:before{padding-top:100%;}
-.vlc-match-emblem img{max-width:var(--emblem-size); max-height:var(--emblem-size);}
-.vlc-match-vs b{font-weight:900;}
-
 
 
 .videoplayer-left{display:block;}

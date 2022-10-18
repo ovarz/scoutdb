@@ -18,11 +18,41 @@
     <section aria-label="Section Competition" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label">Choose Your Player</div>
+	    <div class="section-title-label">Choose Match</div>
+		<div class="section-title-filter">
+		  <div class="stf-box">
+		    <select class="stf-field">
+              <option value="1">- All Competition -</option>
+              <option value="2">Competition A</option>
+              <option value="2">Competition B</option>
+              <option value="2">Competition C</option>
+            </select>
+			<?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+		  </div>
+		  <div class="stf-box">
+		    <select class="stf-field">
+              <option value="1">- All Stage -</option>
+              <option value="2">Group</option>
+              <option value="3">Round 32</option>
+              <option value="4">Round 16</option>
+              <option value="5">Round 8</option>
+              <option value="6">Round 4</option>
+              <option value="7">Round 2</option>
+            </select>
+			<?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+		  </div>
+		  <div class="stf-box">
+		    <button class="btn stf-button content_center">
+			  <span>Filter</span>
+			</button>
+		  </div>
+		</div>
 	  </h2>
-      <div class="player-list">
-        <?php for ($i=1; $i <= 20 ; $i++) { ?>
-          <?php $player_link='competition/player/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
+      <div class="match-list">
+        <?php for ($i=1; $i <= 6 ; $i++) { ?>
+		  <a aria-label="MATCH_A_VS_B" title="MATCH_A_VS_B" class="match-link" href="competition/match/">
+            <?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
+		  </a>
         <?php } ?>
       </div>
     </section>

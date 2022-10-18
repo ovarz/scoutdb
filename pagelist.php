@@ -38,6 +38,14 @@
         <a class="pagelist-row" href="home.php">Halaman Daftar Menu</a>
       </li>
       <li>
+        <div class="pagelist-row">Halaman Competition</div>  
+        <ul>
+          <li><a class="pagelist-row" href="competition/">Halaman Player Scouting - Pilih Pertandingan</a></li>
+          <li><a class="pagelist-row" href="competition/match/">Halaman Player Scouting - Pilih Pemain</a></li>
+          <li><a class="pagelist-row" href="competition/match/player/">Halaman Player Scouting - Detail</a></li>
+        </ul>
+      </li>
+      <li>
         <div class="pagelist-row">Halaman Practice</div>  
         <ul>
           <li><a class="pagelist-row" href="practice/">Halaman Daftar Team</a></li>

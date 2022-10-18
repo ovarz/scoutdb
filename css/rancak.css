@@ -127,6 +127,20 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
 
 
 
+.match-list{display:grid; grid-template-columns:repeat(auto-fill, minmax(275px,1fr)); grid-gap:var(--size-3);}
+.match-link{padding:var(--size-3); border:1px solid;}
+
+
+
+.vlc-match-row{--emblem-size:50px; display:grid; grid-template-columns:1fr var(--emblem-size) 1fr; grid-gap:var(--size-2);}
+.vlc-match-row *{text-align:center;}
+.vlc-match-emblem{height:var(--emblem-size); margin-bottom:var(--size-2);}
+.vlc-match-emblem:before{padding-top:100%;}
+.vlc-match-emblem img{max-width:var(--emblem-size); max-height:var(--emblem-size);}
+.vlc-match-vs b{font-weight:900;}
+
+
+
 
 
 @media screen and (min-width:0px) and (max-width:1023px){

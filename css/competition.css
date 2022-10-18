@@ -1,0 +1,8 @@
+.section-title-filter{display:flex; font-size:14px; align-items:center; align-content:center; margin-left:auto;}
+.stf-box, .stf-box > *{height:100%;}
+.stf-box{position:relative; margin-left:var(--size-2);}
+.stf-field{position:relative; z-index:1000; padding:0 var(--size-2); padding-right:var(--size-5); background-color:transparent; color:var(--color-default-2);
+border:1px solid rgb(var(--color-border) / 55%); border-radius:var(--rounded-1);}
+.stf-field option{color:var(--bg-1);}
+.stf-box .svgicon{position:absolute; z-index:1; top:9px; right:9px; fill:rgb(var(--color-border) / 55%); width:auto; height:34%;}
+button.stf-button{padding:0 var(--size-4); border-radius:var(--rounded-1) !important;}

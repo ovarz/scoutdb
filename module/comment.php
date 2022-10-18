@@ -7,6 +7,7 @@
 
 
 
+<?php if($comment_reply == 'yes') { ?>
 <div class="ptl-box ptl-postcomment">
   <div class="ptl-title">Comments</div>
   <div class="ptl-postcomment-box">
@@ -28,3 +29,4 @@
 	<?php } ?>
   </div>
 </div>
+<?php } ?>

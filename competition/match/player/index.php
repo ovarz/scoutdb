@@ -3,8 +3,8 @@
   $menu='full';
   $channel='competition';
   $subchannel='player-scouting';
-  $backto_link='competition/'; $backto_label='competition';
-  require ('../../inc/base.php')
+  $backto_link='competition/match/'; $backto_label='player';
+  require ('../../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
