@@ -39,8 +39,9 @@
               <option value="3">Round 32</option>
               <option value="4">Round 16</option>
               <option value="5">Round 8</option>
-              <option value="6">Round 4</option>
-              <option value="7">Round 2</option>
+              <option value="6">Quarter Final</option>
+              <option value="7">Semi Final</option>
+              <option value="8">Final</option>
             </select>
 			<?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
 		  </div>
@@ -54,7 +55,8 @@
       <div class="match-list">
         <?php for ($i=1; $i <= 6 ; $i++) { ?>
 		  <a aria-label="MATCH_A_VS_B" title="MATCH_A_VS_B" class="match-link" href="competition/match/">
-            <?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
+            <?php $channel_origin='competition'; 
+			require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
 		  </a>
         <?php } ?>
       </div>

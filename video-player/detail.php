@@ -25,7 +25,8 @@
           Video Player
         </a>
       </div>
-      <?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
+      <?php $channel_origin='video-player'; 
+	  require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
       <?php require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
     </section>
 

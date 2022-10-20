@@ -138,6 +138,10 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
 .vlc-match-emblem:before{padding-top:100%;}
 .vlc-match-emblem img{max-width:var(--emblem-size); max-height:var(--emblem-size);}
 .vlc-match-vs b{font-weight:900;}
+.vlc-competition-name, .vlc-competition-info{margin-top:var(--size-2); font-weight:normal; color:var(--color-default-1);}
+.vlc-competition-name{text-align:center;}
+.vlc-competition-info{display:flex; flex-wrap:wrap; justify-content:center; line-height:100%;}
+.vlc-competition-info > div:not(:last-child){padding-right:var(--size-2); margin-right:var(--size-2); border-right:1px solid;}
 
 
 

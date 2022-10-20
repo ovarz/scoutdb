@@ -70,7 +70,8 @@
               </div>
             </div>
           </div>
-          <?php require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
+          <?php $channel_origin='video-player'; 
+	      require ($_SERVER['SCOUTDB'].'module/video-player-info.php')?>
           <?php require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
         </a>
 		<?php } ?>
