@@ -2,6 +2,9 @@
   $page='welcome';
   $menu='full';
   $channel='home';
+  $report='no';
+  $report_link='';
+  $report_label='';
   $backto_link=''; $backto_label='';
   require ('inc/base.php')
 ?>

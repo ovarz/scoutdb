@@ -3,12 +3,15 @@
   $menu='full';
   $channel='competition';
   $subchannel='player-scouting';
+  $report='no';
+  $report_link='';
+  $report_label='';
   $backto_link='competition/'; $backto_label='player scouting';
   require ('../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
-<?php $practice_result='none'; require ($_SERVER['SCOUTDB'].'inc/header.php')?>
+<?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-competition.php')?>
 <link rel="stylesheet" type="text/css" href="css/competition.css?<?php echo $anticache; ?>"/>

@@ -2,12 +2,15 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
+  $report='no';
+  $report_link='';
+  $report_label='';
   $backto_link='home.php'; $backto_label='Home';
   require ('../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
-<?php $practice_result='none'; require ($_SERVER['SCOUTDB'].'inc/header.php')?>
+<?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <div class="rancak-container">
   <span class="width-max">

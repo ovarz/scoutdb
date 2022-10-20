@@ -2,6 +2,9 @@
   $page='dashboard';
   $menu='min';
   $channel='video-player';
+  $report='no';
+  $report_link='';
+  $report_label='';
   $backto_link='video-player/'; $backto_label='Video Player';
   require ('../inc/base.php')
 ?>

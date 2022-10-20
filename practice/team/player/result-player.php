@@ -2,12 +2,15 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
+  $report='yes';
+  $report_link='practice/team/player/speed/result.php';
+  $report_label='Switch To Practice Report';
   $backto_link='practice/team/player/'; $backto_label='Player';
   require ('../../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
-<?php $practice_result='player'; require ($_SERVER['SCOUTDB'].'inc/header.php')?>
+<?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
 <link rel="stylesheet" type="text/css" href="css/practice.css?<?php echo $anticache; ?>"/>
 <div class="rancak-container">
