@@ -2,9 +2,9 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $report='no';
-  $report_link='';
-  $report_label='';
+  $report='yes';
+  $report_link='practice/team/';
+  $report_label='Report';
   $backto_link='practice/'; $backto_label='Practice';
   require ('../../inc/base.php')
 ?>
