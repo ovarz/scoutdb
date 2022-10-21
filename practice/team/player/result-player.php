@@ -2,9 +2,9 @@
   $page='dashboard';
   $menu='full';
   $channel='practice';
-  $report='yes';
-  $report_link='practice/team/player/speed/result.php';
-  $report_label='Switch To Practice Report';
+  $report='no';
+  $report_link='';
+  $report_label='';
   $backto_link='practice/team/player/'; $backto_label='Player';
   require ('../../../inc/base.php')
 ?>

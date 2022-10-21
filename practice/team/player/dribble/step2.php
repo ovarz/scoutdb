@@ -4,7 +4,7 @@
   $channel='practice';
   $practice_type='dribble';
   $report='yes';
-  $report_link='practice/team/player/result-player.php';
+  $report_link='practice/team/player/'.$practice_type.'/result.php';
   $report_label='Report';
   $backto_link='practice/team/player/'.$practice_type.'/'; $backto_label=$practice_type;
   require ('../../../../inc/base.php')

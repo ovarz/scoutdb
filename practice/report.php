@@ -5,7 +5,7 @@
   $report='yes';
   $report_link='practice/report.php';
   $report_label='Report';
-  $backto_link='home.php'; $backto_label='Home';
+  $backto_link='practice/'; $backto_label='Practice';
   require ('../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
@@ -19,8 +19,11 @@
       <a aria-label="Home" title="Home" class="breadcrumb-link content_center" href="home.php">
         <?php require ($_SERVER['SCOUTDB'].'img/icon/home.svg')?>
       </a>
-      <div class="breadcrumb-link content_center">
+      <a aria-label="Practice" title="Practice" class="breadcrumb-link content_center" href="practice/">
         <span>Practice</span>
+      </a>
+      <div class="breadcrumb-link content_center">
+        <span>Report</span>
       </div>
     </section>
 	
@@ -29,11 +32,11 @@
     <section aria-label="Section Practice" class="section-container">
       <h2 class="section-title">
 	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label">Choose Your Team</div>
+	    <div class="section-title-label">Choose Your Player</div>
 	  </h2>
-      <div class="team-list">
+      <div class="player-list">
         <?php for ($i=1; $i <= 20 ; $i++) { ?>
-          <?php $team_link='practice/team/'; require ($_SERVER['SCOUTDB'].'module/team-list.php')?>
+          <?php $player_link='practice/team/player/result-player.php'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
         <?php } ?>
       </div>
     </section>

@@ -3,7 +3,7 @@
   $menu='full';
   $channel='practice';
   $report='yes';
-  $report_link='practice/team/';
+  $report_link='practice/report.php';
   $report_label='Report';
   $backto_link='practice/'; $backto_label='Practice';
   require ('../../inc/base.php')

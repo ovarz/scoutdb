@@ -20,7 +20,7 @@
 
     <section aria-label="Section Competition" class="section-container">
       <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
+	    <div class="section-title-icon"><img alt="img_title" class="lazyload" data-original="img/sample/team-<?php echo rand(1,20); ?>.svg" /></div>
 	    <div class="section-title-label">Team A</div>
 	  </h2>
       <div class="player-list">
@@ -34,7 +34,7 @@
 
     <section aria-label="Section Competition" class="section-container">
       <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
+	    <div class="section-title-icon"><img alt="img_title" class="lazyload" data-original="img/sample/team-<?php echo rand(1,20); ?>.svg" /></div>
 	    <div class="section-title-label">Team B</div>
 	  </h2>
       <div class="player-list">

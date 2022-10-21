@@ -4,7 +4,7 @@
   $channel='practice';
   $practice_type='power';
   $report='yes';
-  $report_link='practice/team/player/result-player.php';
+  $report_link='practice/team/player/'.$practice_type.'/result.php';
   $report_label='Report';
   $backto_link='practice/team/player/'; $backto_label='Player';
   require ('../../../../inc/base.php')
