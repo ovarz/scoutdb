@@ -150,11 +150,11 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
 .table-filter-container .svgicon{width:16px; height:auto;}
 .table-filter-label{margin-bottom:0;}
 .table-filter-sort, .table-filter-search, .table-filter-date{position:relative; margin-left:var(--size-3);}
-.table-filter-field{position:relative; z-index:1000; padding:var(--size-3); padding-right:var(--size-6); width:180px; border:1px solid;}
+.table-filter-field{position:relative; z-index:1000; padding:var(--size-3); padding-right:44px; width:180px; border:1px solid;}
 .table-filter-dropdown, .table-filter-button{position:absolute; z-index:2000; right:0; top:0; width:var(--size-6); height:100%;}
 .table-filter-dropdown{z-index:1;}
 
-.table-filter-sort .table-filter-field{width:120px;}
+.table-filter-sort .table-filter-field{width:140px;}
 
 
 

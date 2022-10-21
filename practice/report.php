@@ -36,6 +36,17 @@
 	      <div class="section-title-label">Choose Your Player</div>
 		</h2>
         <div class="table-filter-container">
+          <div class="table-filter-sort">
+            <select class="table-filter-field">
+              <option value="1">- All Team -</option>
+              <option value="2">Team A</option>
+              <option value="3">Team B</option>
+              <option value="4">Team C</option>
+            </select>
+            <div class="table-filter-dropdown content_center">
+              <?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+            </div>
+          </div>
           <div class="table-filter-search">
             <input class="table-filter-field" placeholder="Input keyword......" type="text">
             <button title="Cari" class="table-filter-button content_center">

@@ -19,21 +19,25 @@
   <span class="width-max">
 
     <section aria-label="Section Competition" class="section-container">
-      <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
-	    <div class="section-title-label">Choose Match</div>
-		<div class="section-title-filter">
-		  <div class="stf-box">
-		    <select class="stf-field">
+      <div class="table-filter">
+        <h2 class="section-title table-filter-label">
+	      <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
+	      <div class="section-title-label">Choose Match</div>
+		</h2>
+        <div class="table-filter-container">
+          <div class="table-filter-sort">
+            <select class="table-filter-field">
               <option value="1">- All Competition -</option>
               <option value="2">Competition A</option>
               <option value="2">Competition B</option>
               <option value="2">Competition C</option>
             </select>
-			<?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
-		  </div>
-		  <div class="stf-box">
-		    <select class="stf-field">
+            <div class="table-filter-dropdown content_center">
+              <?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+            </div>
+          </div>
+          <div class="table-filter-sort">
+            <select class="table-filter-field">
               <option value="1">- All Stage -</option>
               <option value="2">Group</option>
               <option value="3">Round 32</option>
@@ -43,15 +47,17 @@
               <option value="7">Semi Final</option>
               <option value="8">Final</option>
             </select>
-			<?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
-		  </div>
-		  <div class="stf-box">
-		    <button class="btn stf-button content_center">
+            <div class="table-filter-dropdown content_center">
+              <?php require ($_SERVER['SCOUTDB'].'img/icon/dropdown.svg')?>
+            </div>
+          </div>
+		  <div class="table-filter-sort">
+		    <button class="btn table-filter-submit content_center">
 			  <span>Filter</span>
 			</button>
 		  </div>
-		</div>
-	  </h2>
+        </div>
+      </div>
       <div class="match-list">
         <?php for ($i=1; $i <= 6 ; $i++) { ?>
 		  <a aria-label="MATCH_A_VS_B" title="MATCH_A_VS_B" class="match-link" href="competition/match/">
