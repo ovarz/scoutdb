@@ -138,10 +138,28 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
 .vlc-match-emblem:before{padding-top:100%;}
 .vlc-match-emblem img{max-width:var(--emblem-size); max-height:var(--emblem-size);}
 .vlc-match-vs b{font-weight:900;}
-.vlc-competition-name, .vlc-competition-info{margin-top:var(--size-2); font-weight:normal; color:var(--color-default-1);}
+.vlc-competition-name, .vlc-competition-info{margin-top:var(--size-2); font-weight:normal;}
 .vlc-competition-name{text-align:center;}
 .vlc-competition-info{display:flex; flex-wrap:wrap; justify-content:center; line-height:100%;}
 .vlc-competition-info > div:not(:last-child){padding-right:var(--size-2); margin-right:var(--size-2); border-right:1px solid;}
+
+
+
+.ptl-profile, .ptl-player-info, .ptl-player-row{display:grid;}
+.ptl-profile{grid-gap:var(--size-4); grid-template-columns:100px 1fr;}
+.ptl-player-info{grid-gap:var(--size-2);}
+.ptl-player-row{grid-gap:var(--size-2); grid-template-columns:110px 1fr; padding-bottom:var(--size-2); border-bottom:1px dashed;}
+.ptl-player-label{padding-right:var(--size-2); position:relative;}
+.ptl-player-label:after{content:':'; display:block; position:absolute; right:0; top:0;}
+
+.ptl-player-frame:before{padding-top:100%;}
+
+
+
+.plt-comment-box{padding:var(--size-4); min-height:144px; width:100%; background-color:rgb(var(--color-border) / 5%);
+border:1px solid rgb(var(--color-border) / 1%); border-radius:var(--rounded-2); color:var(--color-default-2);
+box-shadow:inset -3px -3px 12px rgba(0,0,0,.3), inset 3px 3px 18px rgba(0,0,0,.3);}
+.ptl-comment .btn{margin-top:var(--size-2);}
 
 
 
@@ -153,4 +171,10 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
   .header-logo{padding-left:var(--size-4);}
   .side-profile{--thumb-size:var(--icon-size);}
   .side-profile-name{display:none;}
+}
+
+
+
+@media screen and (min-width:1180px){
+  .ptl-profile{grid-template-columns:242px 1fr;}
 }

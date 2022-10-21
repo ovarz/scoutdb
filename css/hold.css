@@ -117,6 +117,16 @@ background-color:var(--bg-4); border-radius:var(--rounded-1);}
 
 
 
+.vlc-competition-name, .vlc-competition-info{color:var(--color-default-1);}
+
+
+
+.ptl-player-row{border-color:rgb(var(--color-border) / 13%);}
+.ptl-player-frame{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);
+background:radial-gradient(rgb(var(--color-border) / 0%) 0%, rgb(var(--color-border) / 13%) 100%);}
+
+
+
 footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 13%);}
 footer > *{padding:var(--size-4);}
 

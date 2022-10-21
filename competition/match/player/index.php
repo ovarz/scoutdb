@@ -25,12 +25,16 @@
 	    <div class="psd-container psd-container-center">
 		  <div class="psd-box psd-main">
 		    <div class="psd-main-head">
-			  <button title="PlayerBio" class="psd-main-button psd-main-curr">Player Bio</button>
-			  <button title="PlayerStat" class="psd-main-button">Player Stat</button>
-			  <button title="Video" class="psd-main-button">Video</button>
-			  <button title="Notes" class="psd-main-button">Notes</button>
+			  <button title="Player Bio" data-content="practice-player-profile"
+			  class="psd-main-button psd-main-curr">Player Bio</button>
+			  <button title="Player Stat" data-content="competition-player-stat" 
+			  class="psd-main-button">Player Stat</button>
+			  <button title="Video" data-content="competition-video"
+			  class="psd-main-button">Video</button>
+			  <button title="Notes" data-content="comment"
+			  class="psd-main-button">Notes</button>
 			</div>
-			<div class="psd-main-content">tes</div>
+			<div class="psd-main-content"><?php $comment_reply='no'; require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?></div>
 		  </div>
 		  
 		  <div class="psd-center-split">
@@ -121,5 +125,6 @@
 	
   </span>
 </div>
+<script defer rancak-hold="js/competition.js"></script>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>

@@ -20,7 +20,7 @@
 
     <section aria-label="Section Competition" class="section-container">
       <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
 	    <div class="section-title-label">Choose Match</div>
 		<div class="section-title-filter">
 		  <div class="stf-box">

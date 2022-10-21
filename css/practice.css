@@ -22,14 +22,6 @@ padding-bottom:var(--size-2); margin-bottom:var(--size-2); border-bottom:1px das
 .ptl-rating-star{grid-gap:var(--size-1); margin-right:var(--size-3);}
 .ptl-rating-star .svgicon{width:var(--size-3);}
 
-.ptl-profile, .ptl-player-info, .ptl-player-row{display:grid;}
-.ptl-profile{grid-gap:var(--size-4); grid-template-columns:100px 1fr;}
-.ptl-player-info{grid-gap:var(--size-2);}
-.ptl-player-row{grid-gap:var(--size-2); grid-template-columns:110px 1fr;
-padding-bottom:var(--size-2); border-bottom:1px dashed rgb(var(--color-border) / 13%);}
-.ptl-player-label{padding-right:var(--size-2); position:relative;}
-.ptl-player-label:after{content:':'; display:block; position:absolute; right:0; top:0;}
-
 .ptl-toggle{padding-bottom:var(--size-2); margin-bottom:var(--size-2); border-bottom:1px solid rgb(var(--color-border) / 55%); width:100%;
 color:var(--color-default-2) !important; fill:var(--color-default-2) !important;}
 .ptl-toggle > span{display:flex; justify-content:space-between; align-items:center;}
@@ -90,12 +82,6 @@ border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2);
 
 
 
-.ptl-player-frame{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);
-background:radial-gradient(rgb(var(--color-border) / 0%) 0%, rgb(var(--color-border) / 13%) 100%);}
-.ptl-player-frame:before{padding-top:100%;}
-
-
-
 .practice-result-info{margin-bottom:var(--size-4);}
 .practice-result-rating{margin-bottom:var(--size-4);}
 .practice-result-data{margin-bottom:var(--size-4);}
@@ -114,13 +100,6 @@ border-bottom:1px dashed rgb(var(--color-border) / 21%); color:var(--color-defau
 .pri-row{display:grid; grid-template-columns:100px 1fr; grid-gap:var(--size-2); padding-bottom:var(--size-2);}
 .pri-label{position:relative;}
 .pri-label:after{content:':'; display:block; position:absolute; top:0; right:0;}
-
-
-
-.plt-comment-box{padding:var(--size-4); min-height:144px; width:100%; background-color:rgb(var(--color-border) / 5%);
-border:1px solid rgb(var(--color-border) / 1%); border-radius:var(--rounded-2); color:var(--color-default-2);
-box-shadow:inset -3px -3px 12px rgba(0,0,0,.3), inset 3px 3px 18px rgba(0,0,0,.3);}
-.ptl-comment .btn{margin-top:var(--size-2);}
 
 
 
@@ -193,5 +172,4 @@ border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2);
 @media screen and (min-width:1180px){
   .practice-tutorial{grid-template-columns:1fr 480px;}
   .practice-tutorial-process{grid-template-columns:1fr 360px;}
-  .ptl-profile{grid-template-columns:242px 1fr;}
 }

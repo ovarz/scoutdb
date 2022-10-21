@@ -16,15 +16,29 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-competition.php')?>
 <link rel="stylesheet" type="text/css" href="css/competition.css?<?php echo $anticache; ?>"/>
 <div class="rancak-container">
-  <span class="width-max">
+  <span class="width-max split-versus">
 
     <section aria-label="Section Competition" class="section-container">
       <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label">Choose Your Player</div>
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
+	    <div class="section-title-label">Team A</div>
 	  </h2>
       <div class="player-list">
-        <?php for ($i=1; $i <= 20 ; $i++) { ?>
+        <?php for ($i=1; $i <= 11 ; $i++) { ?>
+          <?php $player_link='competition/match/player/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
+        <?php } ?>
+      </div>
+    </section>
+
+
+
+    <section aria-label="Section Competition" class="section-container">
+      <h2 class="section-title">
+	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
+	    <div class="section-title-label">Team B</div>
+	  </h2>
+      <div class="player-list">
+        <?php for ($i=1; $i <= 11 ; $i++) { ?>
           <?php $player_link='competition/match/player/'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>
         <?php } ?>
       </div>

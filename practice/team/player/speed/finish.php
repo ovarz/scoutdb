@@ -46,7 +46,8 @@
       <div class="practice-tutorial practice-tutorial-process">
         <div class="practice-tutorial-left">
 		  <?php require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?>
-		  <?php $comment_reply='yes'; require ($_SERVER['SCOUTDB'].'module/comment.php')?>
+		  <?php require ($_SERVER['SCOUTDB'].'module/comment.php')?>
+		  <?php require ($_SERVER['SCOUTDB'].'module/comment-reply.php')?>
         </div>
 		
 		
