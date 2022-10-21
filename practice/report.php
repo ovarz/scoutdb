@@ -30,10 +30,20 @@
 	
 
     <section aria-label="Section Practice" class="section-container">
-      <h2 class="section-title">
-	    <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
-	    <div class="section-title-label">Choose Your Player</div>
-	  </h2>
+      <div class="table-filter">
+        <h2 class="section-title table-filter-label">
+	      <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-practice.svg')?></div>
+	      <div class="section-title-label">Choose Your Player</div>
+		</h2>
+        <div class="table-filter-container">
+          <div class="table-filter-search">
+            <input class="table-filter-field" placeholder="Input keyword......" type="text">
+            <button title="Cari" class="table-filter-button content_center">
+              <?php require ($_SERVER['SCOUTDB'].'img/icon/search.svg')?>
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="player-list">
         <?php for ($i=1; $i <= 20 ; $i++) { ?>
           <?php $player_link='practice/team/player/result-player.php'; require ($_SERVER['SCOUTDB'].'module/player-list.php')?>

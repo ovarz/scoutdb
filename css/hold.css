@@ -121,6 +121,12 @@ background-color:var(--bg-4); border-radius:var(--rounded-1);}
 
 
 
+.table-filter-field{border-radius:var(--rounded-2); border-color:rgb(var(--color-border) / 13%); background-color:rgba(0,0,0,0.21); color:var(--color-default-2);}
+.table-filter-field option{color:var(--bg-1);}
+.table-filter-dropdown .svgicon{fill:var(--color-default-2);}
+
+
+
 .ptl-player-row{border-color:rgb(var(--color-border) / 13%);}
 .ptl-player-frame{background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);
 background:radial-gradient(rgb(var(--color-border) / 0%) 0%, rgb(var(--color-border) / 13%) 100%);}
