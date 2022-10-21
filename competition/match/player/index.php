@@ -24,8 +24,15 @@
       <div class="player-scouting-detail">
 	    <div class="psd-container psd-container-center">
 		  <div class="psd-box psd-main">
-		    psd-box-main
+		    <div class="psd-main-head">
+			  <button title="PlayerBio" class="psd-main-button psd-main-curr">Player Bio</button>
+			  <button title="PlayerStat" class="psd-main-button">Player Stat</button>
+			  <button title="Video" class="psd-main-button">Video</button>
+			  <button title="Notes" class="psd-main-button">Notes</button>
+			</div>
+			<div class="psd-main-content">tes</div>
 		  </div>
+		  
 		  <div class="psd-center-split">
 		    <div class="psd-box">
 			  <?php $scout_button='default'; $scout_label='atck'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>

@@ -25,14 +25,20 @@ display:grid; grid-template-columns:repeat(3,1fr); grid-gap:1px;}
 font-size:11px; color:var(--button-color); text-transform:uppercase;}
 .psd-button:hover{background-color:var(--button-color); color:var(--bg-1); fill:var(--bg-1);}
 .psd-button .svgicon{width:auto; height:18px;}
-.psd-button-no, .psd-button-red, .psd-button-end{--button-color:var(--button-color-no);}
+.psd-button-no, .psd-button-card-red, .psd-button-end{--button-color:var(--button-color-no);}
 .psd-button-yes{--button-color:var(--button-color-yes);}
 .psd-button-card-yellow{--button-color:var(--button-color-yellow);}
 .psd-button-curr{background-color:var(--color-default-4) !important; color:var(--color-default-2) !important;  fill:var(--color-default-2) !important;}
 
-.psd-box-pass{border:1px solid rgb(var(--color-border) / 34%); border-radius:var(--rounded-2); position:relative; margin-top:var(--size-4);}
+.psd-box-pass{border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2); position:relative; margin-top:var(--size-4);}
 .psd-box-pass .psd-box-title{position:absolute; z-index:1000; top:-10px; left:0; width:100%;}
-.psd-box-pass .psd-box-title > span{padding:0 var(--size-1); background-color:var(--bg-1);}
+.psd-box-pass .psd-box-title > span{padding:0 var(--size-2); background-color:var(--bg-1);}
+
+
+
+.psd-main-head{display:grid; grid-template-columns:repeat(4,1fr); margin-bottom:var(--size-1);}
+.psd-main-button{text-align:center; padding-bottom:var(--size-2); border-bottom:2px solid rgb(var(--color-border) / 21%); color:rgb(var(--color-border) / 55%);}
+.psd-main-curr{border-bottom-color:rgb(var(--color-border) / 100%); color:rgb(var(--color-border) / 100%) !important;}
 
 
 
