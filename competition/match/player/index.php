@@ -1,6 +1,6 @@
 <?php 
   $page='dashboard';
-  $menu='full';
+  $menu='min';
   $channel='competition';
   $subchannel='player-scouting';
   $report='no';
