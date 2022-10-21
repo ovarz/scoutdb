@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class="table-filter-search">
-            <input class="table-filter-field" placeholder="Input keyword......" type="text">
+            <input class="table-filter-field" placeholder="Input player name......" type="text">
             <button title="Cari" class="table-filter-button content_center">
               <?php require ($_SERVER['SCOUTDB'].'img/icon/search.svg')?>
             </button>
