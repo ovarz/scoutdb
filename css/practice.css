@@ -56,13 +56,13 @@ border-radius:var(--rounded-2); border:2px solid var(--color-box);
 display:flex; justify-content:center; align-items:center;}
 .practice-bleep-button{padding:var(--size-3) var(--size-4); text-align:center; background-color:var(--color-box); color:var(--color-default-2);
 border-radius:var(--rounded-2); margin-top:var(--size-1); transition:var(--transition-default);}
-.practice-bleep-container:hover .practice-bleep-button{background-color:rgb(var(--color-border) / 13%);}
+.practice-bleep-container:hover .practice-bleep-button{opacity:0.89;}
 
 .practice-bleep-level, .practice-bleep-shuttle{--color-box:#9E9E9E;}
 .practice-bleep-fail{--color-box:#DB4A58;}
 .practice-bleep-success{--color-box:#009327;}
 
-.practice-score-box{display:flex; align-items:center; justify-content:center; font-size:18px;}
+.practice-score-box{display:flex; align-items:center; justify-content:center; font-size:18px; color:var(--color-default-1);}
 .practice-score-box .svgicon{margin-right:var(--size-2); fill:var(--color-box);}
 
 .popup-v20-label{text-align:center;}

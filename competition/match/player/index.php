@@ -13,7 +13,6 @@
 <?php require ($_SERVER['SCOUTDB'].'inc/meta.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/header.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/menu-main.php')?>
-<?php require ($_SERVER['SCOUTDB'].'inc/menu-competition.php')?>
 <link rel="stylesheet" type="text/css" href="css/competition.css?<?php echo $anticache; ?>"/>
 <div class="rancak-container ">
   <span class="width-max">

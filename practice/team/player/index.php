@@ -63,7 +63,7 @@
           $training_array[]=array('training_link'=>'dribble','training_name'=>'dribble');
           $training_array[]=array('training_link'=>'speed','training_name'=>'passing');
           $training_array[]=array('training_link'=>'speed','training_name'=>'shooting');
-          $training_array[]=array('training_link'=>'speed','training_name'=>'control');
+          $training_array[]=array('training_link'=>'control','training_name'=>'control');
           $training_array[]=array('training_link'=>'speed','training_name'=>'turning');
           $training_array[]=array('training_link'=>'speed','training_name'=>'forward moves');
           $training_array[]=array('training_link'=>'power','training_name'=>'ball mastery');
