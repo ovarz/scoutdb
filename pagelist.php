@@ -97,6 +97,9 @@
             $icon_array[]=array('icon_id'=>'bleep-fail');
             $icon_array[]=array('icon_id'=>'bleep-success');
             $icon_array[]=array('icon_id'=>'calendar');
+            $icon_array[]=array('icon_id'=>'card');
+            $icon_array[]=array('icon_id'=>'circle-no');
+            $icon_array[]=array('icon_id'=>'circle-yes');
             $icon_array[]=array('icon_id'=>'close');
             $icon_array[]=array('icon_id'=>'delete');
             $icon_array[]=array('icon_id'=>'dropdown');
@@ -112,19 +115,25 @@
             $icon_array[]=array('icon_id'=>'menu-practice');
             $icon_array[]=array('icon_id'=>'menu-scout-video');
             $icon_array[]=array('icon_id'=>'menu-video-player');
+            $icon_array[]=array('icon_id'=>'minus');
             $icon_array[]=array('icon_id'=>'notification');
             $icon_array[]=array('icon_id'=>'play-circle');
+            $icon_array[]=array('icon_id'=>'plus');
             $icon_array[]=array('icon_id'=>'report');
             $icon_array[]=array('icon_id'=>'right');
             $icon_array[]=array('icon_id'=>'right-double');
+            $icon_array[]=array('icon_id'=>'run');
             $icon_array[]=array('icon_id'=>'search');
             $icon_array[]=array('icon_id'=>'section-title');
+            $icon_array[]=array('icon_id'=>'send');
             $icon_array[]=array('icon_id'=>'setting');
+            $icon_array[]=array('icon_id'=>'stand');
             $icon_array[]=array('icon_id'=>'star-filled');
             $icon_array[]=array('icon_id'=>'star-outline');
             $icon_array[]=array('icon_id'=>'switch');
             $icon_array[]=array('icon_id'=>'sync');
             $icon_array[]=array('icon_id'=>'upload');
+            $icon_array[]=array('icon_id'=>'walk');
 		    foreach($icon_array as $icon_list){ 
 		  ?>
 		  <a class="icon-link" href="img/icon/<?php echo($icon_list['icon_id'])?>.svg" target="_blank">

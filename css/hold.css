@@ -134,6 +134,13 @@ background:radial-gradient(rgb(var(--color-border) / 0%) 0%, rgb(var(--color-bor
 
 
 
+.ptl-comment-container, .ptl-comment-field, button.ptl-comment-button{border-radius:var(--rounded-1);}
+.ptl-comment-container{border-color:rgb(var(--color-border) / 13%);}
+.ptl-comment-field{background-color:rgb(var(--color-border) / 13%); color:var(--color-default-2);}
+.ptl-comment-box{background-color:rgb(var(--color-border) / 8%); color:var(--color-default-2); border-radius:var(--rounded-1);}
+
+
+
 footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 13%);}
 footer > *{padding:var(--size-4);}
 

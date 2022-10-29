@@ -33,7 +33,7 @@
 			  <button title="Notes" data-content="comment"
 			  class="psd-main-button">Notes</button>
 			</div>
-			<div class="psd-main-content"><?php $comment_reply='no'; require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?></div>
+			<div class="psd-main-content"><?php $comment_reply='yes'; require ($_SERVER['SCOUTDB'].'module/practice-player-profile.php')?></div>
 		  </div>
 		  
 		  <div class="psd-center-split">
