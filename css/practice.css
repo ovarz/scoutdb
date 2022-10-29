@@ -138,9 +138,9 @@ display:grid; grid-template-columns:var(--thumb-size) 1fr;}
 .rpl-photo{display:flex; align-items:flex-end;}
 .rpl-frame{width:var(--thumb-size);}
 .rpl-info{padding:var(--size-3);}
-.rpl-name{font-size:18px; font-weight:bold; color:var(--color-default-2);}
+.rpl-name{font-size:18px; font-weight:bold;}
 .rpl-rating{grid-gap:var(--size-1); max-width:89px; margin:var(--size-1) 0;}
-.rpl-date{font-size:12px;}
+.rpl-date{font-size:12px; color:var(--color-default-1);}
 
 
 

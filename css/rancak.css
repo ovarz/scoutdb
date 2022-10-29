@@ -177,7 +177,7 @@ word-wrap:break-word; word-break:break-word; hyphens:auto; display:grid; grid-ga
 .ptl-comment-list{display:flex;}
 .ptl-comment-box{padding:var(--size-2); font-size:12px;}
 button.ptl-comment-button{padding:0 var(--size-4); height:45px;}
-button.ptl-comment-button .svgicon{width:auto; height:21px;}
+button.ptl-comment-button .svgicon{width:auto; height:18px;}
 
 
 
