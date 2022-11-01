@@ -67,6 +67,8 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 13%); 
 
 .breadcrumb{background-color:rgb(var(--color-border) / 8%); border-radius:var(--rounded-3);}
 
+.psd-match-team{color:var(--color-default-2); font-weight:bold;}
+
 
 
 .team-link{border-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1);}

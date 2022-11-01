@@ -22,6 +22,18 @@
     <section aria-label="Section Competition" class="section-container">
       <div class="player-scouting-detail">
 	    <div class="psd-container psd-container-center">
+
+          <div class="psd-box psd-match">
+            <ul class="psd-match-team">
+              <li>Team Home VS Team Away</li>
+            </ul>
+            <ul>
+              <li>Competition Name</li>
+              <li>00 September 0000</li>
+              <li>Round 00</li>
+            </ul>
+          </div>
+	
 		  <div class="psd-box psd-main">
 		    <div class="psd-main-head">
 			  <button title="Player Bio" data-content="practice-player-profile"

@@ -101,6 +101,11 @@ text-transform:capitalize;}
 .breadcrumb-link:not(:last-child):after{content:''; display:block; position:absolute; top:0; right:0; width:var(--size-4); height:100%;
 background:url("../img/icon/right.svg") no-repeat center right; background-size:auto 14px; filter:invert(1);}
 
+.psd-match{font-size:12px; line-height:100%; padding:var(--size-3) 0 0 !important;}
+.psd-match > ul{display:flex; flex-wrap:wrap; justify-content:center; row-gap:var(--size-2);}
+.psd-match > ul > li{border-right:1px solid; padding:0 var(--size-3);}
+.psd-match > ul > li:last-child{border-right:0;}
+
 
 
 .rating-icon{line-height:0; display:grid; grid-template-columns:repeat(5,1fr); grid-gap:2px;}
