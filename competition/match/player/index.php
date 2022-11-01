@@ -49,7 +49,7 @@
 		  </div>
 		  
 		  <div class="psd-center-split">
-		    <div class="psd-box">
+		    <div class="psd-box psd-split-left">
 			  <?php $scout_button='default'; $scout_label='atck'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			  <?php $scout_button='card'; $scout_label='card'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
               <div class="psd-row psd-row-action psd-row-single">
@@ -58,7 +58,7 @@
                 </button>
               </div>
 			</div>
-		    <div class="psd-box">
+		    <div class="psd-box psd-split-center">
 			  <div class="psd-row">
 			    <div class="psd-row-misc content_center">
 				  <span>- One on One -</span>
@@ -71,7 +71,7 @@
 				</div>
 			  </div>
 			</div>
-		    <div class="psd-box">
+		    <div class="psd-box psd-split-right">
 			  <?php $scout_button='default'; $scout_label='defs'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
               <div class="psd-row psd-row-action psd-row-single">
                 <button class="psd-button content_center">
