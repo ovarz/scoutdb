@@ -56,6 +56,12 @@ font-size:11px; color:var(--button-color); text-transform:uppercase;}
 
 
 
+.psd-active .psd-ball-possession .psd-button{background-color:var(--button-color-red); color:var(--color-default-2) !important;}
+.psd-deactive .psd-row-action{opacity:0.34;}
+.psd-deactive .psd-ball-possession{opacity:1;}
+
+
+
 @media screen and (min-width:1024px){
   .player-scouting-detail{grid-template-columns:1fr 420px 1fr;}
   .menu-min .player-scouting-detail{grid-template-columns:1fr 500px 1fr;}

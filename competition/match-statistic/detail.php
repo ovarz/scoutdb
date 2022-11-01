@@ -23,8 +23,19 @@
       <div class="player-scouting-detail">
 	    <div class="psd-container psd-container-center">
 
+          <div class="psd-box psd-match" style="padding-bottom:var(--size-3) !important;">
+            <ul class="psd-match-team">
+              <li>Team Home (0) VS (0) Team Away</li>
+            </ul>
+            <ul>
+              <li>Competition Name</li>
+              <li>00 September 0000</li>
+              <li>Round 00</li>
+            </ul>
+          </div>
+
           <div class="psd-center-split">
-		    <div class="psd-box psd-split-left">
+		    <div class="psd-box psd-split-left psd-switch psd-switch-home">
 			  <?php $scout_button='plusminus'; $scout_label='goal'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			  <?php $scout_button='plusminus'; $scout_label='asst'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			  <?php $scout_button='plusminus'; $scout_label='offs'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
@@ -41,7 +52,7 @@
 				</div>
 			  </div>
 			</div>
-		    <div class="psd-box psd-split-right">
+		    <div class="psd-box psd-split-right psd-switch psd-switch-away">
 			  <?php $scout_button='plusminus'; $scout_label='goal'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			  <?php $scout_button='plusminus'; $scout_label='asst'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			  <?php $scout_button='plusminus'; $scout_label='offs'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
@@ -76,7 +87,7 @@
 		
 		
 		
-		<div class="psd-container-left">
+		<div class="psd-container-left psd-switch psd-switch-home">
           <div class="psd-box">
 			<?php $scout_button='default'; $scout_label='frek'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			<?php $scout_button='default'; $scout_label='thrw'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
@@ -84,9 +95,9 @@
             <?php $scout_button='default'; $scout_label='pena'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
             <?php $scout_button='default'; $scout_label='shot'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
             <?php $scout_button='default'; $scout_label='pass'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
-            <div class="psd-row psd-row-action psd-row-single">
-              <button class="psd-button content_center">
-                Ball Possession
+            <div class="psd-row psd-row-action psd-row-single psd-ball-possession">
+              <button data-active="home" class="psd-button content_center">
+                Ball Possession (00%)
               </button>
             </div>
           </div>
@@ -94,7 +105,7 @@
 		
 		
 		
-		<div class="psd-container-right">
+		<div class="psd-container-right psd-switch psd-switch-away">
           <div class="psd-box">
 			<?php $scout_button='default'; $scout_label='frek'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			<?php $scout_button='default'; $scout_label='thrw'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
@@ -102,9 +113,9 @@
             <?php $scout_button='default'; $scout_label='pena'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
             <?php $scout_button='default'; $scout_label='shot'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
             <?php $scout_button='default'; $scout_label='pass'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
-            <div class="psd-row psd-row-action psd-row-single">
-              <button class="psd-button content_center">
-                Ball Possession
+            <div class="psd-row psd-row-action psd-row-single psd-ball-possession">
+              <button data-active="away" class="psd-button content_center">
+                Ball Possession (00%)
               </button>
             </div>
           </div>
