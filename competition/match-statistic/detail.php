@@ -20,19 +20,10 @@
 	
 
     <section aria-label="Section Competition" class="section-container">
+      <?php require ($_SERVER['SCOUTDB'].'module/panel-header.php')?>
+	  
       <div class="player-scouting-detail">
 	    <div class="psd-container psd-container-center">
-
-          <div class="psd-box psd-match" style="padding-bottom:var(--size-3) !important;">
-            <ul class="psd-match-team">
-              <li>Team Home (0) VS (0) Team Away</li>
-            </ul>
-            <ul>
-              <li>Competition Name</li>
-              <li>00 September 0000</li>
-              <li>Round 00</li>
-            </ul>
-          </div>
 
           <div class="psd-center-split">
 		    <div class="psd-box psd-split-left psd-switch psd-switch-home">
