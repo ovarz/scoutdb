@@ -89,15 +89,17 @@
 			<?php $scout_button='default'; $scout_label='pnlt'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			<?php $scout_button='default'; $scout_label='cner'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
             <?php $scout_button='default'; $scout_label='jump'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
+			
+			<?php $get_random_control = $random_control[array_rand($random_control)]; ?>
 			<div class="psd-row psd-row-action psd-row-movement">
 			  <button class="psd-button psd-button-stand psd-button-curr content_center">
-				<?php require ($_SERVER['SCOUTDB'].'img/icon/stand.svg')?>
+				<?php require ($_SERVER['SCOUTDB'].'img/icon/stand'.$get_random_control.'.svg')?>
 			  </button>
 			  <button class="psd-button psd-button-walk content_center">
-				<?php require ($_SERVER['SCOUTDB'].'img/icon/walk.svg')?>
+				<?php require ($_SERVER['SCOUTDB'].'img/icon/walk'.$get_random_control.'.svg')?>
 			  </button>
 			  <button class="psd-button psd-button-run content_center">
-				<?php require ($_SERVER['SCOUTDB'].'img/icon/run.svg')?>
+				<?php require ($_SERVER['SCOUTDB'].'img/icon/run'.$get_random_control.'.svg')?>
 			  </button>
 			</div>
             <?php $scout_button='default'; $scout_label='ctrl'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
