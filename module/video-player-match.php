@@ -37,7 +37,7 @@
   </div>
   <div class="vlc-competition-babak">
     <span>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
         1st
       </a>
       <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">

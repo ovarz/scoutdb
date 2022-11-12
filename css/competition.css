@@ -31,11 +31,13 @@ display:grid; grid-template-columns:repeat(3,1fr); grid-gap:var(--size-1);}
 .psd-info{text-transform:uppercase; text-align:center; font-size:11px; flex-wrap:wrap;}
 .psd-button{--button-color:var(--button-color-default); background-color:var(--bg-1); border-radius:var(--rounded-1); fill:var(--button-color); 
 font-size:11px; color:var(--button-color); text-transform:uppercase;}
+.psd-ball-possession .psd-button{flex-wrap:wrap;}
 .psd-button:hover{background-color:var(--button-color); color:var(--bg-1); fill:var(--bg-1);}
 .psd-button .svgicon{width:auto; height:18px;}
 .psd-button-no, .psd-button-card-red, .psd-button-end{--button-color:var(--button-color-red);}
 .psd-button-start, .psd-button-yes{--button-color:var(--button-color-green);}
 .psd-button-card-yellow{--button-color:var(--button-color-yellow);}
+.psd-ball-stat{width:100%; text-align:center; line-height:100%;}
 .psd-button-curr{background-color:var(--color-default-4) !important; color:var(--color-default-2) !important;  fill:var(--color-default-2) !important;}
 
 .psd-box-pass{border:1px solid rgb(var(--color-border) / 21%); border-radius:var(--rounded-2); position:relative; margin-top:var(--size-4);}
@@ -66,8 +68,9 @@ font-size:11px; color:var(--button-color); text-transform:uppercase;}
 .cps-score-green{color:var(--button-color-green);}
 .cps-score-yellow{color:var(--button-color-yellow);}
 
-.psd-info .cps-box{border:0; padding:0; width:100%;}
+.psd-info .cps-box{border:0; padding:0; width:100%; display:none;}
 .psd-info .cps-score{padding:0 3px;}
+body.menu-min .psd-info .cps-box{display:flex;}
 
 
 

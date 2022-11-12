@@ -61,7 +61,7 @@
       <div class="match-list">
         <?php for ($i=1; $i <= 6 ; $i++) { ?>
 		  <div class="match-link">
-            <?php $channel_origin='competition'; 
+            <?php $channel_origin='competition'; $next_link='competition/match-statistic/'; 
 			require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
 		  </div>
         <?php } ?>

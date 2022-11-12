@@ -88,7 +88,8 @@
             <?php $scout_button='default'; $scout_label='pass'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
             <div class="psd-row psd-row-action psd-row-single psd-ball-possession">
               <button data-active="home" class="psd-button content_center">
-                Ball Possession (00%)
+			    <div class="psd-ball-stat">(00%)</div>
+                Ball Possession 
               </button>
             </div>
           </div>
@@ -106,7 +107,8 @@
             <?php $scout_button='default'; $scout_label='pass'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
             <div class="psd-row psd-row-action psd-row-single psd-ball-possession">
               <button data-active="away" class="psd-button content_center">
-                Ball Possession (00%)
+			    <div class="psd-ball-stat">(00%)</div>
+                Ball Possession 
               </button>
             </div>
           </div>
