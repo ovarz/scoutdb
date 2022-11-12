@@ -52,15 +52,15 @@
 		    <div class="psd-box psd-split-center">
 			  <div class="psd-row">
 			    <div class="psd-row-misc content_center">
-				  <span>- One on One -</span>
-				</div>
-			  </div>
-			  <?php $scout_button='default'; $scout_label='frek'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
-			  <div class="psd-row">
-			    <div class="psd-row-misc content_center">
 				  <img alt="img_title" class="lazyload" data-original="img/logo.png">
 				</div>
 			  </div>
+			  <?php $scout_button='default'; $scout_label='frek'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
+              <div class="psd-row psd-row-action psd-row-single">
+                <button class="psd-button psd-button-start content_center">
+                  Start Match
+                </button>
+              </div>
 			</div>
 		    <div class="psd-box psd-split-right">
 			  <?php $scout_button='default'; $scout_label='defs'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>

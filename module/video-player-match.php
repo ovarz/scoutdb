@@ -32,8 +32,27 @@
     Competition Name
   </div>
   <div class="vlc-competition-info">
-    <div class="vlc-competition-round"><?php echo $random_competition[array_rand($random_competition)]; ?></div>
+    <div class="vlc-competition-stage"><?php echo $random_competition[array_rand($random_competition)]; ?></div>
     <div class="vlc-competition-date">00 Sep 2022</div>
+  </div>
+  <div class="vlc-competition-babak">
+    <span>
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+        1st
+      </a>
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+        2nd
+      </a>
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+        ET1
+      </a>
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+        ET2
+      </a>
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+        Pen
+      </a>
+	</span>
   </div>
   <?php } ?>
 </div>

@@ -28,7 +28,7 @@ display:grid; grid-template-columns:repeat(3,1fr); grid-gap:var(--size-1);}
 .psd-row-misc img{max-height:100%;}
 .psd-row-line{}
 .psd-button{height:var(--button-size);}
-.psd-info{text-transform:uppercase; text-align:center; font-size:11px;}
+.psd-info{text-transform:uppercase; text-align:center; font-size:11px; flex-wrap:wrap;}
 .psd-button{--button-color:var(--button-color-default); background-color:var(--bg-1); border-radius:var(--rounded-1); fill:var(--button-color); 
 font-size:11px; color:var(--button-color); text-transform:uppercase;}
 .psd-button:hover{background-color:var(--button-color); color:var(--bg-1); fill:var(--bg-1);}
@@ -65,6 +65,9 @@ font-size:11px; color:var(--button-color); text-transform:uppercase;}
 .cps-score-red{border-right:1px solid rgb(var(--color-border) / 21%); color:var(--button-color-red);}
 .cps-score-green{color:var(--button-color-green);}
 .cps-score-yellow{color:var(--button-color-yellow);}
+
+.psd-info .cps-box{border:0; padding:0;}
+.psd-info .cps-score{padding:0 3px;}
 
 
 

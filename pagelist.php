@@ -125,17 +125,20 @@
             $icon_array[]=array('icon_id'=>'right');
             $icon_array[]=array('icon_id'=>'right-double');
             $icon_array[]=array('icon_id'=>'run');
+            $icon_array[]=array('icon_id'=>'run-ball');
             $icon_array[]=array('icon_id'=>'search');
             $icon_array[]=array('icon_id'=>'section-title');
             $icon_array[]=array('icon_id'=>'send');
             $icon_array[]=array('icon_id'=>'setting');
             $icon_array[]=array('icon_id'=>'stand');
+            $icon_array[]=array('icon_id'=>'stand-ball');
             $icon_array[]=array('icon_id'=>'star-filled');
             $icon_array[]=array('icon_id'=>'star-outline');
             $icon_array[]=array('icon_id'=>'switch');
             $icon_array[]=array('icon_id'=>'sync');
             $icon_array[]=array('icon_id'=>'upload');
             $icon_array[]=array('icon_id'=>'walk');
+            $icon_array[]=array('icon_id'=>'walk-ball');
 		    foreach($icon_array as $icon_list){ 
 		  ?>
 		  <a class="icon-link" href="img/icon/<?php echo($icon_list['icon_id'])?>.svg" target="_blank">

@@ -12,7 +12,7 @@
 
   $random_position=array("Goalkeeper","Right Back","Right Wing Back","Left Back","Left Wing Back","Center Back","Defending Midfielder","Left Midfielder","Right Midfielder","Center Midfielder","Attacking Midfielder","Left Winger","Right Winger","Striker","Second Striker");
 
-  $random_competition=array("Group","Round 32","Round 16","Round 8","Quarter Final","Semi Final","Final");
+  $random_competition=array("Group","Round of 32","Round of 16","Round of 8","Quarter Final","Semi Final","Final");
 
   $random_control=array("","-ball","","-ball","","-ball");
 ?>

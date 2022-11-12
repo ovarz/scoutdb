@@ -60,15 +60,16 @@
       </div>
       <div class="match-list">
         <?php for ($i=1; $i <= 6 ; $i++) { ?>
-		  <a aria-label="MATCH_A_VS_B" title="MATCH_A_VS_B" class="match-link" href="competition/match-statistic/detail.php">
+		  <div class="match-link">
             <?php $channel_origin='competition'; 
 			require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
-		  </a>
+		  </div>
         <?php } ?>
       </div>
     </section>
 	
   </span>
 </div>
+<script defer rancak-hold="js/competition.js"></script>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>

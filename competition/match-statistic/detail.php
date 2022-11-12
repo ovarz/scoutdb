@@ -62,7 +62,7 @@
 		    <div class="psd-box psd-split-center">
               <div class="psd-row psd-row-action psd-row-single">
                 <button class="psd-button psd-button-start content_center">
-                  Start
+                  Start Match
                 </button>
               </div>
 			</div>

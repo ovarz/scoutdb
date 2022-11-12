@@ -23,8 +23,17 @@ var ball_possession_switch = function(){
 
 
 
+var show_match_round = function(){
+  $('.match-link').click(function(){
+	$(this).find('.vlc-match > .vlc-competition-babak').slideDown('fast');
+  });	
+};
+
+
+
 $(document).ready(function(){
   "use strict";
   competition_tab();
   ball_possession_switch();
+  show_match_round();
 });

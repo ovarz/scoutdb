@@ -20,6 +20,16 @@
   
   
   <div class="psd-info content_center">
+    <?php if($subchannel == 'match-statistic') { ?>
+	  <div class="cps-box">
+		<div class="cps-score cps-score-red">00</div>
+		<div class="cps-score 
+		<?php if($scout_button != 'card') { ?>cps-score-green<?php } ?>
+		<?php if($scout_button == 'card') { ?>cps-score-yellow<?php } ?>">
+		00
+		</div>
+	  </div>
+	<?php } ?>
     <span><?php echo $scout_label; ?></span>
   </div>
   
