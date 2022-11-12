@@ -83,7 +83,7 @@
 			    <li class="prb-info"><?php echo rand(1,10); ?></li>
 			  </ul>
 			  <ul class="prb-row">
-			    <li class="prb-label">V20 Max</li>
+			    <li class="prb-label">V02 Max</li>
 			    <li class="prb-info"><?php echo rand(10,90); ?>,<?php echo rand(0,9); ?></li>
 			  </ul>
 			  <ul class="prb-row">

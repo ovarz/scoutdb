@@ -24,7 +24,7 @@
       </button>
       <div class="rancak-popup-container content_center">
         <div class="rancak-popup-box popup-v20">
-          <div class="popup-v20-label">Input V20 Max</div>
+          <div class="popup-v20-label">Input V02 Max</div>
           <input type="text" class="popup-v20-field" placeholder="Input Number Here"
           onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"/>
           <div class="popup-v20-action">
