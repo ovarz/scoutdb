@@ -179,8 +179,10 @@ background:url("../img/icon/right.svg") no-repeat center right; background-size:
 word-wrap:break-word; word-break:break-word; hyphens:auto; display:grid; grid-gap:var(--size-2);}
 .ptl-comment-container::-webkit-scrollbar{width:0px;}
 .ptl-comment-field{padding:var(--size-3);}
-.ptl-comment-list{display:flex;}
-.ptl-comment-box{padding:var(--size-2); font-size:12px;}
+.ptl-comment-list, .ptl-comment-date, .ptl-comment-date > span{display:flex;}
+.ptl-comment-box{padding:var(--size-2); font-size:12px; margin-right:var(--size-2);}
+.ptl-comment-date{align-items:flex-end; font-size:10px;}
+.ptl-comment-date > span{min-width:var(--size-5);}
 button.ptl-comment-button{padding:0 var(--size-4); height:45px;}
 button.ptl-comment-button .svgicon{width:auto; height:18px;}
 

@@ -11,6 +11,7 @@
 		  <div class="ptl-comment-box">
 		    <?php echo $random_keyword[array_rand($random_keyword)]; ?>
 		  </div>
+		  <div class="ptl-comment-date"><span>00:00</span></div>
 		</div>
 	  <?php } ?>
     <?php } ?>
