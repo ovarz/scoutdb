@@ -11,7 +11,7 @@ var competition_tab = function(){
 
 
 
-var control_tab = function(){
+var ball_possession_switch = function(){
   "use strict";
   $('.psd-ball-possession .psd-button').click(function(){
     var get_data = $(this).attr('data-active');
@@ -26,5 +26,5 @@ var control_tab = function(){
 $(document).ready(function(){
   "use strict";
   competition_tab();
-  control_tab();
+  ball_possession_switch();
 });
