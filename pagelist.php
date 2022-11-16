@@ -46,6 +46,7 @@
           <li><a class="pagelist-row" href="competition/">Halaman Player Scouting - Pilih Pertandingan</a></li>
           <li><a class="pagelist-row" href="competition/match/">Halaman Player Scouting - Pilih Pemain</a></li>
           <li><a class="pagelist-row" href="competition/match/player/">Halaman Player Scouting - Detail</a></li>
+          <li><a class="pagelist-row" href="competition/match/player/result.php">Halaman Player Scouting - Result</a></li>
           <li><a class="pagelist-row" href="competition/match-statistic/">Halaman Daftar Match Statistic</a></li>
           <li><a class="pagelist-row" href="competition/match-statistic/detail.php">Halaman Detail Match Statistic</a></li>
         </ul>
@@ -73,11 +74,17 @@
           <li><a class="pagelist-row" href="practice/team/player/endurance/step3.php">Halaman Training Bleep - Selesai</a></li>
           <li><a class="pagelist-row" href="practice/team/player/endurance/result.php">Halaman Training Bleep - Hasil</a></li>
 		  
-          <li><a class="pagelist-row" href="practice/team/player/timer-point/">Halaman Training Timer & Poin</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/timer-point/step1.php">Halaman Training Timer & Poin - Mulai</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/timer-point/step2.php">Halaman Training Timer & Poin - Berlangsung</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/timer-point/step3.php">Halaman Training Timer & Poin - Selesai</a></li>
-          <li><a class="pagelist-row" href="practice/team/player/timer-point/result.php">Halaman Training Timer & Poin - Hasil</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/dribble/">Halaman Training Timer & Poin</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/dribble/step1.php">Halaman Training Timer & Poin - Mulai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/dribble/step2.php">Halaman Training Timer & Poin - Berlangsung</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/dribble/step3.php">Halaman Training Timer & Poin - Selesai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/dribble/result.php">Halaman Training Timer & Poin - Hasil</a></li>
+		  
+          <li><a class="pagelist-row" href="practice/team/player/control/">Halaman Training Success / Fail</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/control/step1.php">Halaman Training Success / Fail - Mulai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/control/step2.php">Halaman Training Success / Fail - Berlangsung</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/control/step3.php">Halaman Training Success / Fail - Selesai</a></li>
+          <li><a class="pagelist-row" href="practice/team/player/control/result.php">Halaman Training Success / Fail - Hasil</a></li>
 		  
           <li><a class="pagelist-row" href="practice/team/player/speed/finish.php">Halaman Detail Hasil Training</a></li>
           <li><a class="pagelist-row" href="practice/team/player/result-player.php">Halaman Hasil Training - Per Pemain</a></li>

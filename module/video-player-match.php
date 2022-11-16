@@ -40,16 +40,16 @@
       <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
         1st
       </a>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
         2nd
       </a>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
         ET1
       </a>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
         ET2
       </a>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="competition/match-statistic/detail.php">
+      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
         Pen
       </a>
 	</span>

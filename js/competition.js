@@ -31,9 +31,24 @@ var show_match_round = function(){
 
 
 
+var toggle_start = function(){
+  $.fn.toggleText = function(t1, t2){
+    if(this.text() == t1) this.text(t2);
+    else this.text(t1);
+    return this;
+  };
+  
+  $('.psd-button-start').click(function(){
+	$(this).toggleText('Pause Match', 'Start Match');
+  });	
+};
+
+
+
 $(document).ready(function(){
   "use strict";
   competition_tab();
   ball_possession_switch();
   show_match_round();
+  toggle_start();
 });

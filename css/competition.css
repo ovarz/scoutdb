@@ -80,6 +80,25 @@ body.menu-min .psd-info .cps-box{display:flex;}
 
 
 
+
+.practice-tutorial-sticky{top:calc(var(--size-7) + var(--size-5));}
+
+.ptl-cmi-title{font-weight:bold; padding-bottom:var(--size-2); color:var(--color-default-2); display:block;}
+.ptl-cmi-row{display:grid; grid-gap:var(--size-2); grid-template-columns:110px 1fr; padding:var(--size-2) 0; border-bottom:1px dashed rgb(var(--color-border) / 13%);}
+.ptl-cmi-label{position:relative;}
+.ptl-cmi-label:after{content:':'; display:flex; align-items:center; position:absolute; top:0; right:0; height:100%;}
+
+.competition-result-timeline .ptl-cmi-row{grid-template-columns:60px 1fr;}
+
+
+
+.competition-match-action{display:grid; grid-template-columns:repeat(4,1fr); grid-gap:var(--size-2);}
+.ptl-cma-save{background-color:#006FE5 !important;}
+.ptl-cma-edit{background-color:#CDA111 !important;}
+.ptl-cma-submit{background-color:#007403 !important;}
+
+
+
 @media screen and (min-width:1024px){
   .player-scouting-detail{grid-template-columns:1fr 420px 1fr;}
   .menu-min .player-scouting-detail{grid-template-columns:1fr 500px 1fr;}

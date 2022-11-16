@@ -14,5 +14,7 @@
 
   $random_competition=array("Group","Round of 32","Round of 16","Round of 8","Quarter Final","Semi Final","Final");
 
+  $random_round=array("1st Half","2nd Half","Extra Time 1","Extra Time 2","Penalty");
+
   $random_control=array("","-ball","","-ball","","-ball");
 ?>
