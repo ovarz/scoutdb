@@ -6,7 +6,7 @@
   $report='no';
   $report_link='';
   $report_label='';
-  $backto_link='competition/in-game-administration/'; $backto_label='In Game Administration';
+  $backto_link='home.php'; $backto_label='Home';
   require ('../../inc/base.php')
 ?>
 <?php require ($_SERVER['SCOUTDB'].'inc/data.php')?>
