@@ -29,25 +29,25 @@
 		  <div class="match-info-box match-info-choice">
 		  
 		    <div class="match-info-radiobutton">
-			  <input type="checkbox" class="mirb-real">
+			  <input type="radio" class="mirb-real" name="field">
 			  <div class="mirb-dummy">
-			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu.svg')?></div>
+			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/field-dry.svg')?></div>
 			    <div class="mirb-label">Dry</div>
 			  </div>
 			</div>
 		  
 		    <div class="match-info-radiobutton">
-			  <input type="checkbox" class="mirb-real">
+			  <input type="radio" class="mirb-real" name="field">
 			  <div class="mirb-dummy">
-			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu.svg')?></div>
+			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/field-wet.svg')?></div>
 			    <div class="mirb-label">Wet</div>
 			  </div>
 			</div>
 		  
 		    <div class="match-info-radiobutton">
-			  <input type="checkbox" class="mirb-real">
+			  <input type="radio" class="mirb-real" name="field">
 			  <div class="mirb-dummy">
-			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu.svg')?></div>
+			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/field-mud.svg')?></div>
 			    <div class="mirb-label">Mud</div>
 			  </div>
 			</div>
@@ -58,37 +58,37 @@
 		  
 		  
         <div class="match-info-row">
-		  <div class="match-info-label">Field</div>
+		  <div class="match-info-label">Weather</div>
 		  <div class="match-info-box match-info-choice">
 		  
 		    <div class="match-info-radiobutton">
-			  <input type="checkbox" class="mirb-real">
+			  <input type="radio" class="mirb-real" name="weather">
 			  <div class="mirb-dummy">
-			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu.svg')?></div>
+			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/weather-bright.svg')?></div>
 			    <div class="mirb-label">Bright</div>
 			  </div>
 			</div>
 		  
 		    <div class="match-info-radiobutton">
-			  <input type="checkbox" class="mirb-real">
+			  <input type="radio" class="mirb-real" name="weather">
 			  <div class="mirb-dummy">
-			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu.svg')?></div>
+			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/weather-hot.svg')?></div>
 			    <div class="mirb-label">Hot</div>
 			  </div>
 			</div>
 		  
 		    <div class="match-info-radiobutton">
-			  <input type="checkbox" class="mirb-real">
+			  <input type="radio" class="mirb-real" name="weather">
 			  <div class="mirb-dummy">
-			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu.svg')?></div>
+			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/weather-rain.svg')?></div>
 			    <div class="mirb-label">Rain</div>
 			  </div>
 			</div>
 		  
 		    <div class="match-info-radiobutton">
-			  <input type="checkbox" class="mirb-real">
+			  <input type="radio" class="mirb-real" name="weather">
 			  <div class="mirb-dummy">
-			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu.svg')?></div>
+			    <div class="mirb-icon content_center"><?php require ($_SERVER['SCOUTDB'].'img/icon/weather-heavyrain.svg')?></div>
 			    <div class="mirb-label">Heavy Rain</div>
 			  </div>
 			</div>

@@ -109,10 +109,11 @@ border:1px solid rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);
 .mirb-dummy{position:relative; z-index:1; width:84px; height:84px; display:flex; flex-wrap:wrap; align-content:center; color:var(--color-default-1); fill:var(--color-default-1);
 border:1px solid rgb(var(--color-border) / 13%); border-radius:var(--rounded-2); transition:var(--transition-default);}
 .mirb-dummy > *{width:100%;}
-.mirb-icon .svgicon{width:auto; height:var(--size-4);}
+.mirb-icon .svgicon{width:auto; height:24px;}
 .mirb-label{text-align:center; margin-top:var(--size-1); font-size:11px;}
 
 .match-info-radiobutton:hover .mirb-dummy{border-color:var(--color-default-2); color:var(--color-default-2); fill:var(--color-default-2);}
+.mirb-real:checked + .mirb-dummy{border-color:var(--color-default-3); background-color:var(--color-default-3); color:var(--color-default-2); fill:var(--color-default-2);}
 
 
 
