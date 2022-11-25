@@ -21,10 +21,7 @@
           <span><?php echo rand(1,99); ?></span>
         </div>
       </div>
-      <div class="clc-player-info">
-        <div class="clc-player-position"><?php echo $random_position_short[array_rand($random_position_short)]; ?></div>
-        <div class="clc-player-name"><?php echo $random_username[array_rand($random_username)]; ?></div>
-      </div>
+      <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/player-card-small.php')?>
       <div class="clc-player-action">
         <button title="EditPlayerNumber" class="clc-player-button">
           <?php require ($_SERVER['SCOUTDB'].'img/icon/edit.svg')?>
