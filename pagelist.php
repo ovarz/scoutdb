@@ -49,6 +49,10 @@
           <li><a class="pagelist-row" href="competition/match/player/result.php">Halaman Player Scouting - Result</a></li>
           <li><a class="pagelist-row" href="competition/match-statistic/">Halaman Daftar Match Statistic</a></li>
           <li><a class="pagelist-row" href="competition/match-statistic/detail.php">Halaman Detail Match Statistic</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/">Halaman Daftar Match</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/info/">Halaman Match Information</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup.php">Halaman Lineup (Empty)</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-filled.php">Halaman Lineup (Filled)</a></li>
         </ul>
       </li>
       <li>
@@ -111,6 +115,7 @@
             $icon_array[]=array('icon_id'=>'circle-yes');
             $icon_array[]=array('icon_id'=>'close');
             $icon_array[]=array('icon_id'=>'delete');
+            $icon_array[]=array('icon_id'=>'edit');
             $icon_array[]=array('icon_id'=>'dropdown');
             $icon_array[]=array('icon_id'=>'google');
             $icon_array[]=array('icon_id'=>'home');

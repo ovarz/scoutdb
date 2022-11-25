@@ -24,15 +24,18 @@
         <div class="section-title-label">Line Up</div>
 	  </h2>
       <div class="choose-lineup">
-	    <div class="choose-lineup-column choose-lineup-home">
-		  <div class="clc-team">
-		    <div class="clc-team-name"><b>Team Home</b></div>
-		    <div class="clc-team-emblem">
-			  <img alt="img_title" class="lazyload" data-original="img/sample/team-<?php echo rand(1,10); ?>.svg" />
-			</div>
+	    <div class="choose-lineup-column">
+		  <div class="clc-container">
+		    <div class="clc-container-label">Starting Lineup</div>
+            <div class="clc-player-list">
+              <?php for ($i=1; $i <= 11 ; $i++) { ?>
+                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+              <?php } ?>
+            </div>
 		  </div>
-		  <div class="clc-player">
-		    <div class="clc-player-label">Starting Lineup</div>
+		  
+		  <div class="clc-container">
+		    <div class="clc-container-label">Subtitution</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
                 <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
@@ -40,17 +43,8 @@
             </div>
 		  </div>
 		  
-		  <div class="clc-player">
-		    <div class="clc-player-label">Subtitution</div>
-            <div class="clc-player-list">
-              <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
-              <?php } ?>
-            </div>
-		  </div>
-		  
-		  <div class="clc-player">
-		    <div class="clc-player-label">Reserved</div>
+		  <div class="clc-container">
+		    <div class="clc-container-label">Reserved</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 5 ; $i++) { ?>
                 <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
@@ -61,17 +55,21 @@
 		
 		
 		
-		
-		
-	    <div class="choose-lineup-column choose-lineup-away">
-		  <div class="clc-team">
-		    <div class="clc-team-emblem">
-			  <img alt="img_title" class="lazyload" data-original="img/sample/team-<?php echo rand(11,20); ?>.svg" />
-			</div>
-		    <div class="clc-team-name"><b>Team Away</b></div>
+	    <div class="choose-lineup-column">
+		  <div class="clc-container">
+		    <div class="clc-container-label">Starting Lineup</div>
+            <div class="clc-player-list">
+              <?php for ($i=1; $i <= 3 ; $i++) { ?>
+                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+              <?php } ?>
+              <?php for ($i=1; $i <= 8 ; $i++) { ?>
+                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+              <?php } ?>
+            </div>
 		  </div>
-		  <div class="clc-player">
-		    <div class="clc-player-label">Starting Lineup</div>
+		  
+		  <div class="clc-container">
+		    <div class="clc-container-label">Subtitution</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
                 <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
@@ -79,17 +77,8 @@
             </div>
 		  </div>
 		  
-		  <div class="clc-player">
-		    <div class="clc-player-label">Subtitution</div>
-            <div class="clc-player-list">
-              <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
-              <?php } ?>
-            </div>
-		  </div>
-		  
-		  <div class="clc-player">
-		    <div class="clc-player-label">Reserved</div>
+		  <div class="clc-container">
+		    <div class="clc-container-label">Reserved</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 5 ; $i++) { ?>
                 <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
