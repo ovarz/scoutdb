@@ -114,9 +114,13 @@
             $icon_array[]=array('icon_id'=>'circle-no');
             $icon_array[]=array('icon_id'=>'circle-yes');
             $icon_array[]=array('icon_id'=>'close');
+            $icon_array[]=array('icon_id'=>'comment');
             $icon_array[]=array('icon_id'=>'delete');
-            $icon_array[]=array('icon_id'=>'edit');
             $icon_array[]=array('icon_id'=>'dropdown');
+            $icon_array[]=array('icon_id'=>'edit');
+            $icon_array[]=array('icon_id'=>'field-dry');
+            $icon_array[]=array('icon_id'=>'field-mud');
+            $icon_array[]=array('icon_id'=>'field-wet');
             $icon_array[]=array('icon_id'=>'google');
             $icon_array[]=array('icon_id'=>'home');
             $icon_array[]=array('icon_id'=>'left');
@@ -151,6 +155,10 @@
             $icon_array[]=array('icon_id'=>'upload');
             $icon_array[]=array('icon_id'=>'walk');
             $icon_array[]=array('icon_id'=>'walk-ball');
+            $icon_array[]=array('icon_id'=>'weather-bright');
+            $icon_array[]=array('icon_id'=>'weather-heavyrain');
+            $icon_array[]=array('icon_id'=>'weather-hot');
+            $icon_array[]=array('icon_id'=>'weather-rain');
 		    foreach($icon_array as $icon_list){ 
 		  ?>
 		  <a class="icon-link" href="img/icon/<?php echo($icon_list['icon_id'])?>.svg" target="_blank">
