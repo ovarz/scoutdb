@@ -11,6 +11,8 @@
   $random_username=array("Pay Joe","Rhou Jya Lee","Rush Die","Soul as Three");
 
   $random_position=array("Goalkeeper","Right Back","Right Wing Back","Left Back","Left Wing Back","Center Back","Defending Midfielder","Left Midfielder","Right Midfielder","Center Midfielder","Attacking Midfielder","Left Winger","Right Winger","Striker","Second Striker");
+  
+  $random_position_short=array("GK","RB","RWB","LB","LWB","CB","DM","LM","RM","CM","AM","LW","RW","ST","SS");
 
   $random_competition=array("Group","Round of 32","Round of 16","Round of 8","Quarter Final","Semi Final","Final");
 
