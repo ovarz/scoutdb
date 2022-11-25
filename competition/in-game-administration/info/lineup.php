@@ -23,7 +23,22 @@
         <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
         <div class="section-title-label">Line Up</div>
 	  </h2>
-      tes
+      <div class="choose-lineup">
+	    <div class="choose-lineup-column choose-lineup-column-starting">
+		  <div class="clc-player-list">
+		    <?php for ($i=1; $i <= 11 ; $i++) { ?>
+			  <?php require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+			<?php } ?>
+		  </div>
+		</div>
+	    <div class="choose-lineup-column choose-lineup-column-starting">
+		  <div class="clc-player-list">
+		    <?php for ($i=1; $i <= 11 ; $i++) { ?>
+			  <?php require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+			<?php } ?>
+		  </div>
+		</div>
+	  </div>
     </section>
 	
   </span>
