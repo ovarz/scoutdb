@@ -123,6 +123,7 @@
             $icon_array[]=array('icon_id'=>'field-wet');
             $icon_array[]=array('icon_id'=>'google');
             $icon_array[]=array('icon_id'=>'home');
+            $icon_array[]=array('icon_id'=>'jersey');
             $icon_array[]=array('icon_id'=>'left');
             $icon_array[]=array('icon_id'=>'left-double');
             $icon_array[]=array('icon_id'=>'logout');

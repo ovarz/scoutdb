@@ -45,10 +45,22 @@ var toggle_start = function(){
 
 
 
+var choose_jersey = function(){
+  $('.clc-jersey-button').click(function(){
+    var get_color = $(this).attr('data-color');
+	$(this).parent().find('.clc-jersey-button').removeClass('clc-jersey-button-selected');
+	$(this).addClass('clc-jersey-button-selected');
+	$(this).parents().eq(1).attr("data-color",get_color);
+  });	
+};
+
+
+
 $(document).ready(function(){
   "use strict";
   competition_tab();
   ball_possession_switch();
   show_match_round();
   toggle_start();
+  choose_jersey();
 });
