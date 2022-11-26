@@ -21,7 +21,7 @@
     <section aria-label="Section Competition" class="section-container">
 	  <h2 class="section-title">
         <div class="section-title-icon"><?php require ($_SERVER['SCOUTDB'].'img/icon/menu-competition.svg')?></div>
-        <div class="section-title-label">Line Up</div>
+        <div class="section-title-label">Line Up Confirmation</div>
 	  </h2>
       <div class="choose-lineup">
 	    <div class="choose-lineup-column choose-lineup-home">
