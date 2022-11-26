@@ -37,21 +37,28 @@
   </div>
   <div class="vlc-competition-babak">
     <span>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
-        1st
-      </a>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
-        2nd
-      </a>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
-        ET1
-      </a>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
-        ET2
-      </a>
-      <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
-        Pen
-      </a>
+	  <?php if($subchannel != 'in-game-administration'){ ?>
+        <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
+          1st
+        </a>
+        <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
+          2nd
+        </a>
+        <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
+          ET1
+        </a>
+        <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
+          ET2
+        </a>
+        <a aria-label="Round" title="Round" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
+          Pen
+        </a>
+	  <?php } ?>
+	  <?php if($subchannel == 'in-game-administration'){ ?>
+        <a aria-label="<?php echo $next_label; ?>" title="<?php echo $next_label; ?>" class="btn vlc-cb-link" href="<?php echo $next_link; ?>">
+          <?php echo $next_label; ?>
+        </a>
+	  <?php } ?>
 	</span>
   </div>
   <?php } ?>
