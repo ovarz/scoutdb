@@ -33,35 +33,19 @@
 		  </div>
 		  
 		  <div class="clc-jersey">
-		    <div class="clc-jersey-container clc-jersey-goalkeeper" data-color="Default">
-			  <div class="clc-jersey-label">Goalkeeper</div>
-			  <div class="clc-jersey-preview content_center">
-			    <?php require ($_SERVER['SCOUTDB'].'img/icon/jersey.svg')?>
-			  </div>
-			  <div class="clc-jersey-choice">
-			    <button title="Jersey" data-color="Yellow" class="clc-jersey-button"></button>
-			    <button title="Jersey" data-color="Blue" class="clc-jersey-button"></button>
-			    <button title="Jersey" data-color="Black" class="clc-jersey-button"></button>
-			  </div>
-			</div>
-		    <div class="clc-jersey-container clc-jersey-player" data-color="Default">
-			  <div class="clc-jersey-label">Player</div>
-			  <div class="clc-jersey-preview">
-			    <?php require ($_SERVER['SCOUTDB'].'img/icon/jersey.svg')?>
-			  </div>
-			  <div class="clc-jersey-choice">
-			    <button title="Jersey" data-color="Red" class="clc-jersey-button"></button>
-			    <button title="Jersey" data-color="White" class="clc-jersey-button"></button>
-			    <button title="Jersey" data-color="Orange" class="clc-jersey-button"></button>
-			  </div>
-			</div>
+		    <?php $color_display='Yellow'; $jersey_label='goalkeeper'; 
+			$color_switch='no'; $color_1=''; $color_2=''; $color_3=''; 
+			require ($_SERVER['SCOUTDB'].'module/jersey-color.php')?>
+		    <?php $color_display='Red'; $jersey_label='player'; 
+			$color_switch='no'; $color_1=''; $color_2=''; $color_3=''; 
+			require ($_SERVER['SCOUTDB'].'module/jersey-color.php')?>
 		  </div>
 		  
 		  <div class="clc-player">
 		    <div class="clc-player-label">Starting Lineup</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -70,7 +54,7 @@
 		    <div class="clc-player-label">Subtitution</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -79,7 +63,7 @@
 		    <div class="clc-player-label">Reserved</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 5 ; $i++) { ?>
-                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -98,35 +82,19 @@
 		  </div>
 		  
 		  <div class="clc-jersey">
-		    <div class="clc-jersey-container clc-jersey-goalkeeper" data-color="Default">
-			  <div class="clc-jersey-label">Goalkeeper</div>
-			  <div class="clc-jersey-preview content_center">
-			    <?php require ($_SERVER['SCOUTDB'].'img/icon/jersey.svg')?>
-			  </div>
-			  <div class="clc-jersey-choice">
-			    <button title="Jersey" data-color="Black" class="clc-jersey-button"></button>
-			    <button title="Jersey" data-color="Green" class="clc-jersey-button"></button>
-			    <button title="Jersey" data-color="Silver" class="clc-jersey-button"></button>
-			  </div>
-			</div>
-		    <div class="clc-jersey-container clc-jersey-player" data-color="Default">
-			  <div class="clc-jersey-label">Player</div>
-			  <div class="clc-jersey-preview">
-			    <?php require ($_SERVER['SCOUTDB'].'img/icon/jersey.svg')?>
-			  </div>
-			  <div class="clc-jersey-choice">
-			    <button title="Jersey" data-color="White" class="clc-jersey-button"></button>
-			    <button title="Jersey" data-color="Green" class="clc-jersey-button"></button>
-			    <button title="Jersey" data-color="Pink" class="clc-jersey-button"></button>
-			  </div>
-			</div>
+		    <?php $color_display='Green'; $jersey_label='goalkeeper'; 
+			$color_switch='no'; $color_1=''; $color_2=''; $color_3=''; 
+			require ($_SERVER['SCOUTDB'].'module/jersey-color.php')?>
+		    <?php $color_display='White'; $jersey_label='player'; 
+			$color_switch='no'; $color_1=''; $color_2=''; $color_3=''; 
+			require ($_SERVER['SCOUTDB'].'module/jersey-color.php')?>
 		  </div>
 		  
 		  <div class="clc-player">
 		    <div class="clc-player-label">Starting Lineup</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -135,7 +103,7 @@
 		    <div class="clc-player-label">Subtitution</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -144,7 +112,7 @@
 		    <div class="clc-player-label">Reserved</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 5 ; $i++) { ?>
-                <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>

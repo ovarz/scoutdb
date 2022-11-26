@@ -1,0 +1,2 @@
+var player = ["Pay Joe","Marr Juo Kye","Jumy N'Ten","Shuu Trysh Noe","U Choqq","Bham Bank","Bank Toy Yiep","Pho Nie Mann","Rhou Jya Lee","Rush Die","Soul as Three"];
+autocomplete(document.getElementById("player_name"), player);

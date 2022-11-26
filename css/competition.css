@@ -143,16 +143,17 @@ padding:var(--size-3); display:grid; grid-column-gap:var(--size-3); grid-templat
 .clc-player-number{grid-column:2/3; grid-row:1/2;}
 .clc-player-circle{width:var(--circle-size); height:var(--circle-size); background-color:var(--color-default-3);}
 .clc-player-info{grid-column:3/4; grid-row:1/2;}
+.clc-player-position, .clc-player-name{padding:2px var(--size-1); height:var(--circle-size);}
+.clc-player-position{background-color:rgb(var(--color-border) / 13%); margin-right:var(--size-1); color:var(--color-default-1);}
 .clc-player-name{display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; color:var(--color-default-2);}
 .clc-player-action{grid-column:2/4; grid-row:2/3; display:flex;}
-.clc-player-position, .clc-player-name{padding:2px var(--size-1); height:var(--circle-size);}
-.clc-player-position{background-color:rgb(var(--color-border) / 13%); margin-right:var(--size-1);}
 .clc-player-button{margin-right:var(--size-4);  line-height:0;}
 .clc-player-button .svgicon{width:auto; height:20px; padding-top:var(--size-1);}
 
 
 
-.clc-jersey{display:flex; margin-bottom:var(--size-5);}
+.clc-jersey{display:flex;}
+.choose-lineup-column .clc-jersey{margin-bottom:var(--size-5);}
 .clc-jersey-container{--color-selected:rgb(var(--color-border) / 13%);}
 .clc-jersey-goalkeeper{margin-right:var(--size-5);}
 .clc-jersey-preview{fill:var(--color-selected); line-height:0; margin:var(--size-3) 0;}
@@ -162,7 +163,7 @@ padding:var(--size-3); display:grid; grid-column-gap:var(--size-3); grid-templat
 .clc-jersey-button{padding:3px; border:1px solid rgb(var(--color-border) / 13%); box-sizing:content-box; background-color:var(--bg-1);}
 .clc-jersey-button-selected{border-color:rgb(var(--color-border) / 100%);}
 .clc-jersey-button:before{content:''; display:block; padding-top:100%; background-color:var(--color-selected);}
-.clc-jersey-label{text-align:center;}
+.clc-jersey-label{text-align:center; text-transform:capitalize;}
 
 .choose-lineup-home .clc-jersey{justify-content:flex-end;}
 
@@ -175,6 +176,22 @@ padding:var(--size-3); display:grid; grid-column-gap:var(--size-3); grid-templat
 .clc-jersey *[data-color="Green"]{--color-selected:#8BC34A;}
 .clc-jersey *[data-color="Pink"]{--color-selected:#FE85AB;}
 .clc-jersey *[data-color="Silver"]{--color-selected:#919191;}
+
+
+
+.input-lineup{margin-bottom:var(--size-4); position:relative;}
+.input-lineup-field{width:100%; background-color:rgba(0,0,0,0.21); padding:var(--size-3); color:var(--color-default-2);
+border:1px solid rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);}
+
+
+.pml-container{margin-bottom:var(--size-4);}
+.pml-title{margin-bottom:var(--size-2); color:var(--color-default-2);}
+.pml-column{display:grid; grid-gap:var(--size-2); grid-template-columns:repeat(auto-fill, minmax(62px,1fr));}
+.player-card-mini{position:relative;}
+.pcm-thumb{border-radius:var(--rounded-1); overflow:hidden;}
+.pcm-thumb:before{padding-top:100%;}
+.pcm-number{position:absolute; z-index:1000; bottom:2px; right:2px; font-size:10px; width:24px; height:24px; border-radius:50%;
+background-color:var(--bg-1); color:var(--color-default-2);}
 
 
 

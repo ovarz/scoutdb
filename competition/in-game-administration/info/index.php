@@ -134,8 +134,38 @@
 		
 		
 		
+        <div class="match-info-row">
+		  <div class="match-info-label">Home Team Jersey</div>
+		  
+		  <div class="clc-jersey">
+		    <?php $color_display='Default'; $jersey_label='goalkeeper'; 
+			$color_switch='yes'; $color_1='Yellow'; $color_2='Blue'; $color_3='Black'; 
+			require ($_SERVER['SCOUTDB'].'module/jersey-color.php')?>
+		    <?php $color_display='Default'; $jersey_label='player'; 
+			$color_switch='yes'; $color_1='Red'; $color_2='White'; $color_3='Orange'; 
+			require ($_SERVER['SCOUTDB'].'module/jersey-color.php')?>
+		  </div>
+		</div>
+		
+		
+		
+        <div class="match-info-row">
+		  <div class="match-info-label">Away Team Jersey</div>
+		  
+		  <div class="clc-jersey">
+		    <?php $color_display='Default'; $jersey_label='goalkeeper'; 
+			$color_switch='yes'; $color_1='Black'; $color_2='Green'; $color_3='Silver'; 
+			require ($_SERVER['SCOUTDB'].'module/jersey-color.php')?>
+		    <?php $color_display='Default'; $jersey_label='player'; 
+			$color_switch='yes'; $color_1='White'; $color_2='Green'; $color_3='Pink'; 
+			require ($_SERVER['SCOUTDB'].'module/jersey-color.php')?>
+		  </div>
+		</div>
+		
+		
+		
         <div class="match-info-row match-info-submit">
-		  <button class="btn content_center" onclick="location.href='competition/in-game-administration/info/lineup.php';">
+		  <button class="btn content_center" onclick="location.href='competition/in-game-administration/info/lineup-home-empty.php';">
             Save Data
           </button>
 		</div>

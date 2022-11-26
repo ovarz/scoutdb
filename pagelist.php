@@ -51,8 +51,11 @@
           <li><a class="pagelist-row" href="competition/match-statistic/detail.php">Halaman Detail Match Statistic</a></li>
           <li><a class="pagelist-row" href="competition/in-game-administration/">Halaman Daftar Match</a></li>
           <li><a class="pagelist-row" href="competition/in-game-administration/info/">Halaman Match Information</a></li>
-          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup.php">Halaman Lineup (Empty)</a></li>
-          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-filled.php">Halaman Lineup (Filled)</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-home-empty.php">Halaman Input Home Team Lineup (Empty)</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-home-filled.php">Halaman Input Home Team Lineup (Filled)</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-away-empty.php">Halaman Input Away Team Lineup (Empty)</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-away-filled.php">Halaman Input Away Team Lineup (Filled)</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-full.php">Halaman Full Lineup</a></li>
         </ul>
       </li>
       <li>

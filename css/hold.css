@@ -143,6 +143,13 @@ background:radial-gradient(rgb(var(--color-border) / 0%) 0%, rgb(var(--color-bor
 
 
 
+.autocomplete-items{position:absolute; z-index:5000; top:var(--size-6); left:0;
+background-color:var(--color-default-4); border-radius:var(--rounded-2); overflow:hidden;}
+.autocomplete-items > div{padding:var(--size-3) var(--size-4); border-bottom:1px dashed rgb(var(--color-border) / 13%); color:var(--color-default-2);}
+.autocomplete-items > div:hover{background-color:rgb(var(--color-border) / 13%); cursor:pointer;}
+
+
+
 footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 13%);}
 footer > *{padding:var(--size-4);}
 
