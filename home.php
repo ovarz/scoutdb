@@ -42,6 +42,7 @@
           <?php require ($_SERVER['SCOUTDB'].'img/icon/menu-'.$menu_main_list['menu_main_id'].'.svg')?>
         </div>
         <div class="pagemenu-link-label content_center"><?php echo($menu_main_list['menu_main_label'])?></div>
+        <div class="pagemenu-link-desc"><?php echo $random_keyword[array_rand($random_keyword)]; ?></div>
       </a>
       <?php } ?>
 	</div>
