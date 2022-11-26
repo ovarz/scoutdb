@@ -21,7 +21,7 @@ align-content:flex-start; align-items:flex-start; box-shadow:0 2px 10px rgb(0 0 
 .pagemenu-link-icon .svgicon{width:auto; height:var(--size-5); filter:drop-shadow(0px 2px 1px rgba(0,0,0,0.25));}
 .pagemenu-link-label{text-align:center; text-transform:uppercase; font-weight:bold; margin-top:var(--size-3); font-size:11px;}
 .pagemenu-link:hover{background-color:var(--bg-1); color:var(--color-default-2); fill:var(--color-default-2);}
-.pagemenu-link-desc{font-weight:normal; font-size:11px; text-align:center; margin-top:var(--size-2); color:var(--color-default-1);}
+.pagemenu-link-desc{font-weight:normal; font-size:11px; text-align:center; margin-top:var(--size-2); color:var(--color-default-1); font-style:italic;}
 
 @supports(-webkit-backdrop-filter:none) or (backdrop-filter:none){
   .pagemenu-link{-webkit-backdrop-filter:blur(var(--size-3)); backdrop-filter:blur(var(--size-3)); background-color:rgb(var(--color-border) / 21%);}
