@@ -60,7 +60,7 @@
       </div>
       <div class="match-list">
 		  <div class="match-link">
-            <?php $channel_origin='competition'; $next_link='competition/in-game-administration/game/start.php'; $next_label='Continue Match';
+            <?php $channel_origin='competition'; $next_link='competition/in-game-administration/game/secondhalf.php'; $next_label='Continue Match';
 			require ($_SERVER['SCOUTDB'].'module/video-player-match.php')?>
 		  </div>
         <?php for ($i=1; $i <= 6 ; $i++) { ?>
