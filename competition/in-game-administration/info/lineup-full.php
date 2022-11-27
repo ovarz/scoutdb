@@ -130,6 +130,50 @@
 	
   </span>
 </div>
+
+
+
+<div id="popup-EditPlayerNumber" class="rancak-popup hide">
+  <div class="rancak-popup-overlay"></div>
+  <button title="Close" class="popup-close-button rancak-popup-close content_center">
+    <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
+  </button>
+  <div class="rancak-popup-container content_center">
+	<div class="rancak-popup-box popup-v20">
+	  <div class="popup-v20-label">Input New Shirt Number</div>
+	  <input type="text" class="popup-v20-field" placeholder="<?php echo rand(1,30); ?>"
+	  onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"/>
+	  <div class="popup-v20-action">
+		<button title="No" class="btn popup-close-button popup-v20-cancel">Cancel</button>
+		<button title="Yes" class="btn popup-v20-save" onclick="location.href='competition/in-game-administration/info/lineup-full.php';">Save</button>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+
+<div id="popup-InsertPlayer" class="rancak-popup hide">
+  <div class="rancak-popup-overlay"></div>
+  <button title="Close" class="popup-close-button rancak-popup-close content_center">
+    <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
+  </button>
+  <div class="rancak-popup-container content_center">
+    <div class="rancak-popup-box popup-insert-player">
+	  <div class="pip-label">Choose Player</div>
+	  <div class="pip-list">
+		<?php for ($i=1; $i <= 15 ; $i++) { ?>
+		  <?php require ($_SERVER['SCOUTDB'].'module/player-card-small.php')?>
+		<?php } ?>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+
+<script defer rancak-hold="js/autocomplete-base.js"></script>
+<script defer rancak-hold="js/autocomplete-player.js"></script>
 <script defer rancak-hold="js/competition.js"></script>
 <?php require ($_SERVER['SCOUTDB'].'inc/footer.php')?>
 <?php require ($_SERVER['SCOUTDB'].'inc/base-bottom.php')?>

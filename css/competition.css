@@ -135,18 +135,17 @@ border:1px solid rgb(var(--color-border) / 13%); border-radius:var(--rounded-2);
 .clc-player-dropdown{position:absolute; z-index:1; top:0; right:0; height:100%; padding:0 var(--size-4); fill:rgb(var(--color-border) / 55%);}
 
 .clc-player-box{--thumb-size:64px; --circle-size:24px; position:relative;
-padding:var(--size-3); display:grid; grid-column-gap:var(--size-3); grid-template-columns:var(--thumb-size) var(--circle-size) 1fr;}
-.clc-player-thumb, .clc-player-circle, .clc-player-position{border-radius:var(--rounded-1); overflow:hidden; font-size:11px;}
+padding:var(--size-3); display:grid; grid-column-gap:var(--size-3); grid-template-columns:var(--thumb-size) 1fr;}
+.clc-player-thumb, .clc-player-number, .clc-player-position{border-radius:var(--rounded-1); overflow:hidden; font-size:11px;}
 .clc-player-photo{grid-column:1/2; grid-row:1/3;}
 .clc-player-thumb{width:var(--thumb-size); height:var(--thumb-size);}
-.clc-player-number, .clc-player-info, .clc-player-position, .clc-player-name{display:flex; align-items:center;}
-.clc-player-number{grid-column:2/3; grid-row:1/2;}
-.clc-player-circle{width:var(--circle-size); height:var(--circle-size); background-color:var(--color-default-3);}
-.clc-player-info{grid-column:3/4; grid-row:1/2;}
-.clc-player-position, .clc-player-name{padding:2px var(--size-1); height:var(--circle-size);}
-.clc-player-position{background-color:rgb(var(--color-border) / 13%); margin-right:var(--size-1); color:var(--color-default-1);}
+.clc-player-info, .clc-player-position, .clc-player-name{display:flex; align-items:center;}
+.clc-player-number{width:var(--circle-size); height:var(--circle-size); background-color:var(--color-default-3);}
+.clc-player-info{grid-column:2/3; grid-row:1/2;}
+.clc-player-position, .clc-player-name{padding:2px var(--size-1); height:var(--circle-size); margin-left:var(--size-1);}
+.clc-player-position{background-color:rgb(var(--color-border) / 13%); color:var(--color-default-1); justify-content:center;}
 .clc-player-name{display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; color:var(--color-default-2);}
-.clc-player-action{grid-column:2/4; grid-row:2/3; display:flex;}
+.clc-player-action{grid-column:2/3; grid-row:2/3; display:flex;}
 .clc-player-button{margin-right:var(--size-4);  line-height:0;}
 .clc-player-button .svgicon{width:auto; height:20px; padding-top:var(--size-1);}
 

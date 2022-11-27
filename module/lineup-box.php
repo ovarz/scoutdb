@@ -2,7 +2,7 @@
   <div class="clc-player-box">
   
     <?php if($clc_mode == 'form'){ ?>
-      <button title="InsertPlayer" class="clc-player-insert">
+      <button title="InsertPlayer" class="open-popup clc-player-insert">
         <span>Insert Player.....</span>
       </button>
 	  <div class="clc-player-dropdown content_center">
@@ -16,17 +16,12 @@
           <img alt="img_title" class="lazyload" data-original="img/sample/player-<?php echo rand(1,20); ?>.jpg" />
         </div>
       </div>
-      <div class="clc-player-number">
-        <div class="clc-player-circle content_center">
-          <span><?php echo rand(1,99); ?></span>
-        </div>
-      </div>
       <?php $clc_mode='form'; require ($_SERVER['SCOUTDB'].'module/player-card-small.php')?>
       <div class="clc-player-action">
-        <button title="EditPlayerNumber" class="clc-player-button">
+        <button title="EditPlayerNumber" class="open-popup clc-player-button">
           <?php require ($_SERVER['SCOUTDB'].'img/icon/edit.svg')?>
         </button>
-        <button title="InsertPlayer" class="clc-player-button">
+        <button title="InsertPlayer" class="open-popup clc-player-button">
           <?php require ($_SERVER['SCOUTDB'].'img/icon/switch.svg')?>
         </button>
         <button title="RemovePlayer" class="clc-player-button">
