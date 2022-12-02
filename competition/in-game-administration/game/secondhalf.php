@@ -41,7 +41,11 @@
 	    <?php $scout_button='card'; $scout_label='card'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 		<?php $scout_button='default'; $scout_label='pnlt'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 	    <?php $scout_button='default'; $scout_label='undo'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
-	    <?php $scout_button='end'; $scout_label='end match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
+	    <div class="psd-row psd-row-action psd-row-single">
+		  <button class="psd-button psd-button-start content_center" onclick="location.href='competition/in-game-administration/recap/';">
+			End Match
+		  </button>
+		</div>
 	  </div>
       <div class="iga-player-list">
 	    <?php $clc_mode='box'; $clc_bottom='info'; $clc_card=''; $clc_goal='2'; $clc_pen=''; 

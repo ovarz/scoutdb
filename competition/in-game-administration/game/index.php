@@ -32,7 +32,7 @@
 	  <div class="iga-panel psd-box">
 	    <div class="psd-row psd-row-action psd-row-single">
 		  <button class="psd-button psd-button-start content_center" onclick="location.href='competition/in-game-administration/game/secondhalf.php';">
-			Start Game
+			Start Match
 		  </button>
 		</div>
 	    <?php $scout_button='default'; $scout_label='goal'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
