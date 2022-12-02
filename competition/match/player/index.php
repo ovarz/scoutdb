@@ -43,11 +43,7 @@
 		    <div class="psd-box psd-split-left">
 			  <?php $scout_button='default'; $scout_label='atck'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 			  <?php $scout_button='card'; $scout_label='card'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
-              <div class="psd-row psd-row-action psd-row-single">
-                <button class="psd-button content_center">
-                  Undo
-                </button>
-              </div>
+              <?php $scout_button='default'; $scout_label='undo'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 			</div>
 		    <div class="psd-box psd-split-center">
 			  <div class="psd-row">
@@ -56,24 +52,12 @@
 				</div>
 			  </div>
 			  <?php $scout_button='default'; $scout_label='frek'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
-              <div class="psd-row psd-row-action psd-row-single">
-                <button class="psd-button psd-button-start content_center">
-                  Start Match
-                </button>
-              </div>
+              <?php $scout_button='start'; $scout_label='start match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 			</div>
 		    <div class="psd-box psd-split-right">
 			  <?php $scout_button='default'; $scout_label='defs'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
-              <div class="psd-row psd-row-action psd-row-single">
-                <button class="psd-button content_center">
-                  Subtituted Out
-                </button>
-              </div>
-              <div class="psd-row psd-row-action psd-row-single">
-                <button class="psd-button psd-button-end content_center" onclick="location.href='competition/match/player/result.php';">
-                  End Match
-                </button>
-              </div>
+			  <?php $scout_button='default'; $scout_label='subtituted out'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
+              <?php $scout_button='end'; $scout_label='end match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 			</div>
 		  </div>
 		</div>

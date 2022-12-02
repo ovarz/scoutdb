@@ -45,7 +45,7 @@
 		    <div class="clc-player-label">Starting Lineup</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -54,7 +54,7 @@
 		    <div class="clc-player-label">Subtitution</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -63,7 +63,7 @@
 		    <div class="clc-player-label">Reserved</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 5 ; $i++) { ?>
-                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -94,7 +94,7 @@
 		    <div class="clc-player-label">Starting Lineup</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -103,7 +103,7 @@
 		    <div class="clc-player-label">Subtitution</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
-                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -112,7 +112,7 @@
 		    <div class="clc-player-label">Reserved</div>
             <div class="clc-player-list">
               <?php for ($i=1; $i <= 5 ; $i++) { ?>
-                <?php $clc_mode='box'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+                <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>

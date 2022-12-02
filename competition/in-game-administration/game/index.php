@@ -33,13 +33,23 @@
 
     <section aria-label="Section Competition" class="section-container section-iga-iig">
       <div class="iga-player-list">
-	    playerlist
+        <?php for ($i=1; $i <= 11 ; $i++) { ?>
+          <?php $clc_mode='box'; $clc_bottom='info'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+        <?php } ?>
 	  </div>
-	  <div class="iga-panel">
-	    info
+	  <div class="iga-panel psd-box">
+	    <?php $scout_button='start'; $scout_label='start match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
+	    <?php $scout_button='default'; $scout_label='goal'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
+	    <?php $scout_button='default'; $scout_label='subs'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
+	    <?php $scout_button='card'; $scout_label='card'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
+		<?php $scout_button='default'; $scout_label='pnlt'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
+	    <?php $scout_button='default'; $scout_label='undo'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
+	    <?php $scout_button='end'; $scout_label='end match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 	  </div>
       <div class="iga-player-list">
-	    playerlist
+        <?php for ($i=1; $i <= 11 ; $i++) { ?>
+          <?php $clc_mode='box'; $clc_bottom='info'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+        <?php } ?>
 	  </div>
     </section>
 	

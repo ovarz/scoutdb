@@ -53,25 +53,13 @@
 			
 			<!-- border -->
 		    <div class="psd-box psd-split-left">
-              <div class="psd-row psd-row-action psd-row-single">
-                <button class="psd-button content_center">
-                  Undo
-                </button>
-              </div>
+              <?php $scout_button='default'; $scout_label='undo'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 			</div>
 		    <div class="psd-box psd-split-center">
-              <div class="psd-row psd-row-action psd-row-single">
-                <button class="psd-button psd-button-start content_center">
-                  Start Match
-                </button>
-              </div>
+              <?php $scout_button='start'; $scout_label='start match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 			</div>
 		    <div class="psd-box psd-split-right">
-              <div class="psd-row psd-row-action psd-row-single">
-                <button class="psd-button psd-button-end content_center">
-                  End Match
-                </button>
-              </div>
+              <?php $scout_button='end'; $scout_label='end match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 			</div>
 		  </div>
 		</div>
