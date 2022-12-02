@@ -18,23 +18,19 @@
   <span class="width-max">
 
     <section aria-label="Section Competition" class="section-container section-iga-iig">
-      <?php $iga_time='first-half'; require ($_SERVER['SCOUTDB'].'module/ingame-head.php')?>
+      <?php $iga_time='second-half'; require ($_SERVER['SCOUTDB'].'module/ingame-head.php')?>
     </section>
 
 
 
     <section aria-label="Section Competition" class="section-container section-iga-iig">
-      <div class="iga-player-list" style="opacity:0.21">
+      <div class="iga-player-list">
         <?php for ($i=1; $i <= 11 ; $i++) { ?>
           <?php $clc_mode='box'; $clc_bottom='info'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
         <?php } ?>
 	  </div>
 	  <div class="iga-panel psd-box">
-	    <div class="psd-row psd-row-action psd-row-single">
-		  <button class="psd-button psd-button-start content_center" onclick="location.href='competition/in-game-administration/game/secondhalf.php';">
-			Start Game
-		  </button>
-		</div>
+	    <?php $scout_button='start'; $scout_label='pause match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 	    <?php $scout_button='default'; $scout_label='goal'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 	    <?php $scout_button='default'; $scout_label='subs'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 	    <?php $scout_button='card'; $scout_label='card'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
@@ -42,7 +38,7 @@
 	    <?php $scout_button='default'; $scout_label='undo'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 	    <?php $scout_button='end'; $scout_label='end match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 	  </div>
-      <div class="iga-player-list" style="opacity:0.21">
+      <div class="iga-player-list">
         <?php for ($i=1; $i <= 11 ; $i++) { ?>
           <?php $clc_mode='box'; $clc_bottom='info'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
         <?php } ?>

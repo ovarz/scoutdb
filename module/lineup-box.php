@@ -22,12 +22,22 @@
           <?php require ($_SERVER['SCOUTDB'].'img/icon/switch.svg')?>
         </button>
 	    <?php if($clc_bottom == 'button'){ ?>
-        <button title="EditPlayerNumber" class="open-popup clc-player-button">
-          <?php require ($_SERVER['SCOUTDB'].'img/icon/edit.svg')?>
-        </button>
-        <button title="RemovePlayer" class="clc-player-button">
-          <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
-        </button>
+          <button title="EditPlayerNumber" class="open-popup clc-player-button">
+            <?php require ($_SERVER['SCOUTDB'].'img/icon/edit.svg')?>
+          </button>
+          <button title="RemovePlayer" class="clc-player-button">
+            <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
+          </button>
+		<?php } ?>
+		<?php if (isset($iga_time)){ ?>
+          <?php if($iga_time == 'second-half'){ ?>
+            <div class="clc-player-stat">
+              <div class="clc-ps-icon psd-button-card-red">
+                <?php require ($_SERVER['SCOUTDB'].'img/icon/card.svg')?>
+              </div>
+              <div class="clc-ps-label"></div>
+            </div>
+          <?php } ?>
 		<?php } ?>
       </div>
 	<?php } ?>

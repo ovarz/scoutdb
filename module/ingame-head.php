@@ -14,7 +14,12 @@
 	  <b>0</b>
 	</div>
     <div class="iga-info-time content_center">
-	  <b>00:00</b>
+	  <?php if($iga_time == 'first-half'){ ?>
+	    <b>00:00</b>
+	  <?php } ?>
+	  <?php if($iga_time == 'second-half'){ ?>
+	    <b><?php echo rand(10,44); ?>:<?php echo rand(10,59); ?></b>
+	  <?php } ?>
 	</div>
   </span>
 </div>

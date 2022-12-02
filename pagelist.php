@@ -56,6 +56,8 @@
           <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-away-empty.php">Halaman Input Away Team Lineup (Empty)</a></li>
           <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-away-filled.php">Halaman Input Away Team Lineup (Filled)</a></li>
           <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-full.php">Halaman Full Lineup</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/game/">Halaman Pertandingan Belum Dimulai</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/game/secondhalf.php">Halaman Pertandingan Sedang Berlangsung</a></li>
         </ul>
       </li>
       <li>

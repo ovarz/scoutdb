@@ -59,6 +59,25 @@
 
 
 
+<div id="popup-InsertPlayer" class="rancak-popup hide">
+  <div class="rancak-popup-overlay"></div>
+  <button title="Close" class="popup-close-button rancak-popup-close content_center">
+    <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
+  </button>
+  <div class="rancak-popup-container content_center">
+    <div class="rancak-popup-box popup-insert-player">
+	  <div class="pip-label">Choose Player</div>
+	  <div class="pip-list">
+		<?php for ($i=1; $i <= 15 ; $i++) { ?>
+		  <?php require ($_SERVER['SCOUTDB'].'module/player-card-small.php')?>
+		<?php } ?>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+
 <noscript id="deferred-styles">
   <link rel="stylesheet" type="text/css" href="css/hold.css?<?php echo $anticache; ?>" media="print" onload="this.media='all'"/>
 </noscript>
