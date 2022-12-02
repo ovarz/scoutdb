@@ -195,10 +195,21 @@ background-color:var(--bg-1); color:var(--color-default-2);}
 
 
 .section-iga-iig{display:grid; grid-gap:var(--size-4); grid-template-columns:1fr 210px 1fr;}
+
+.iga-team-emblem img{width:auto; height:var(--size-7);}
+.iga-team-name{font-size:var(--size-4); font-weight:bold; text-align:center; color:var(--color-default-2);
+margin-top:var(--size-3); margin-bottom:calc(var(--size-4) * -1);}
+
 .iga-panel.psd-box{padding:0; grid-auto-rows:min-content;}
 .iga-player-list{max-height:calc(100vh - 350px); overflow-y:auto; padding:var(--size-3); border-radius:var(--rounded-2); background-color:rgb(var(--bg-3) / 34%);
 display:grid; grid-gap:var(--size-2); border:5px solid rgb(var(--color-border) / 13%);}
 .iga-player-list .clc-player-box{background-color:var(--bg-1);}
+
+.iga-info-container{display:grid; grid-template-columns:repeat(3,1fr); grid-column-gap:var(--size-3); font-weight:bold;}
+.iga-info-time{grid-column:1/4;}
+.iga-info-score{font-size:48px;}
+.iga-info-separate, .iga-info-time{font-size:18px;}
+.iga-info-time > b{display:block; padding:var(--size-1) var(--size-2); background-color:var(--color-default-1); color:var(--bg-2); border-radius:var(--rounded-1);}
 
 
 

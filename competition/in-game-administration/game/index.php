@@ -18,15 +18,7 @@
   <span class="width-max">
 
     <section aria-label="Section Competition" class="section-container section-iga-iig">
-      <div class="iga-team-info">
-	    playerlist
-	  </div>
-	  <div class="iga-info">
-	    info
-	  </div>
-      <div class="iga-team-info">
-	    playerlist
-	  </div>
+      <?php $iga_time='first-half'; require ($_SERVER['SCOUTDB'].'module/ingame-head.php')?>
     </section>
 
 
