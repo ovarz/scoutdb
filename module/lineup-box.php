@@ -29,7 +29,7 @@
             <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
           </button>
 		<?php } ?>
-		<?php if (isset($iga_time)){ ?>
+		<?php if (isset($clc_card)){ ?>
           <?php if($clc_card == 'yellow'){ ?>
             <div class="clc-player-button clc-player-stat">
               <div class="clc-ps-icon clc-ps-yellow">

@@ -218,6 +218,14 @@ display:grid; grid-gap:var(--size-2); border:5px solid rgb(var(--color-border) /
 
 
 
+.section-recap-tab, .crt-link{border-bottom:var(--border-size) solid #EEE;}
+.section-recap-tab{--border-size:3px; margin-top:calc(var(--size-4) * -1)}
+.section-recap-tab > span{display:flex;}
+.crt-link{padding:var(--size-3); margin-bottom:calc(var(--border-size) * -1);}
+.crt-curr{color:var(--color-default-3); border-bottom-color:var(--color-default-3);}
+
+
+
 
 
 @media screen and (min-width:1024px){

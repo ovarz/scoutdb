@@ -42,7 +42,7 @@
 		<?php $scout_button='default'; $scout_label='pnlt'; require ($_SERVER['SCOUTDB'].'module/scout-button.php')?>
 	    <?php $scout_button='default'; $scout_label='undo'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 	    <div class="psd-row psd-row-action psd-row-single">
-		  <button class="psd-button psd-button-start content_center" onclick="location.href='competition/in-game-administration/recap/';">
+		  <button class="psd-button psd-button-end content_center" onclick="location.href='competition/in-game-administration/recap/';">
 			End Match
 		  </button>
 		</div>
