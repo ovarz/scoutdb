@@ -30,12 +30,44 @@
           </button>
 		<?php } ?>
 		<?php if (isset($iga_time)){ ?>
-          <?php if($iga_time == 'second-half'){ ?>
-            <div class="clc-player-stat">
-              <div class="clc-ps-icon psd-button-card-red">
+          <?php if($clc_card == 'yellow'){ ?>
+            <div class="clc-player-button clc-player-stat">
+              <div class="clc-ps-icon clc-ps-yellow">
                 <?php require ($_SERVER['SCOUTDB'].'img/icon/card.svg')?>
               </div>
               <div class="clc-ps-label"></div>
+            </div>
+          <?php } ?>
+          <?php if($clc_card == 'red'){ ?>
+            <div class="clc-player-button clc-player-stat">
+              <div class="clc-ps-icon clc-ps-red">
+                <?php require ($_SERVER['SCOUTDB'].'img/icon/card.svg')?>
+              </div>
+              <div class="clc-ps-label"></div>
+            </div>
+          <?php } ?>
+          <?php if($clc_goal != ''){ ?>
+            <div class="clc-player-button clc-player-stat">
+              <div class="clc-ps-icon">
+                <?php require ($_SERVER['SCOUTDB'].'img/icon/ball.svg')?>
+              </div>
+              <div class="clc-ps-label"><?php echo $clc_goal; ?></div>
+            </div>
+          <?php } ?>
+          <?php if($clc_pen == 'fail'){ ?>
+            <div class="clc-player-button clc-player-stat">
+              <div class="clc-ps-icon">
+                <?php require ($_SERVER['SCOUTDB'].'img/icon/ball-pen-fail.svg')?>
+              </div>
+              <div class="clc-ps-label"><?php echo $clc_goal; ?></div>
+            </div>
+          <?php } ?>
+          <?php if($clc_pen == 'success'){ ?>
+            <div class="clc-player-button clc-player-stat">
+              <div class="clc-ps-icon">
+                <?php require ($_SERVER['SCOUTDB'].'img/icon/ball-pen-success.svg')?>
+              </div>
+              <div class="clc-ps-label"><?php echo $clc_goal; ?></div>
             </div>
           <?php } ?>
 		<?php } ?>

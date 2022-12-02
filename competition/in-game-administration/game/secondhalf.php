@@ -25,8 +25,13 @@
 
     <section aria-label="Section Competition" class="section-container section-iga-iig">
       <div class="iga-player-list">
-        <?php for ($i=1; $i <= 11 ; $i++) { ?>
-          <?php $clc_mode='box'; $clc_bottom='info'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+	    <?php $clc_mode='box'; $clc_bottom='info'; $clc_card='yellow'; $clc_goal=''; $clc_pen=''; 
+		require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+	    <?php $clc_mode='box'; $clc_bottom='info'; $clc_card=''; $clc_goal='1'; $clc_pen='success'; 
+		require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+        <?php for ($i=1; $i <= 9 ; $i++) { ?>
+          <?php $clc_mode='box'; $clc_bottom='info'; $clc_card=''; $clc_goal=''; $clc_pen='';
+		  require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
         <?php } ?>
 	  </div>
 	  <div class="iga-panel psd-box">
@@ -39,8 +44,13 @@
 	    <?php $scout_button='end'; $scout_label='end match'; require ($_SERVER['SCOUTDB'].'module/scout-button-misc.php')?>
 	  </div>
       <div class="iga-player-list">
-        <?php for ($i=1; $i <= 11 ; $i++) { ?>
-          <?php $clc_mode='box'; $clc_bottom='info'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+	    <?php $clc_mode='box'; $clc_bottom='info'; $clc_card=''; $clc_goal='2'; $clc_pen=''; 
+		require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+	    <?php $clc_mode='box'; $clc_bottom='info'; $clc_card='red'; $clc_goal=''; $clc_pen='fail'; 
+		require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+        <?php for ($i=1; $i <= 9 ; $i++) { ?>
+          <?php $clc_mode='box'; $clc_bottom='info'; $clc_card=''; $clc_goal=''; $clc_pen='';
+		  require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
         <?php } ?>
 	  </div>
     </section>
