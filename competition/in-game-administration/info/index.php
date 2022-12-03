@@ -165,7 +165,7 @@
 		
 		
         <div class="match-info-row match-info-submit">
-		  <button class="btn content_center" onclick="location.href='competition/in-game-administration/info/lineup-home-empty.php';">
+		  <button class="btn content_center" onclick="location.href='competition/in-game-administration/info/lineup-full.php';">
             Save Data
           </button>
 		</div>

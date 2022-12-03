@@ -43,7 +43,7 @@
 		  
 		  <div class="clc-player">
 		    <div class="clc-player-label">Starting Lineup</div>
-            <div class="clc-player-list">
+            <div class="clc-player-list clc-player-star">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
                 <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
@@ -52,7 +52,7 @@
 		  
 		  <div class="clc-player">
 		    <div class="clc-player-label">Subtitution</div>
-            <div class="clc-player-list">
+            <div class="clc-player-list clc-player-subs">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
                 <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
@@ -61,9 +61,12 @@
 		  
 		  <div class="clc-player">
 		    <div class="clc-player-label">Reserved</div>
-            <div class="clc-player-list">
-              <?php for ($i=1; $i <= 5 ; $i++) { ?>
+            <div class="clc-player-list clc-player-resv">
+              <?php for ($i=1; $i <= 2 ; $i++) { ?>
                 <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+              <?php } ?>
+              <?php for ($i=1; $i <= 3 ; $i++) { ?>
+                <?php $clc_mode='form'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -92,7 +95,7 @@
 		  
 		  <div class="clc-player">
 		    <div class="clc-player-label">Starting Lineup</div>
-            <div class="clc-player-list">
+            <div class="clc-player-list clc-player-star">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
                 <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
@@ -101,7 +104,7 @@
 		  
 		  <div class="clc-player">
 		    <div class="clc-player-label">Subtitution</div>
-            <div class="clc-player-list">
+            <div class="clc-player-list clc-player-subs">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
                 <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
@@ -110,9 +113,12 @@
 		  
 		  <div class="clc-player">
 		    <div class="clc-player-label">Reserved</div>
-            <div class="clc-player-list">
-              <?php for ($i=1; $i <= 5 ; $i++) { ?>
+            <div class="clc-player-list clc-player-resv">
+              <?php for ($i=1; $i <= 2 ; $i++) { ?>
                 <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
+              <?php } ?>
+              <?php for ($i=1; $i <= 3 ; $i++) { ?>
+                <?php $clc_mode='form'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
               <?php } ?>
             </div>
 		  </div>
@@ -139,7 +145,16 @@
     <?php require ($_SERVER['SCOUTDB'].'img/icon/close.svg')?>
   </button>
   <div class="rancak-popup-container content_center">
-	<div class="rancak-popup-box popup-v20">
+	<div class="rancak-popup-box popup-v20 popup-shirtnumber">
+	  <div class="psn-box">
+        <div class="psn-photo content_center">
+          <div class="psn-thumb flex_ori thumb-loading">
+            <img alt="img_title" class="lazyload" data-original="img/sample/player-<?php echo rand(1,20); ?>.jpg" />
+          </div>
+        </div>
+        <div class="psn-name"><?php echo $random_username[array_rand($random_username)]; ?></div>
+	  </div>
+	
 	  <div class="popup-v20-label">Input New Shirt Number</div>
 	  <input type="text" class="popup-v20-field" placeholder="<?php echo rand(1,30); ?>"
 	  onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"/>

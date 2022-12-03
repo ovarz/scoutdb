@@ -149,6 +149,8 @@ padding:var(--size-3); display:grid; grid-column-gap:var(--size-3); grid-templat
 .clc-player-button{margin-right:var(--size-4);  line-height:0; display:flex; align-items:flex-end;}
 .clc-player-button .svgicon{width:auto; height:20px; padding-top:var(--size-1);}
 
+.clc-player-star .svgicon-close, .clc-player-resv .svgicon-close{display:none;}
+
 .clc-player-stat{display:flex; align-items:flex-end; color:var(--color-default-1); fill:var(--color-default-1);}
 .clc-ps-yellow{fill:#FFC75F;}
 .clc-ps-red{fill:#D53D4E;}

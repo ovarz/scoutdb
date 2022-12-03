@@ -168,6 +168,13 @@ padding-bottom:var(--size-3); margin-bottom:var(--size-3); border-bottom:1px das
 
 
 
+.popup-shirtnumber{--psn-size:150px; position:relative; padding-left:var(--psn-size);}
+.psn-box{position:absolute; top:44px; left:var(--size-4); width:calc(var(--psn-size) - var(--size-4) - var(--size-4));}
+.psn-thumb{width:calc(var(--psn-size) / 2); height:calc(var(--psn-size) / 2); border-radius:50%; overflow:hidden;}
+.psn-name{margin-top:var(--size-3); text-align:center;}
+
+
+
 footer{display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(var(--color-border) / 13%);}
 footer > *{padding:var(--size-4);}
 
