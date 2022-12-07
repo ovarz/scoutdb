@@ -56,6 +56,17 @@ var choose_jersey = function(){
 
 
 
+var recap_tab = function(){
+  $('.crt-link').click(function(){
+    var get_recap = $(this).attr('data-recap');
+	$('.crt-link').not(this).removeClass('crt-curr');
+	$(this).addClass('crt-curr');
+	$(".section-recap-content > span").load('competition/in-game-administration/recap/recap-content-'+ get_recap +'.php');
+  });	
+};
+
+
+
 $(document).ready(function(){
   "use strict";
   competition_tab();
@@ -63,4 +74,5 @@ $(document).ready(function(){
   show_match_round();
   toggle_start();
   choose_jersey();
+  recap_tab();
 });

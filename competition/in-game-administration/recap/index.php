@@ -28,6 +28,12 @@
 		<?php $recap_curr='info'; require ($_SERVER['SCOUTDB'].'module/recap-tab.php')?>
 	  </span>
     </section>
+
+
+
+    <section aria-label="Section Competition" class="section-container section-recap-content">
+      <span><?php require ($_SERVER['SCOUTDB'].'competition/in-game-administration/recap/recap-content-info.php')?></span>
+    </section>
 	
   </span>
 </div>
