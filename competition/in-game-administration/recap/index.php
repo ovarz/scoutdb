@@ -32,7 +32,11 @@
 
 
     <section aria-label="Section Competition" class="section-container section-recap-content">
-      <span><?php require ($_SERVER['SCOUTDB'].'competition/in-game-administration/recap/recap-content-info.php')?></span>
+      <span>
+	    <?php require ($_SERVER['SCOUTDB'].'competition/in-game-administration/recap/recap-content-info.php')?>
+	    <?php require ($_SERVER['SCOUTDB'].'competition/in-game-administration/recap/recap-content-event.php')?>
+	    <?php require ($_SERVER['SCOUTDB'].'competition/in-game-administration/recap/recap-content-lineup.php')?>
+	  </span>
     </section>
 	
   </span>

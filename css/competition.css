@@ -230,7 +230,9 @@ display:grid; grid-gap:var(--size-2); border:5px solid rgb(var(--color-border) /
 
 .section-recap-content{margin-top:calc(var(--size-2) * -1);}
 
-.recap-content-info{display:grid; grid-gap:var(--size-4);}
+.recap-content-box{display:none;}
+.recap-content-info{display:block;}
+.rci-row{margin-bottom:var(--size-3);}
 .rci-row *{text-align:center;}
 .rci-data{color:var(--color-default-2); font-weight:bold; margin-top:var(--size-1);}
 .rci-data-namelist{display:flex; justify-content:center;}

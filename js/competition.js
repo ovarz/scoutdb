@@ -61,7 +61,8 @@ var recap_tab = function(){
     var get_recap = $(this).attr('data-recap');
 	$('.crt-link').not(this).removeClass('crt-curr');
 	$(this).addClass('crt-curr');
-	$(".section-recap-content > span").load('competition/in-game-administration/recap/recap-content-'+ get_recap +'.php');
+	$(".recap-content-box").not(('#recap-content-'+ get_recap +'')).css('display','none');
+	$('#recap-content-'+ get_recap +'').css('display','block');
   });	
 };
 
