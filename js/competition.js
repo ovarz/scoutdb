@@ -61,8 +61,8 @@ var recap_tab = function(){
     var get_recap = $(this).attr('data-recap');
 	$('.crt-link').not(this).removeClass('crt-curr');
 	$(this).addClass('crt-curr');
-	$(".recap-content-box").not(('#recap-content-'+ get_recap +'')).css('display','none');
-	$('#recap-content-'+ get_recap +'').css('display','block');
+	$(".recap-content-box").not(('#recap-content-'+ get_recap +'')).slideUp('fast');
+	$('#recap-content-'+ get_recap +'').slideDown('fast');
   });	
 };
 

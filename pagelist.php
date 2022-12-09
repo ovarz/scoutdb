@@ -58,6 +58,7 @@
           <li><a class="pagelist-row" href="competition/in-game-administration/info/lineup-full.php">Halaman Full Lineup</a></li>
           <li><a class="pagelist-row" href="competition/in-game-administration/game/">Halaman Pertandingan Belum Dimulai</a></li>
           <li><a class="pagelist-row" href="competition/in-game-administration/game/secondhalf.php">Halaman Pertandingan Sedang Berlangsung</a></li>
+          <li><a class="pagelist-row" href="competition/in-game-administration/recap/">Halaman Rekap Pertandingan</a></li>
         </ul>
       </li>
       <li>
@@ -112,6 +113,9 @@
 		  <?php 
             $icon_array = array();
             $icon_array[]=array('icon_id'=>'back');
+            $icon_array[]=array('icon_id'=>'ball');
+            $icon_array[]=array('icon_id'=>'ball-pen-fail');
+            $icon_array[]=array('icon_id'=>'ball-pen-success');
             $icon_array[]=array('icon_id'=>'bleep-fail');
             $icon_array[]=array('icon_id'=>'bleep-success');
             $icon_array[]=array('icon_id'=>'calendar');
@@ -156,6 +160,8 @@
             $icon_array[]=array('icon_id'=>'stand-ball');
             $icon_array[]=array('icon_id'=>'star-filled');
             $icon_array[]=array('icon_id'=>'star-outline');
+            $icon_array[]=array('icon_id'=>'sub-in');
+            $icon_array[]=array('icon_id'=>'sub-out');
             $icon_array[]=array('icon_id'=>'switch');
             $icon_array[]=array('icon_id'=>'sync');
             $icon_array[]=array('icon_id'=>'upload');
