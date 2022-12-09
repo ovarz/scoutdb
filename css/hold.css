@@ -91,6 +91,12 @@ menu{background-color:var(--bg-2); border-color:rgb(var(--color-border) / 13%); 
 
 
 
+.vlt-list-row{border-color:rgb(var(--color-border) / 13%);}
+.vlt-list-data b{ background-color:rgb(var(--color-border) / 13%); border-radius:var(--rounded-1); overflow:hidden;}
+.vlt-list-player{color:var(--color-default-2);}
+
+
+
 .pagination{--icon-size:36px; display:flex;}
 .pagination-button{margin-right:var(--size-2); margin-top:var(--size-2); width:var(--icon-size); height:var(--icon-size);
 color:var(--color-default-2); fill:var(--color-default-2); font-weight:bold; 

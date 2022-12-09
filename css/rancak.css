@@ -191,6 +191,15 @@ button.ptl-comment-button .svgicon{width:auto; height:18px;}
 
 
 
+.vlt-list{display:grid; grid-gap:var(--size-3);}
+.vlt-list-row{display:grid; grid-template-columns:60px 1fr; grid-gap:var(--size-2); align-items:flex-start;
+padding-bottom:var(--size-3); border-bottom:1px dashed;}
+.vlt-list-info{line-height:130%;}
+.vlt-list-data b{padding:var(--size-1) var(--size-2); font-size:12px;}
+.vlt-list-player{font-weight:bold; margin-bottom:var(--size-1);}
+
+
+
 
 
 @media screen and (min-width:0px) and (max-width:1023px){

@@ -231,7 +231,7 @@ display:grid; grid-gap:var(--size-2); border:5px solid rgb(var(--color-border) /
 .section-recap-content{margin-top:calc(var(--size-2) * -1);}
 
 .recap-content-box{display:none;}
-.recap-content-lineup{display:block;}
+.recap-content-info{display:block;}
 .rci-row{margin-bottom:var(--size-3);}
 .rci-row *{text-align:center;}
 .rci-data{color:var(--color-default-2); font-weight:bold; margin-top:var(--size-1);}
@@ -278,6 +278,22 @@ padding-bottom:var(--size-3); margin-bottom:var(--size-3); border-bottom:1px das
 .rcl-team-away .rcl-subs-player > div > div{grid-row:1/2;}
 .rcl-team-away .rcl-subs-icon{grid-column:1/2;}
 .rcl-team-away .rcl-subs-name{grid-column:2/3;}
+
+
+
+.recap-content-event .vlt-list-player{margin-bottom:var(--size-1);}
+
+
+
+.section-signature{display:flex; flex-wrap:wrap; justify-content:center;}
+.signature-box{margin:0 var(--size-4);}
+.signature-input{width:144px; height:144px; margin-bottom:var(--size-4); position:relative; display:flex; align-items:flex-end;}
+.signature-input img{width:auto; max-width:100%; max-height:100%;}
+.signature-label{padding:var(--size-3) 0; border-top:1px solid rgb(var(--color-border) / 34%); text-align:center; font-weight:bold;}
+.signature-here{position:absolute; top:0; left:0; width:100%; height:100%; padding:var(--size-3); border:2px dashed rgb(var(--color-border) / 34%); border-radius:var(--rounded-2);
+display:flex; flex-wrap:wrap; justify-content:center; align-content:center; align-items:center; color:rgb(var(--color-border) / 34%); fill:rgb(var(--color-border) / 34%);}
+.signature-here > *{text-align:center;}
+.signature-submit{width:100%; margin-top:var(--size-2);}
 
 
 

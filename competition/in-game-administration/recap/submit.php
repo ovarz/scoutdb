@@ -42,11 +42,11 @@
 
 
     <section aria-label="Section Competition" class="section-container section-signature">
-	  <?php $signature_content='no'; $signature_label='Coach Home Team'; require ($_SERVER['SCOUTDB'].'module/signature-box.php')?>
-	  <?php $signature_content='no'; $signature_label='Wasit'; require ($_SERVER['SCOUTDB'].'module/signature-box.php')?>
-	  <?php $signature_content='no'; $signature_label='Coach Away Team'; require ($_SERVER['SCOUTDB'].'module/signature-box.php')?>
+	  <?php $signature_content='yes'; $signature_label='Coach Home Team'; require ($_SERVER['SCOUTDB'].'module/signature-box.php')?>
+	  <?php $signature_content='yes'; $signature_label='Wasit'; require ($_SERVER['SCOUTDB'].'module/signature-box.php')?>
+	  <?php $signature_content='yes'; $signature_label='Coach Away Team'; require ($_SERVER['SCOUTDB'].'module/signature-box.php')?>
 	  <div class="signature-submit content_center">
-	    <button title="Signature" class="btn signature-submit-button">Submit</button>
+	    <button title="Signature" class="btn signature-submit-button" onclick="location.href='competition/in-game-administration/';">Submit</button>
 	  </div>
 	</section>
 	
