@@ -1,5 +1,16 @@
 <div class="rcl-player">
   <div class="rcl-player-subs content_center">
+    <?php if($card == 'yes'){ ?>
+	  <?php require ($_SERVER['SCOUTDB'].'img/icon/card.svg')?>
+	<?php } ?>
+    <?php if($goal == 'yes'){ ?>
+	  <div class="clc-player-button clc-player-stat">
+        <div class="clc-ps-icon">
+          <?php require ($_SERVER['SCOUTDB'].'img/icon/ball.svg')?>
+		</div>
+        <div class="clc-ps-label"><?php echo rand(1,3); ?></div>
+      </div>
+	<?php } ?>
     <?php if($subs == 'out'){ ?>
 	  <?php require ($_SERVER['SCOUTDB'].'img/icon/sub-out.svg')?>
 	<?php } ?>

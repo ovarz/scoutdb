@@ -250,14 +250,21 @@ display:grid; grid-gap:var(--size-2); border:5px solid rgb(var(--color-border) /
 .rcl-player{display:grid; grid-gap:var(--size-2); grid-template-columns:1fr 24px 160px; color:var(--color-default-2); fill:var(--color-default-2);
 padding-bottom:var(--size-3); margin-bottom:var(--size-3); border-bottom:1px dashed rgb(var(--color-border) / 13%);}
 .rcl-player-subs, .rcl-player-name{display:flex; justify-content:flex-end;}
-.rcl-player-subs .svgicon{width:auto; height:18px;}
+.rcl-player-subs{display:flex;}
+.rcl-player-subs .svgicon{width:auto; height:18px; margin-right:var(--size-3);}
+.rcl-player-subs .svgicon-ball{margin-right:0; padding-top:0;}
+.rcl-player-subs .clc-player-stat{margin-right:var(--size-3);}
 
-.rcl-team-away .rcl-player-subs, .rcl-team-away .rcl-player-name{display:flex; justify-content:flex-start;}
+.rcl-team-home .svgicon-card{fill:#D53D4E;}
+
+.rcl-team-away .rcl-player-subs, .rcl-team-away .rcl-player-name{display:flex; flex-direction:row-reverse;}
 .rcl-team-away .rcl-player{grid-template-columns:160px 24px 1fr;}
 .rcl-team-away .rcl-player > div{grid-row:1/2;}
 .rcl-team-away .rcl-player-name{grid-column:1/2;}
 .rcl-team-away .rcl-player-number{grid-column:2/3;}
 .rcl-team-away .rcl-player-subs{grid-column:3/4;}
+.rcl-team-away .rcl-player-subs .svgicon{margin-right:0; margin-left:var(--size-3);}
+.rcl-team-away .svgicon-card{fill:#FFC75F;}
 
 
 
