@@ -51,7 +51,7 @@
 		  </div>
 		  
 		  <div class="clc-player">
-		    <div class="clc-player-label">Subtitution</div>
+		    <div class="clc-player-label">Substitution</div>
             <div class="clc-player-list clc-player-subs">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
                 <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>
@@ -103,7 +103,7 @@
 		  </div>
 		  
 		  <div class="clc-player">
-		    <div class="clc-player-label">Subtitution</div>
+		    <div class="clc-player-label">Substitution</div>
             <div class="clc-player-list clc-player-subs">
               <?php for ($i=1; $i <= 11 ; $i++) { ?>
                 <?php $clc_mode='box'; $clc_bottom='button'; require ($_SERVER['SCOUTDB'].'module/lineup-box.php')?>

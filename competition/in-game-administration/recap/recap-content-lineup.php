@@ -34,7 +34,7 @@
   
   
   <div class="rcl-container rcl-container-subs">
-    <div class="rcl-title">Subtitution</div>
+    <div class="rcl-title">Substitution</div>
     <div class="rcl-team rcl-team-home">
       <?php for ($i=1; $i <= 2 ; $i++) { ?>
         <?php require ($_SERVER['SCOUTDB'].'module/recap-subs.php')?>
@@ -50,7 +50,7 @@
   
   
   <div class="rcl-container">
-    <div class="rcl-title">Subtitute Player</div>
+    <div class="rcl-title">Substitute Player</div>
     <div class="rcl-team rcl-team-home">
       <?php for ($i=1; $i <= 2 ; $i++) { ?>
         <?php $subs='no'; $goal='no'; $card='no'; require ($_SERVER['SCOUTDB'].'module/recap-player.php')?>

@@ -39,7 +39,7 @@
 		</div>
 		
 	    <div class="pml-container">
-		  <div class="pml-title">Subtitution</div>
+		  <div class="pml-title">Substitution</div>
 		  <div class="pml-column">
 		    <?php for ($i=1; $i <= 15 ; $i++) { ?>
 			  <?php require ($_SERVER['SCOUTDB'].'module/player-card-mini.php')?>
